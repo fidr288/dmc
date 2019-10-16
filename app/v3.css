@@ -31,6 +31,8 @@ hr {
     width: 400px;
     border-top: 1px solid grey;
     border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 
 }
 
@@ -41,9 +43,6 @@ hr {
 
 }
 
-.nav {
-    color: #999;
-}
 
 .small-text {
     font-size: 0.65em;
@@ -51,18 +50,12 @@ hr {
 
 }
 
-.page-section {
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-}
+
 
 .time-details {
     margin-top: 1.5rem;
 }
 
-footer {
-    color: #999;
-}
 
 .content {
 max-width: 800px;
@@ -80,4 +73,16 @@ text-align: center;
   content: '<';
   font-size: 55px;
   color: #999;
+}
+
+
+
+.link-text {
+    color: black;
+    text-align: center;
+
+}
+
+footer {
+    color: black;
 }
