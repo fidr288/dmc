@@ -36,21 +36,12 @@ hr {
 
 }
 
-.announcement{
-    text-align: center;
-    color: black;
-   
-
-}
-
 
 .small-text {
     font-size: 0.65em;
     font-weight: 800;
 
 }
-
-
 
 .time-details {
     margin-top: 1.5rem;
@@ -60,6 +51,7 @@ hr {
 .content {
 max-width: 800px;
 text-align: center;
+color: black;
 }
 
 .carousel-control-next-icon:after
@@ -81,10 +73,6 @@ text-align: center;
     color: black;
     text-align: center;
 
-}
-
-footer {
-    color: black;
 }
 
 td {
