@@ -1,0 +1,83 @@
+#content {
+    text-align: center;
+    padding-top: 15%;
+    color: black;
+    /* text-shadow: 0px 4px 3px rgba(0,0,0,0.4),  */
+                 /* 0px 8px 13px rgba(0,0,0,0.1), */
+                 /* 0px 18px 23px rgba(0,0,0,0.1); */
+}
+
+
+
+body {
+    /* background-image: url("https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"); */
+    /* background-size: center; */
+    background-color: white; 
+    font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+html {
+    height: 100%;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 4em;
+}
+
+hr {
+    width: 400px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+
+}
+
+.announcement{
+    text-align: center;
+    color: black;
+   
+
+}
+
+.nav {
+    color: #999;
+}
+
+.small-text {
+    font-size: 0.65em;
+    font-weight: 800;
+
+}
+
+.page-section {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.time-details {
+    margin-top: 1.5rem;
+}
+
+footer {
+    color: #999;
+}
+
+.content {
+max-width: 800px;
+text-align: center;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #999;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #999;
+}
