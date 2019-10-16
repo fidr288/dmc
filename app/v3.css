@@ -86,3 +86,15 @@ text-align: center;
 footer {
     color: black;
 }
+
+td {
+    text-align: center;
+}
+
+.center-text{
+    text-align: center;
+}
+.page-heading{
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
