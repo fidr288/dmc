@@ -38,10 +38,11 @@ h1 {
 
 .short--hr {
     width: 150px;
-    border-top: 1px solid grey;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
     margin-top: 1rem;
     margin-bottom: 1rem;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 
 }
 
