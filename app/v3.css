@@ -36,6 +36,10 @@ hr {
 
 }
 
+hr .small--hr {
+    width: 200px;
+}
+
 
 .small-text {
     font-size: 0.65em;
