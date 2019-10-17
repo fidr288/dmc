@@ -37,11 +37,11 @@ h1 {
 }
 
 .short--hr {
-    width: 200px;
+    width: 150px;
     border-top: 1px solid grey;
     border-bottom: 1px solid rgba(0,0,0,0.2);
-    margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 
 }
 
