@@ -27,7 +27,7 @@ h1 {
     font-size: 4em;
 }
 
-hr {
+.long--hr {
     width: 400px;
     border-top: 1px solid grey;
     border-bottom: 1px solid rgba(0,0,0,0.2);
@@ -36,8 +36,13 @@ hr {
 
 }
 
-hr .small--hr {
+.short--hr {
     width: 200px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+
 }
 
 
