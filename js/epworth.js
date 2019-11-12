@@ -17,9 +17,9 @@ button.addEventListener("click", function(){
     } else if (total <= 14) {
         document.getElementById("level").textContent = "Mild sleep disturbance";
     } else if (total <= 17){
-        document.getElementById("level").textContent = "Moderate sleep disturbance";
+        document.getElementById("level").textContent = "Moderate sleep disturbance, please seek medical help";
     } else{
-        document.getElementById("level").textContent = "Severe sleep disturbance";
+        document.getElementById("level").textContent = "Severe sleep disturbance, please seek medical help";
     };
 });
 clear.addEventListener("click", function(){
