@@ -11,7 +11,7 @@ button.addEventListener("click", function(){
     let seven = parseInt(document.querySelector('input[name="seven"]:checked').value);
     let eight = parseInt(document.querySelector('input[name="eight"]:checked').value);
     total = +(one+two+three+four+five+six+seven+eight);
-    document.getElementById("message").textContent = "Sleep score = " + total;
+    document.getElementById("message").textContent = "Sleep score = " + total + "/24";
     if (total <= 10){
         document.getElementById("level").textContent = "normal sleep levels";
     } else if (total <= 14) {
