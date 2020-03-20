@@ -21,7 +21,7 @@
 <hr>
 <div>
   <h3 style="color:#e3a547">14岁以下 under 14</h3>
-  <div id='product-component-1584695034888' style="padding-top: 3%"></div>
+  <div id='product-component-1584695869807' style="padding-top: 3%"></div>
 </div>
 <hr>
 <div>
@@ -292,21 +292,17 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
         id: '4781114163245',
-        node: document.getElementById('product-component-1584695034888'),
+        node: document.getElementById('product-component-1584695869807'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
     "styles": {
       "product": {
         "@media (min-width: 601px)": {
-          "max-width": "100%",
-          "margin-left": "0",
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
           "margin-bottom": "50px"
-        },
-        "text-align": "left"
-      },
-      "title": {
-        "font-size": "26px"
+        }
       },
       "button": {
         ":hover": {
@@ -316,24 +312,8 @@
         ":focus": {
           "background-color": "#cc9540"
         }
-      },
-      "price": {
-        "font-size": "18px"
-      },
-      "compareAt": {
-        "font-size": "15.299999999999999px"
-      },
-      "unitPrice": {
-        "font-size": "15.299999999999999px"
       }
     },
-    "layout": "horizontal",
-    "contents": {
-      "img": false,
-      "imgWithCarousel": true,
-      "description": true
-    },
-    "width": "100%",
     "text": {
       "button": "Add to cart"
     }
@@ -373,7 +353,7 @@
       }
     },
     "text": {
-      "button": "添加购物车 Add to cart"
+      "button": "Add to cart"
     }
   },
   "cart": {
