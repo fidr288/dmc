@@ -14,9 +14,45 @@
     <title>Enrol</title>
 
 <body>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel" style = "color: red">您要符合以下条件才可以注册:<br>You must fulfill the below criterias before allowed to enrol:</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        <ul>
+          <li>诊所确认<br>Approved by the clinic</li>
+        </ul>
+        <p style="text-align: center;">以及符合一项下列所需的条件 AND one of the below criteria</p>
+        <ul>
+            <li>您是新西兰公民。<br>You are a NZ citizen</li>
+            <li>持有新西兰居民签证或是永久居留签。<br>hold a residence visa or permanent resident visa</li>
+            <li>持有工作签证并可以证明我能够在新西兰居住至少2年。<br>have a work visa/permit and can show that I am able to be in New Zealand for at least 2 years (pervious permits included).</li>
+        </ul>
+        
+        <p style="text-align: center;">以及 AND </p>
+
+        <ul>
+        <li>您往后的12个月里至少有183天居住在新西兰。<br>You intended to be a resident in New Zealand for at least 183 days in the next 12 months.</li>
+        </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" style="margin-right:50%">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- end modal -->
+
 <div class="container content" style = "padding-top: 10%">
-  <h3>注册为本诊所病人<br><span style="color: red;font-size: 0.6em;">请先等待诊所确认才注册</span></h3>
-  <h3>Enrol with the clinic<br><span style="color: red;font-size: 0.6em;">Please only enrol if approved by the clinic.</span></h3>
+  <h3>注册为本诊所病人<br>Enrol with the clinic</h3>
   
   <hr>
 
@@ -63,7 +99,11 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+<script type="text/javascript">
+  $(document).ready(function(){
+      $("#exampleModal").modal('show');
+  });
+</script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
