@@ -85,30 +85,43 @@
 <!-- <p>Consultation fees include prescription and faxing to pharmacy. </p> -->
 
 <hr>
-<!-- <div>
-  <h3 style="color:#e3a547">14岁以下处方  under 14 prescription</h3>
-  <div id='product-component-1584695869807' style="padding-top: 3%;text-align: center;display: inline-block;"></div>
-</div>
-<hr> -->
+<table class="table table-sm table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">服务<br>Service</th>
+      <th scope="col">添加到购物车<br>Add to cart</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th class="text-primary" style="width: 65%"scope="row">成人会诊<br>Adult consult<br>$18.00 </th>
+      <td style="width: 35%;padding-top: 0%;"> <div id='product-component-1588371238686'></div></td>
+    </tr>
+    <tr>
+      <th class="text-primary" style="width: 65%"scope="row">成人处方<br>Adult prescription<br>$13</th>
+      <td style="width: 35%;padding-top: 0%;"> <div id='product-component-1588371359467'></div></td>
+    </tr>
+    <tr>
+      <th class ="table-secondary center-text" scope="row" colspan="4"></th>
+    </tr>
+    <tr>
+      <th class="text-success" style="width: 65%"scope="row">儿童会诊<br>Child consult<br>$12</th>
+      <td style="width: 35%;padding-top: 0%;"> <div id='product-component-1588370769298'></div></td>
+    </tr>
+    <tr>
+      <th class="text-success" style="width: 65%"scope="row">儿童处方<br>Child prescription<br>$8</th>
+      <td style="width: 35%;padding-top: 0%;"> <div id='product-component-1588370926459'></div></td>
+    </tr> 
+    <th class ="table-secondary center-text" scope="row" colspan="4"></th>
+    <tr>
+      <th class="text-danger" style="width: 65%;font-size: 1.6em;vertical-align: middle;"scope="row">$1</th>
+      <td style="width: 35%;padding-top: 0%;"> <div id='product-component-1588372121423'></div></td>
+    </tr> 
+  </tbody>
+</table>
 
-<div class="card border-dark">
 
-  <h4 class="card-header bg-success text-white">儿童14-17岁<br>Child 14-17yrs</h4>
-
-  <div class="card-body">
-  <div id='collection-component-1586119856282'></div>
-  </div>
-</div>
-
-<div class="card border-dark" style="margin-top:3%;">
-  <h4 class="card-header bg-primary text-white" >成人18岁以上<br>Adult 18+</h4>
-  <div class="card-body">
-      <div id='collection-component-1586119653632'></div>
-    <!-- <div id='collection-component-1584656839507' style="padding-top: 3%"></div> -->
-  </div>
-</div>
-
-<!-- adult -->
+<!-- $1 -->
 <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
@@ -135,9 +148,9 @@
       storefrontAccessToken: '9cc2d6611316abc3e05aa2a07b2eed5a',
     });
     ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('collection', {
-        id: '183596449837',
-        node: document.getElementById('collection-component-1586119653632'),
+      ui.createComponent('product', {
+        id: '4990375428141',
+        node: document.getElementById('product-component-1588372121423'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -146,22 +159,37 @@
         "@media (min-width: 601px)": {
           "max-width": "calc(25% - 20px)",
           "margin-left": "20px",
-          "margin-bottom": "50px",
-          "width": "calc(25% - 20px)"
+          "margin-bottom": "50px"
         }
       },
       "button": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
         ":hover": {
-          "background-color": "#0269c2"
+          "background-color": "#cc460f"
         },
-        "background-color": "#0275d8",
+        "background-color": "#e34e11",
         ":focus": {
-          "background-color": "#0269c2"
-        }
+          "background-color": "#cc460f"
+        },
+        "border-radius": "39px",
+        "padding-left": "33px",
+        "padding-right": "33px"
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
       }
     },
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false
+    },
     "text": {
-      "button": "添加购物车 Add to cart"
+      "button": "+"
     }
   },
   "productSet": {
@@ -189,13 +217,24 @@
         }
       },
       "button": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
         ":hover": {
-          "background-color": "#0269c2"
+          "background-color": "#cc460f"
         },
-        "background-color": "#0275d8",
+        "background-color": "#e34e11",
         ":focus": {
-          "background-color": "#0269c2"
-        }
+          "background-color": "#cc460f"
+        },
+        "border-radius": "39px",
+        "padding-left": "33px",
+        "padding-right": "33px"
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
       }
     },
     "text": {
@@ -205,13 +244,17 @@
   "cart": {
     "styles": {
       "button": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
         ":hover": {
-          "background-color": "#0269c2"
+          "background-color": "#cc460f"
         },
-        "background-color": "#0275d8",
+        "background-color": "#e34e11",
         ":focus": {
-          "background-color": "#0269c2"
-        }
+          "background-color": "#cc460f"
+        },
+        "border-radius": "39px"
       }
     },
     "text": {
@@ -226,13 +269,16 @@
   "toggle": {
     "styles": {
       "toggle": {
-        "background-color": "#0275d8",
+        "background-color": "#e34e11",
         ":hover": {
-          "background-color": "#0269c2"
+          "background-color": "#cc460f"
         },
         ":focus": {
-          "background-color": "#0269c2"
+          "background-color": "#cc460f"
         }
+      },
+      "count": {
+        "font-size": "14px"
       }
     }
   }
@@ -244,8 +290,7 @@
 /*]]>*/
 </script>
 
-
-<!-- child 14-17 -->
+<!-- adult prescription -->
 <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
@@ -272,9 +317,9 @@
       storefrontAccessToken: '9cc2d6611316abc3e05aa2a07b2eed5a',
     });
     ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent('collection', {
-        id: '183617650733',
-        node: document.getElementById('collection-component-1586119856282'),
+      ui.createComponent('product', {
+        id: '4779264933933',
+        node: document.getElementById('product-component-1588371359467'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -283,22 +328,37 @@
         "@media (min-width: 601px)": {
           "max-width": "calc(25% - 20px)",
           "margin-left": "20px",
-          "margin-bottom": "50px",
-          "width": "calc(25% - 20px)"
+          "margin-bottom": "50px"
         }
       },
       "button": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
         ":hover": {
-          "background-color": "#53a653"
+          "background-color": "#025faf"
         },
-        "background-color": "#5cb85c",
+        "background-color": "#0269c2",
         ":focus": {
-          "background-color": "#53a653"
-        }
+          "background-color": "#025faf"
+        },
+        "border-radius": "39px",
+        "padding-left": "33px",
+        "padding-right": "33px"
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
       }
     },
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false
+    },
     "text": {
-      "button": "添加购物车 Add to cart"
+      "button": "+"
     }
   },
   "productSet": {
@@ -326,13 +386,24 @@
         }
       },
       "button": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
         ":hover": {
-          "background-color": "#53a653"
+          "background-color": "#025faf"
         },
-        "background-color": "#5cb85c",
+        "background-color": "#0269c2",
         ":focus": {
-          "background-color": "#53a653"
-        }
+          "background-color": "#025faf"
+        },
+        "border-radius": "39px",
+        "padding-left": "33px",
+        "padding-right": "33px"
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
       }
     },
     "text": {
@@ -342,13 +413,355 @@
   "cart": {
     "styles": {
       "button": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        ":hover": {
+          "background-color": "#025faf"
+        },
+        "background-color": "#0269c2",
+        ":focus": {
+          "background-color": "#025faf"
+        },
+        "border-radius": "39px"
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout",
+      "noteDescription": "输入姓名，出生日期和会诊日期\nEnter name,date of birth and consult date"
+    },
+    "contents": {
+      "note": true
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#0269c2",
+        ":hover": {
+          "background-color": "#025faf"
+        },
+        ":focus": {
+          "background-color": "#025faf"
+        }
+      },
+      "count": {
+        "font-size": "14px"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
+<!-- adult consult -->
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'dominion-medical-centre.myshopify.com',
+      storefrontAccessToken: '9cc2d6611316abc3e05aa2a07b2eed5a',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '4778731470893',
+        node: document.getElementById('product-component-1588371238686'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        ":hover": {
+          "background-color": "#025faf"
+        },
+        "background-color": "#0269c2",
+        ":focus": {
+          "background-color": "#025faf"
+        },
+        "border-radius": "39px",
+        "padding-left": "33px",
+        "padding-right": "33px"
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      }
+    },
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false
+    },
+    "text": {
+      "button": "+"
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        ":hover": {
+          "background-color": "#025faf"
+        },
+        "background-color": "#0269c2",
+        ":focus": {
+          "background-color": "#025faf"
+        },
+        "border-radius": "39px",
+        "padding-left": "33px",
+        "padding-right": "33px"
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "cart": {
+    "styles": {
+      "button": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        ":hover": {
+          "background-color": "#025faf"
+        },
+        "background-color": "#0269c2",
+        ":focus": {
+          "background-color": "#025faf"
+        },
+        "border-radius": "39px"
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout",
+      "noteDescription": "输入姓名，出生日期和会诊日期\nEnter name,date of birth and consult date"
+    },
+    "contents": {
+      "note": true
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#0269c2",
+        ":hover": {
+          "background-color": "#025faf"
+        },
+        ":focus": {
+          "background-color": "#025faf"
+        }
+      },
+      "count": {
+        "font-size": "14px"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
+<!-- child consult -->
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'dominion-medical-centre.myshopify.com',
+      storefrontAccessToken: '9cc2d6611316abc3e05aa2a07b2eed5a',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '4778838982701',
+        node: document.getElementById('product-component-1588370769298'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
         ":hover": {
           "background-color": "#53a653"
         },
         "background-color": "#5cb85c",
         ":focus": {
           "background-color": "#53a653"
+        },
+        "border-radius": "39px",
+        "padding-left": "33px",
+        "padding-right": "33px"
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      }
+    },
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false
+    },
+    "text": {
+      "button": "+"
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
         }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        ":hover": {
+          "background-color": "#53a653"
+        },
+        "background-color": "#5cb85c",
+        ":focus": {
+          "background-color": "#53a653"
+        },
+        "border-radius": "39px",
+        "padding-left": "33px",
+        "padding-right": "33px"
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "cart": {
+    "styles": {
+      "button": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        ":hover": {
+          "background-color": "#53a653"
+        },
+        "background-color": "#5cb85c",
+        ":focus": {
+          "background-color": "#53a653"
+        },
+        "border-radius": "39px"
       }
     },
     "text": {
@@ -370,6 +783,9 @@
         ":focus": {
           "background-color": "#53a653"
         }
+      },
+      "count": {
+        "font-size": "14px"
       }
     }
   }
@@ -381,25 +797,177 @@
 /*]]>*/
 </script>
 
-
-
+<!-- child prescription -->
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'dominion-medical-centre.myshopify.com',
+      storefrontAccessToken: '9cc2d6611316abc3e05aa2a07b2eed5a',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '4779260215341',
+        node: document.getElementById('product-component-1588370926459'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        ":hover": {
+          "background-color": "#53a653"
+        },
+        "background-color": "#5cb85c",
+        ":focus": {
+          "background-color": "#53a653"
+        },
+        "border-radius": "39px",
+        "padding-left": "33px",
+        "padding-right": "33px"
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      }
+    },
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false
+    },
+    "text": {
+      "button": "+"
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        ":hover": {
+          "background-color": "#53a653"
+        },
+        "background-color": "#5cb85c",
+        ":focus": {
+          "background-color": "#53a653"
+        },
+        "border-radius": "39px",
+        "padding-left": "33px",
+        "padding-right": "33px"
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "cart": {
+    "styles": {
+      "button": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        ":hover": {
+          "background-color": "#53a653"
+        },
+        "background-color": "#5cb85c",
+        ":focus": {
+          "background-color": "#53a653"
+        },
+        "border-radius": "39px"
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout",
+      "noteDescription": "输入姓名，出生日期和会诊日期\nEnter name,date of birth and consult date"
+    },
+    "contents": {
+      "note": true
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#5cb85c",
+        ":hover": {
+          "background-color": "#53a653"
+        },
+        ":focus": {
+          "background-color": "#53a653"
+        }
+      },
+      "count": {
+        "font-size": "14px"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
  <hr>
 
-<!--<footer>
-  <div class="container content">
-    <div class="row">
-      <div class="col-sm-4">
-        <a href="index.html" class="link-text">Home<br>主页</a>
-    </div>  
-      <div class="col-sm-4">
-            <a href="fees.html" class="link-text">Service & Fees<br>服务及收费</a>
-        </div>
-        <div class="col-sm-4">
-            <a href="resource.html" class="link-text">Resources<br>资源</a>
-        </div> 
-    </div>
-  </div> 
-</footer> -->
+
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
