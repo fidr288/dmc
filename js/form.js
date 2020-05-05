@@ -9,7 +9,8 @@ function resident() {
   // If the checkbox is checked, display the output text
   if (contact == "yes"){
     resident.style.display = "block";
-    noteligible.style.display ="none";
+      contactbox.style.display ="none";
+      noteligible.style.display ="none";
   } else {
     resident.style.display = "none";
     noteligible.style.display ="block";
@@ -25,7 +26,8 @@ function days() {
   let residentChoice = document.querySelector('input[name="resident"]:checked').value
   var days = document.getElementById("days");
     var yesresident = document.getElementById("yesresident");
-    var notresident = document.getElementById("notresident");
+  var resident = document.getElementById("resident");
+  var notresident = document.getElementById("notresident");
 
   if (residentChoice == "yes"){
     days.style.display = "block";
@@ -33,7 +35,7 @@ function days() {
 } 
   else {
     days.style.display = "none";
-      yesresident.style.display ="none";
+  yesresident.style.display ="none";
       notresident.style.display ="block";
 
   }
