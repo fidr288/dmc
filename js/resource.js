@@ -638,8 +638,8 @@ function choice() {
     imm.style.display = "none";
     service.style.display = "none";
     medicine.style.display = "none";
-    gov.style.display = "none";
-    screening.style.display = "block";
+    gov.style.display = "block";
+    screening.style.display = "none";
     men.style.display = "none";
     allergy.style.display = "none";
     cancer.style.display = "none";
