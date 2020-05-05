@@ -42,11 +42,11 @@ function final() {
   
     if (dayChoice == "yes"){
       notresident.style.display ="none";
-      yesresident.style.dispay ="block";
+      yesresident.style.display ="block";
   } 
     else {
       notresident.style.display ="block";
-      isresident.style.dispay ="none";
+      yesresident.style.display ="none";
   
     }
   } 

@@ -37,12 +37,13 @@
                   在线服务 Online services
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="./enrol.html">注册 Enrol</a>
+                <!-- <a class="dropdown-item" href="./enrol.html">注册 Enrol</a> -->
+                <a class="dropdown-item" href="./form.html">注册或登记 Enrol or register</a>
                 <a class="dropdown-item" href="./payment.html">线上付款 Online Payment</a>
                 <a class="dropdown-item" href="./prescription.html">重复处方 Repeat prescription</a>
                 <a class="dropdown-item" href="./booking.html">线上预约 Online Booking</a>
                 <a class="dropdown-item" href="./video.html">线上视频会诊 Video consult</a>
-                <a class="dropdown-item" href="./nonres.html">非居民线上登记 Non-resident registration form</a>
+                <!-- <a class="dropdown-item" href="./nonres.html">非居民线上登记 Non-resident registration form</a> -->
               </div>
           </li>
   <!-- 
@@ -77,53 +78,65 @@
   
   <div id="contact">
     <p>您是否已获得诊所的批准填写此表格?<br>Have you already got permission from the clinic to fill this form?</p>
-    <label>是 Yes</label>
-    <input type="radio"  name="contact" value="yes"required  onclick="resident()">
-    <label>不是 No</label>
-    <input type="radio" name="contact" value="no" required onclick="resident()">
+    <div>
+      <label class="btn btn-secondary">
+        <input type="radio" name="contact"  value="yes" required onclick="resident()">是 Yes
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="contact"  value="no" required onclick="resident()">不是 No
+      </label>
+    </div>
   </div>
 
-  <div id="resident" style="display:none">
+  <div id="resident" style="display:none; margin-top:5%;">
+    <p>您满足以下其中一项条件吗?<br>Do you qualify for one of the below criteria?</p>
     <ul>
     <li>新西兰公民。<br>A NZ citizen</li>
     <li>持有新西兰居民签证或是永久居留签。<br>Hold a residence visa or permanent resident visa</li>
     <li>持有工作签证并可以证明您能够在新西兰居住至少2年。<br>  Have a work visa/permit and can show that you are able to be in New Zealand for at least 2 years (previous permits included).
     </li>
     </ul>
-    <label>是 Yes</label>
-    <input type="radio"  name="resident" value="yes" required  onclick="days()">
-    <label>不是 No</label>
-    <input type="radio" name="resident" value="no" required onclick="days()">
+    <div>
+      <label class="btn btn-secondary">
+        <input type="radio" name="resident"  value="yes" required onclick="days()">是 Yes
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="resident"  value="no" required onclick="days()">不是 No
+      </label>
+    </div>
   </div>
   
 
-  <div id="days" style="display:none">
-    <p>您往后的12个月里至少有183天居住在新西兰。
-      You intend to be a resident in New Zealand for at least 183 days in the next 12 months.</p>
-    <label>是 Yes</label>
-    <input type="radio" name="day" value="yes" required onclick="final()">
-    <label>不是 No</label>
-    <input type="radio" name="day" value="no" required onclick="final()">
+  <div id="days" style="display:none; margin-top:5%;">
+    <p>您往后的12个月里至少有183天居住在新西兰吗？<br>Do you intend to be a resident in New Zealand for at least 183 days in the next 12 months.</p>
+  
+    <div >
+      <label class="btn btn-secondary">
+        <input type="radio" name="day"  value="yes" required onclick="final()">是 Yes
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="day"  value="no" required onclick="final()">不是 No
+      </label>
+    </div>
   </div>
 
 
-  <div id="yesresident" style="display:none;">
-    <p>ENROL</p>
-    <p>ENROL</p>
-    <p>ENROL</p>
+  <div id="yesresident" style="display:none;margin-top: 5%;">
+    <a href="./enrol.html" class="btn btn-large btn-info"><i class="material-icons">touch_app</i><br>线上注册请点击这里<br>Click here to enrol online</a>
   </div>
-</div>
 
   <div id="noteligible" style="display:none;">
-    <p>Please call clinic on 09-624986 or message us</p>
+    <p>致电09-6204986或留言给我们以获取批准。<br>Please call 09-6204986 or message us to get approval.</p>
     <a href="https://doc.dominionmedical.co.nz/interview?i=docassemble.contactonline:data/questions/contactonline.yml" class="btn btn-info col-sm-6" style="width:30%; height: 100%;"><i class="material-icons" style="margin-top:auto">email</i><br>给我们留言<br>Message us</a>
     <a href="tel:+6496204986" class="btn btn-info col-sm-6" style="width: 30%; height: 100%;"><i class="material-icons" style="margin-top:auto">phone</i><br>打给我们<br>Call us</a>
   </div>
   
   <div id="notresident" style="display:none;">
     <p>fill in registration form</p>
-    <a href="./nonres.html" class="btn btn-large btn-warning">Click here</a>
+    <a href="./nonres.html" class="btn btn-large btn-warning"><i class="material-icons">touch_app</i><br>线上非居民登记请点击这里<br>Click here to register as a non-resident online</a>
+
   </div>
+
 </div>
 
 
