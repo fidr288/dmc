@@ -38,14 +38,15 @@ function days() {
 function final() {
     var dayChoice = document.querySelector('input[name="day"]:checked').value
     var notresident = document.getElementById("notresident");
-    var isresident = document.getElementById("isresident");
+    var yesresident = document.getElementById("yesresident");
   
     if (dayChoice == "yes"){
       notresident.style.display ="none";
-      isresident.style.dispay ="block";
+      yesresident.style.dispay ="block";
   } 
     else {
       notresident.style.display ="block";
+      isresident.style.dispay ="none";
   
     }
   } 
