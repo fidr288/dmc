@@ -697,7 +697,7 @@ function choice() {
     gov.style.display = "none";
     screening.style.display = "none";
     men.style.display = "none";
-    allergy.style.display = "allergy";
+    allergy.style.display = "block";
     cancer.style.display = "none";
   } else{
     menubox.style.display ="none";
