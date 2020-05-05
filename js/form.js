@@ -31,12 +31,13 @@ function days() {
 
   if (residentChoice == "yes"){
     days.style.display = "block";
+    resident.style.display = "none";
     notresident.style.display ="none";
 } 
   else {
     days.style.display = "none";
-  yesresident.style.display ="none";
-      notresident.style.display ="block";
+    yesresident.style.display ="none";
+    notresident.style.display ="block";
 
   }
 } 
