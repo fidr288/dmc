@@ -146,6 +146,10 @@ function choice() {
     men.style.display = "block";
     menubox.style.display ="none";
     break;
+    case "screening":
+    screening.style.display = "block";
+    menubox.style.display ="none";
+    break;
     case "allergy":
     allergy.style.display = "block";
     menubox.style.display ="none";
