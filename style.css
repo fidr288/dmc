@@ -96,10 +96,18 @@ ul {
 }
 
 .button {
+    width: 100px;
+    height:100px; 
+    border-radius:50px; 
+    font-size: 12px;
+    padding-top: 2%; 
+    line-height: 1.33;
+}
+/* .button {
     width: 148px;
     height:148px; 
     border-radius:74px; 
     font-size: 16px;
     padding-top: 5%; 
     line-height: 1.33;
-}
+} */
