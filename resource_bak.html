@@ -34,7 +34,7 @@
                     在线服务 Online services
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="./form.html">注册或登记 Enrol or register</a>
+                <a class="dropdown-item" href="./formpw.html">注册或登记 Enrol or register</a>
                 <!-- <a class="dropdown-item" href="./enrol.html">注册 Enrol</a> -->
                   <a class="dropdown-item" href="./payment.html">线上付款 Online Payment</a>
                   <a class="dropdown-item" href="./prescription.html">重复处方 Repeat prescription</a>
@@ -72,109 +72,132 @@
       <!-- nav end -->
 
     <h2 class="center-text page-heading">资源<br>Resources</h2>
-    <a href="./resource_bak.html" class="btn btn-info">reset</a>
+    <div style="text-align: center;">
+    <a href="./resource.html" class="btn btn-info">还原 reset</a>
+  </div>
     <hr>
 <div class="container content">
 
-    <div id="menu" style="display: block;" >
+    <div id="menu" style="display: block; margin-bottom: 30%;" >
 
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <label >
-                <input type="radio" name="menu"  value="help" required onclick="choice()">Helplines
+                <input type="radio" name="menu"  value="help" required onclick="choice()">Helplines 求助热线
               </label>
             </li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Morbi leo risus</li>
-            <li class="list-group-item">Porta ac consectetur ac</li>
-            <li class="list-group-item">Vestibulum at eros</li>
+            <li class="list-group-item"><label>
+              <input type="radio" name="menu"  value="service" required onclick="choice()">Directory for services 服务目录
+            </label>
+          </li>
+            <li class="list-group-item">
+              <label>
+              <input type="radio" name="menu"  value="general" required onclick="choice()">General health information 一般健康信息
+            </label>
+          </li>
+            <li class="list-group-item">
+              <label>
+              <input type="radio" name="menu"  value="test" required onclick="choice()">Self assessment tests 自我评估测试
+            </label>
+          </li>
+          <li class="list-group-item"><label>
+            <input type="radio" name="menu"  value="diabetes" required onclick="choice()">Diabetes 糖尿病
+          </label>
+        </li>
+            <li class="list-group-item">
+              <label>
+              <input type="radio" name="menu"  value="woman" required onclick="choice()">Women health and maternity 妇女保健和生育
+            </label>
+          </li>
+            <li class="list-group-item">
+              <label>
+              <input type="radio" name="menu"  value="elderly" required onclick="choice()">Elderly 老年人信息
+            </label>
+          </li>
+          <li class="list-group-item"><label>
+            <input type="radio" name="menu"  value="mental" required onclick="choice()">Mental health / counselling 心理健康信息
+          </label>
+        </li>
+          <li class="list-group-item">
+            <label>
+              <input type="radio" name="menu"  value="resp" required onclick="choice()">Respiratory 呼吸科
+            </label>
+          </li>
+          <li class="list-group-item"><label>
+              <input type="radio" name="menu"  value="drug" required onclick="choice()">Drug and Alcohol, Addiction, Smoking 药物，酗酒，吸烟。
+            </label>
+          </li>
+          <li class="list-group-item"><label>
+              <input type="radio" name="menu"  value="rheum" required onclick="choice()">Rheumatology 风湿科
+            </label>
+          </li>
+          <li class="list-group-item"> <label>
+              <input type="radio" name="menu"  value="cardio" required onclick="choice()">Cardiovascular 心血管科
+            </label>
+          </li>
+          <li class="list-group-item"><label>
+              <input type="radio" name="menu"  value="neuro" required onclick="choice()">Neurological 神经科
+            </label>
+            
+          <li class="list-group-item"><label>
+              <input type="radio" name="menu"  value="genetic" required onclick="choice()">Genetic 基因遗传科
+            </label>
+          </li>
+          <li class="list-group-item"><label>
+              <input type="radio" name="menu"  value="gastro" required onclick="choice()">Gastroenterology 肠胃病科
+            </label>
+          </li>
+          <li class="list-group-item"><label>
+              <input type="radio" name="menu"  value="derm" required onclick="choice()">Dermatology 皮肤科
+            </label>
+          </li>
+          <li class="list-group-item"><label>
+              <input type="radio" name="menu"  value="paed" required onclick="choice()">Childrens Health 小儿科
+            </label>
+          </li>
+          <li class="list-group-item">   
+              <label>
+                <input type="radio" name="menu"  value="flu" required onclick="choice()">Flu 流感
+              </label>
+            </li>
+          <li class="list-group-item"><label>
+              <input type="radio" name="menu"  value="travel" required onclick="choice()">Travel (vacinations, diseases, outbreaks) 旅游健康,疫苗接种
+            </label>
+          </li>
+          <li class="list-group-item"> <label> 
+              <input type="radio" name="menu"  value="imm" required onclick="choice()">Immunisation 疫苗接种
+            </label>
+          </li>
+          <li class="list-group-item"><label>
+              <input type="radio" name="menu"  value="medicine" required onclick="choice()">Medicines 药物
+            </label>
+          </li>
+          <li class="list-group-item"> <label>
+              <input type="radio" name="menu"  value="gov" required onclick="choice()">Government 福利表格
+            </label>
+          </li>
+          <li class="list-group-item"><label>
+              <input type="radio" name="menu"  value="screening" required onclick="choice()">Screening 健康筛查
+            </label>
+          </li>
+          <li class="list-group-item"><label>
+              <input type="radio" name="menu"  value="men" required onclick="choice()">Mens Health 男性健康
+            </label>
+          </li>
+          <li class="list-group-item"><label>
+              <input type="radio" name="menu"  value="allergy" required onclick="choice()">Allergy 过敏
+            </label>
+          </li>
+          <li class="list-group-item"><label>
+              <input type="radio" name="menu"  value="cancer" required onclick="choice()">Cancer 癌症
+            </label>
+          </li>
           </ul>
         <div>
           
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="general" required onclick="choice()">General health information
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="test" required onclick="choice()">Self assessment tests | 自我评估测试
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="woman" required onclick="choice()">Women health and maternity
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="elderly" required onclick="choice()">Elderly
-          </label>
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="resp" required onclick="choice()">Respiratory
-          </label>
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="drug" required onclick="choice()">Drug and Alcohol, Addiction, Smoking
-          </label>
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="rheum" required onclick="choice()">Rheumatology
-          </label>
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="diabetes" required onclick="choice()">Diabetes
-          </label>
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="cardio" required onclick="choice()">Cardiovascular
-          </label>
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="neuro" required onclick="choice()">Neurological
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="genetic" required onclick="choice()">Genetic
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="mental" required onclick="choice()">Mental health / counselling
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="gastro" required onclick="choice()">Gastroenterology
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="derm" required onclick="choice()">Dermatology
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="paed" required onclick="choice()">Childrens Health
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="flu" required onclick="choice()">Flu
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="travel" required onclick="choice()">Travel (vacinations, diseases, outbreaks)
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="imm" required onclick="choice()">Immunisation
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="service" required onclick="choice()">Directory for services
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="medicine" required onclick="choice()">Medicines
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="gov" required onclick="choice()">Government
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="screening" required onclick="choice()">Screening
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="men" required onclick="choice()">Mens Health
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="allergy" required onclick="choice()">Allergy
-          </label>
-          <label class="btn btn-info">
-            <input type="radio" name="menu"  value="cancer" required onclick="choice()">Cancer
-          </label>
         </div>
     </div>
-<div id="help" style="display:none;">
+<div id="help" style="display:none; margin-bottom:30%;;">
  <p>Helplines</p>
     <hr class="short--hr">
     <ul>
@@ -193,7 +216,20 @@
     </ul>
 </div>
 
-<div id="general" style="display:none">
+
+<div id="service" style="display:none; margin-bottom:30%;">
+  <p>Directory for services</p>
+   <hr class="short--hr">
+  <ul>
+      <li><a href="https://www.healthpoint.co.nz/" runtime_url="https://www.healthpoint.co.nz/" target="_blank" >Healthpoint NZ</a>&nbsp;- Find GP, Specialist, Physiotherapist, Occupational therapy, Midwife, Dental, Many other health services</li>
+      <li><a href="https://healthpages.co.nz/" runtime_url="https://healthpages.co.nz/" target="_blank" >Healthpages NZ</a>&nbsp;- Find GP, Specialist, Physiotherapist, Occupational therapy, Midwife, Dental, Many other health services</li>
+      <li><a href="https://interpret.org.nz/book-an-interpreter.html" runtime_url="https://interpret.org.nz/book-an-interpreter.html" target="_blank">Interpreting</a> - Book an Interpreter - Charges Apply</li>
+      <li>LABTESTS NZ Collection centres 血检中心的开放时间和地址 <a href="https://www.labtests.co.nz/index.php/collection-centres" target="_blank">Link</a></li>
+  </ul>
+  </div>
+  
+
+<div id="general" style="display:none; margin-bottom:30%;">
     <p>General Health information</p>
     <hr class="short--hr">
     <ul>
@@ -205,7 +241,7 @@
     </ul>
 </div>
 
-<div id="test" style="display:none">
+<div id="test" style="display:none; margin-bottom:30%;">
     <p>Self assessment tests | 自我评估测试</p>
         <hr class="short--hr">
         <ul>
@@ -242,7 +278,7 @@
     </ul>
  </div>      
  
-<div id="woman" style="display:none">
+<div id="woman" style="display:none; margin-bottom:30%;">
 <p>Womens Health & Maternity</p>
 <hr class="short--hr">
 
@@ -261,11 +297,16 @@
 </ul>
 </div>
 
-<div id="elderly" style="display:none">
+<div id="elderly" style="display:none; margin-bottom:30%;">
 <p>Elderly</p>
 <hr class="short--hr">
 
 <ul>
+    <li>MOCA dementia screen+instructions<br><a href="./files/moca-eng.pdf" target="_blank">Form |</a><a href="./files/moca-eng-ins.pdf" target="_blank">Instructions</a><br>MOCA 认知评估基础量表+评分方法
+    <br>
+    <a href="./files/moca-chi.pdf" target="_blank">表格 |</a>
+    <a href="./files/moca-chi-ins.pdf" target="_blank">方法</a>
+    </li>
     <li><a href="https://www.ageconcern.org.nz/" runtime_url="https://www.ageconcern.org.nz/" target="_blank">Age Concern</a> - Charitable organisation dedicated solely to people over 65</li>
     <li><a href="https://www.ccsdisabilityaction.org.nz/mobility-parking/applications-and-renewal/" runtime_url="https://www.ccsdisabilityaction.org.nz/mobility-parking/applications-and-renewal/" target="_blank">Mobility Parking Permit Application</a></li>
     <li><a href="https://www.seniorline.org.nz/" runtime_url="https://www.seniorline.org.nz/" target="_blank">Seniorline</a> - Seniorline is a national information service to help older people and their whanau navigate the health system</li>
@@ -273,7 +314,7 @@
     <li><a href="https://www.hqsc.govt.nz/our-programmes/advance-care-planning/" runtime_url="https://www.hqsc.govt.nz/our-programmes/advance-care-planning/" target="_blank">Advanced care planning</a> - Advance care planning (ACP) is the process of thinking about, talking about and planning for future health care and end-of-life care. It is about identifying what matters to you</li>
 </ul>
 </div>
-<div id="resp" style="display:none">
+<div id="resp" style="display:none; margin-bottom:30%;">
 <p>Respiratory</p>
 <hr class="short--hr">
 
@@ -283,10 +324,14 @@
     <li><a href="https://s3-ap-southeast-2.amazonaws.com/assets.asthmafoundation.org.nz/images/172460-Child-Asthma-Plan_ASTH10_web.pdf" runtime_url="https://s3-ap-southeast-2.amazonaws.com/assets.asthmafoundation.org.nz/images/172460-Child-Asthma-Plan_ASTH10_web.pdf" target="_blank">Child Asthma Action Plan</a> - Download</li>
     <li><a href="https://www.asthmafoundation.org.nz/resources/asthma-action-plans" runtime_url="https://www.asthmafoundation.org.nz/resources/asthma-action-plans" target="_blank">Adult Asthma Action Plan</a></li>
     <li><a href="https://www.health.govt.nz/your-health/healthy-living/environmental-health/hazardous-substances/asbestos" runtime_url="https://www.health.govt.nz/your-health/healthy-living/environmental-health/hazardous-substances/asbestos" target="_blank" >Asbestos and health</a></li>
-</ul>
+    <li>Sleepiness assessment<br>睡眠评分 <a href="./epworth.html">Link</a></li>
+    <li>Asthma assessment<br>哮喘评分 <a href="./act/actlanding.html">Link</a></li>
+    <li>COPD Assessment Test )<br>慢性阻塞性肺病評估測試<a href="./cat.html">Link</a>
+    </li>
+  </ul>
 </div>
 
-<div id="drug" style="display:none">
+<div id="drug" style="display:none; margin-bottom:30%;">
 <p>Drug and Alcohol, Addiction, Smoking</p>
 <hr class="short--hr">
 
@@ -300,7 +345,7 @@
 </ul>
 </div>
 
-<div id="rheum" style="display:none">
+<div id="rheum" style="display:none; margin-bottom:30%;">
 <p>Rheumatology</p>
 <hr class="short--hr">
 
@@ -309,7 +354,7 @@
 </ul>
 </div>
 
-<div id="diabetes" style="display:none">
+<div id="diabetes" style="display:none; margin-bottom:30%;">
 <p>Diabetes</p>
 <hr class="short--hr">
 
@@ -317,10 +362,16 @@
     <li><a href="https://www.diabetes.org.nz/home" runtime_url="https://www.diabetes.org.nz/home" target="_blank">Diabetes NZ</a> - Information and support for patients with diabetes</li>
     <li><a href="https://www.healthpoint.co.nz/community-health-services/community-health/green-prescription-sport-auckland/" runtime_url="https://www.healthpoint.co.nz/community-health-services/community-health/green-prescription-sport-auckland/" target="_blank">Green Prescription</a> - Subsidised Gym activities for patients with disability</li>
     <li><a href="https://www.health.govt.nz/your-health/healthy-living/food-activity-and-sleep/green-prescriptions/active-families" runtime_url="https://www.health.govt.nz/your-health/healthy-living/food-activity-and-sleep/green-prescriptions/active-families" target="_blank">Active Families</a> - For children</li>
+    <li> Diabetes prevention<br>如何预防糖尿病 <a href="https://static1.squarespace.com/static/5a1b161b6957daf4c4f3b326/t/5a2e443af9619a5b7c9bd2ae/1512981563310/2014-Prediabetes.pdf" target="_blank">Link</a></li>
+    <li>Diabetes physical activity <a href="https://static1.squarespace.com/static/5a1b161b6957daf4c4f3b326/t/5a2e442171c10b8afedfe0a8/1512981539042/2014-Diabetes-and-physical-activity.pdf" target="_blank">Link</a></li>
+    <li>Diabetes Stay well <a href="https://static1.squarespace.com/static/5a1b161b6957daf4c4f3b326/t/5abad10b352f53d186dcd84b/1522192659655/Staying+well+with+type+2.pdf" target="_blank">Link</a></li>
+    <li>2型糖尿病患者如何保持健康 <a href="https://static1.squarespace.com/static/5a1b161b6957daf4c4f3b326/t/5a2e44d8e4966be66fdd5a36/1512981727507/Chinese-Staying-well-with-type-2-Chinese.pdf" target="_blank">中文 </a></li>
+    <li>Diabetes diet 糖尿病飲食<a href="https://static1.squarespace.com/static/5a1b161b6957daf4c4f3b326/t/5a2e4460419202de2ec198ef/1512981609282/Diabetes_and_healthy_food_choices_web.pdf" target="_blank">eng</a><a href="">中文 </a>
+    </li>
 </ul>
 </div>
 
-<div id="cardio" style="display:none">
+<div id="cardio" style="display:none; margin-bottom:30%;">
 <p>Cardiovascular</p>
 <hr class="short--hr">
 
@@ -331,10 +382,14 @@
     <li><a href="https://www.heartfoundation.org.nz/wellbeing/managing-risk/managing-high-cholesterol" runtime_url="https://www.heartfoundation.org.nz/wellbeing/managing-risk/managing-high-cholesterol" target="_blank" >Managing High Cholesterol</a></li>
     <li><a href="https://www.heartfoundation.org.nz/wellbeing/healthy-eating/how-to-lose-weight" runtime_url="https://www.heartfoundation.org.nz/wellbeing/healthy-eating/how-to-lose-weight" target="_blank" >Reach Healthy Weight</a></li>
     <li><a href="https://www.heartfoundation.org.nz/wellbeing/bmi-calculator" runtime_url="https://www.heartfoundation.org.nz/wellbeing/bmi-calculator" target="_blank" >Whats my BMI?</a></li>
+    <li>Healthy heart Food Chart<br>健康的心脏食物图<a href="https://www.heartfoundation.org.nz/shop/nutrition/docs/healthy-heart-chinese.pdf" target="_blank">中文</a></li>
+    <li>Healthy heart eating<br>健康的心脏食物<a href="https://www.heartfoundation.org.nz/shop/heart-healthcare/eating-for-a-healthy-heart.pdf" target="_blank">eng</a><a href="https://www.heartfoundation.org.nz/shop/nutrition/docs/simple-steps-chinese.pdf" target="_blank">中文</a></li>
+    <li>Prevent Stroke and heart attacks<a href="https://www.heartfoundation.org.nz/resources/lowering-your-risk-of-heart-attack-and-stroke-booklet" target="_blank">eng</a></li>
+    <li>Healthy lunch box for kids<a href="https://www.heartfoundation.org.nz/shop/education/loading-up-the-lunchbox-chinese.pdf" target="_blank">中文 </a></li>
 </ul>
 </div>
 
-<div id="sti" style="display:none">
+<div id="sti" style="display:none; margin-bottom:30%;">
 <p>STI (Sexually Transmited Illness)</p>
 <hr class="short--hr">
 
@@ -349,7 +404,7 @@
 </ul>
 </div>
 
-<div id="neuro" style="display:none">
+<div id="neuro" style="display:none; margin-bottom:30%;">
 <p>Neurological</p>
 <hr class="short--hr">
 
@@ -360,7 +415,7 @@
 </ul>
 </div>
 
-<div id="genetic" style="display:none">
+<div id="genetic" style="display:none; margin-bottom:30%;">
 <p>Genetic</p>
 <hr class="short--hr">
 
@@ -369,11 +424,14 @@
 </ul>
 </div>
 
-<div id="mental" style="display:none">
+<div id="mental" style="display:none; margin-bottom:30%;">
 <p>Mental Health/Councelling</p>
 <hr class="short--hr">
 
 <ul>
+    <li>Crisis line- Central Auckland  0800 800 717, South Auckland  09 261 3700, West Auckland and NorthShore 09 487 1414 (After Hours 09 486 8900)</li>
+    <li>Anxiety assessment<br>焦虑症评分 <a href="./gad.html">Link</a></li>
+    <li>Depression assessment<br>抑郁评分 <a href="./kessler.html">Link</a></li>
     <li><a href="https://supportingfamilies.org.nz/" runtime_url="https://supportingfamilies.org.nz/" target="_blank">Supporting Families NZ</a> - Support, Information, Advocacy</li>
     <li><a href="http://www.areyouok.org.nz/" runtime_url="http://www.areyouok.org.nz/" target="_blank">Are you ok?</a> - Support group against family violence</li>
     <li><a href="http://www.beatingtheblues.co.nz/" runtime_url="http://www.beatingtheblues.co.nz/" target="_blank">Beating the blues</a></li>
@@ -392,7 +450,7 @@
 </ul>
 </div>
 
-<div id="gastro" style="display:none">
+<div id="gastro" style="display:none; margin-bottom:30%;">
 <p>Gastroenterology</p>
  <hr class="short--hr">
 <ul>
@@ -401,7 +459,7 @@
 </ul>
 </div>
 
-<div id="derm" style="display:none">
+<div id="derm" style="display:none; margin-bottom:30%;">
 <p>Dermatology</p>
  <hr class="short--hr">
 <ul>
@@ -409,7 +467,7 @@
 </ul>
 </div>
 
-<div id="paed" style="display:none">
+<div id="paed" style="display:none; margin-bottom:30%;">
 <p>Childrens health</p>
  <hr class="short--hr">
 <ul>
@@ -420,7 +478,7 @@
 </ul>
 </div>
 
-<div id="flu" style="display:none">
+<div id="flu" style="display:none; margin-bottom:30%;">
 <p>Flu</p>
  <hr class="short--hr">
 <ul>
@@ -430,7 +488,7 @@
 </ul>
 </div>
 
-<div id="travel" style="display:none">
+<div id="travel" style="display:none; margin-bottom:30%;">
 <p>Travel (vacinations, diseases, outbreaks)</p>
  <hr class="short--hr">
 <ul>
@@ -443,7 +501,7 @@
 </ul>
 </div>
 
-<div id="imm" style="display:none">
+<div id="imm" style="display:none; margin-bottom:30%;">
 <p>Immunisation</p>
  <hr class="short--hr">
 <ul>
@@ -452,18 +510,7 @@
 </ul>
 </div>
 
-<div id="service" style="display:none">
-<p>Directory for services</p>
- <hr class="short--hr">
-<ul>
-    <li><a href="https://www.healthpoint.co.nz/" runtime_url="https://www.healthpoint.co.nz/" target="_blank" >Healthpoint NZ</a>&nbsp;- Find GP, Specialist, Physiotherapist, Occupational therapy, Midwife, Dental, Many other health services</li>
-    <li><a href="https://healthpages.co.nz/" runtime_url="https://healthpages.co.nz/" target="_blank" >Healthpages NZ</a>&nbsp;- Find GP, Specialist, Physiotherapist, Occupational therapy, Midwife, Dental, Many other health services</li>
-    <li><a href="https://interpret.org.nz/book-an-interpreter.html" runtime_url="https://interpret.org.nz/book-an-interpreter.html" target="_blank">Interpreting</a> - Book an Interpreter - Charges Apply</li>
-    <li>LABTESTS NZ Collection centres 血检中心的开放时间和地址 <a href="https://www.labtests.co.nz/index.php/collection-centres" target="_blank">Link</a></li>
-</ul>
-</div>
-
-<div id="medicine" style="display:none">
+<div id="medicine" style="display:none; margin-bottom:30%;">
 <p>Medicines</p>
  <hr class="short--hr">
 <ul>
@@ -473,8 +520,8 @@
 </ul>
 </div>
 
-<div id="gov" style="display:none">
-<p>Government</p>
+<div id="gov" style="display:none; margin-bottom:30%;">
+<p>Government 福利表格</p>
  <hr class="short--hr">
 <ul>
     <li><a href="https://www.workandincome.govt.nz/" target="_blank" >Work and Income NZ</a></li>
@@ -486,7 +533,7 @@
 </ul>
 </div>
 
-<div id="screening" style="display:none">
+<div id="screening" style="display:none; margin-bottom:30%;">
 <p>Screening</p>
  <hr class="short--hr">
 <ul>
@@ -496,7 +543,7 @@
 </ul>
 </div>
 
-<div id="men" style="display:none">
+<div id="men" style="display:none; margin-bottom:30%;">
 <p>Mens Health</p>
  <hr class="short--hr">
 <ul>
@@ -505,7 +552,7 @@
 </ul>
 </div>
 
-<div id="allergy" style="display:none">
+<div id="allergy" style="display:none; margin-bottom:30%;">
 <p>Allergy</p>
  <hr class="short--hr">
 <ul>
@@ -516,7 +563,7 @@
 </ul>
 </div>
 
-<div id="cancer" style="display:none">
+<div id="cancer" style="display:none; margin-bottom:30%;">
 <p>Cancer / Malignancy</p>
  <hr class="short--hr">
 <ul>

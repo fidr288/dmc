@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></head>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://cdn.materialdesignicons.com/5.0.45/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> 
 
 <body>
@@ -16,7 +17,7 @@
   <!-- nav start -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" ari"Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -33,7 +34,7 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     在线服务 Online services
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-menu" ariedby="navbarDropdown">
                 <a class="dropdown-item" href="./formpw.html">注册或登记 Enrol or register</a>
                 <!-- <a class="dropdown-item" href="./enrol.html">注册 Enrol</a> -->
                   <a class="dropdown-item" href="./payment.html">线上付款 Online Payment</a>
@@ -71,518 +72,402 @@
       </nav>
       <!-- nav end -->
 
-    <h2 class="center-text page-heading">资源<br>Resources</h2>
-    <div style="text-align: center;">
-    <a href="./resource.html" class="btn btn-info">还原 reset</a>
-  </div>
-    <hr>
+
 <div class="container content">
+  <div class="accordian col-sm" style="margin-top: 5%;" id="menu">
+    <div class="list-group">
 
-    <div id="menu" style="display: block; margin-bottom: 30%;" >
-
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <label >
-                <input type="radio" name="menu"  value="help" required onclick="choice()">Helplines 求助热线
-              </label>
-            </li>
-            <li class="list-group-item"><label>
-              <input type="radio" name="menu"  value="service" required onclick="choice()">Directory for services 服务目录
-            </label>
-          </li>
-            <li class="list-group-item">
-              <label>
-              <input type="radio" name="menu"  value="general" required onclick="choice()">General health information 一般健康信息
-            </label>
-          </li>
-            <li class="list-group-item">
-              <label>
-              <input type="radio" name="menu"  value="test" required onclick="choice()">Self assessment tests 自我评估测试
-            </label>
-          </li>
-          <li class="list-group-item"><label>
-            <input type="radio" name="menu"  value="diabetes" required onclick="choice()">Diabetes 糖尿病
-          </label>
-        </li>
-            <li class="list-group-item">
-              <label>
-              <input type="radio" name="menu"  value="woman" required onclick="choice()">Women health and maternity 妇女保健和生育
-            </label>
-          </li>
-            <li class="list-group-item">
-              <label>
-              <input type="radio" name="menu"  value="elderly" required onclick="choice()">Elderly 老年人信息
-            </label>
-          </li>
-          <li class="list-group-item"><label>
-            <input type="radio" name="menu"  value="mental" required onclick="choice()">Mental health / counselling 心理健康信息
-          </label>
-        </li>
-          <li class="list-group-item">
-            <label>
-              <input type="radio" name="menu"  value="resp" required onclick="choice()">Respiratory 呼吸科
-            </label>
-          </li>
-          <li class="list-group-item"><label>
-              <input type="radio" name="menu"  value="drug" required onclick="choice()">Drug and Alcohol, Addiction, Smoking 药物，酗酒，吸烟。
-            </label>
-          </li>
-          <li class="list-group-item"><label>
-              <input type="radio" name="menu"  value="rheum" required onclick="choice()">Rheumatology 风湿科
-            </label>
-          </li>
-          <li class="list-group-item"> <label>
-              <input type="radio" name="menu"  value="cardio" required onclick="choice()">Cardiovascular 心血管科
-            </label>
-          </li>
-          <li class="list-group-item"><label>
-              <input type="radio" name="menu"  value="neuro" required onclick="choice()">Neurological 神经科
-            </label>
-            
-          <li class="list-group-item"><label>
-              <input type="radio" name="menu"  value="genetic" required onclick="choice()">Genetic 基因遗传科
-            </label>
-          </li>
-          <li class="list-group-item"><label>
-              <input type="radio" name="menu"  value="gastro" required onclick="choice()">Gastroenterology 肠胃病科
-            </label>
-          </li>
-          <li class="list-group-item"><label>
-              <input type="radio" name="menu"  value="derm" required onclick="choice()">Dermatology 皮肤科
-            </label>
-          </li>
-          <li class="list-group-item"><label>
-              <input type="radio" name="menu"  value="paed" required onclick="choice()">Childrens Health 小儿科
-            </label>
-          </li>
-          <li class="list-group-item">   
-              <label>
-                <input type="radio" name="menu"  value="flu" required onclick="choice()">Flu 流感
-              </label>
-            </li>
-          <li class="list-group-item"><label>
-              <input type="radio" name="menu"  value="travel" required onclick="choice()">Travel (vacinations, diseases, outbreaks) 旅游健康,疫苗接种
-            </label>
-          </li>
-          <li class="list-group-item"> <label> 
-              <input type="radio" name="menu"  value="imm" required onclick="choice()">Immunisation 疫苗接种
-            </label>
-          </li>
-          <li class="list-group-item"><label>
-              <input type="radio" name="menu"  value="medicine" required onclick="choice()">Medicines 药物
-            </label>
-          </li>
-          <li class="list-group-item"> <label>
-              <input type="radio" name="menu"  value="gov" required onclick="choice()">Government 福利表格
-            </label>
-          </li>
-          <li class="list-group-item"><label>
-              <input type="radio" name="menu"  value="screening" required onclick="choice()">Screening 健康筛查
-            </label>
-          </li>
-          <li class="list-group-item"><label>
-              <input type="radio" name="menu"  value="men" required onclick="choice()">Mens Health 男性健康
-            </label>
-          </li>
-          <li class="list-group-item"><label>
-              <input type="radio" name="menu"  value="allergy" required onclick="choice()">Allergy 过敏
-            </label>
-          </li>
-          <li class="list-group-item"><label>
-              <input type="radio" name="menu"  value="cancer" required onclick="choice()">Cancer 癌症
-            </label>
-          </li>
-          </ul>
-        <div>
-          
+      <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#help" aria-expanded="true" aria-controls="help">Helplines 求助热线     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="help" class="collapse" data-parent="#menu">
+          <div>
+            <ul>
+              <li>Healthline 0800 611 116</li>
+              <li>Ambulance  111 (Medical Emergency NZD 88, Accident - Free if covered by ACC)</li>
+              <li>Need to talk? (Counsellor)  Free phone or text 1737</li>
+              <li>Crisis - Central Auckland  0800 800 717, South Auckland  09 261 3700, West Auckland and NorthShore 09 487 1414 (After Hours 09 486 8900)</li>
+              <li>Depression Helpline  0800 111 757 or free text 4202</li>
+              <li>Lifeline - (for counselling and support) 0800 543 354 (0800 LIFELINE)or free text 4357 (HELP)</li>
+              <li>Samaritans (Confidential support for anyonewho is lonely or in emotional distress 0800 726 666</li>
+              <li>Youthline 0800 376 633,free text 234,email talk@youthline.co.nz or webchat at www.youthline.co.nz(webchat available 7pm - 11pm)- for young people and their parents, whānau and friends</li>
+              <li>What's Up 0800 942 8787(0800 WHATSUP) or webchat atwww.whatsup.co.nz from 5pm-10pm for 5-18 year olds</li>
+              <li>Kidsline (for young people up to 18 yearsof age) 0800 543 754(0800 KIDSLINE)</li>
+              <li>Gambling helpline  Call free, day or night, on 0800 654 655or text on 8006</li>
+              <li><a href="https://www.asianfamilyservices.nz/2001325991.html>">Asian health services 亚裔家庭服务中心</a>0800862342</li>
+           </ul>
+          </div>
         </div>
-    </div>
-<div id="help" style="display:none; margin-bottom:30%;;">
- <p>Helplines</p>
-    <hr class="short--hr">
-    <ul>
-       <li>Healthline 0800 611 116</li>
-       <li>Ambulance  111 (Medical Emergency NZD 88, Accident - Free if covered by ACC)</li>
-       <li>Need to talk? (Counsellor)  Free phone or text 1737</li>
-       <li>Crisis - Central Auckland  0800 800 717, South Auckland  09 261 3700, West Auckland and NorthShore 09 487 1414 (After Hours 09 486 8900)</li>
-       <li>Depression Helpline  0800 111 757 or free text 4202</li>
-       <li>Lifeline - (for counselling and support) 0800 543 354 (0800 LIFELINE)or free text 4357 (HELP)</li>
-       <li>Samaritans (Confidential support for anyonewho is lonely or in emotional distress 0800 726 666</li>
-       <li>Youthline 0800 376 633,free text 234,email talk@youthline.co.nz or webchat at www.youthline.co.nz(webchat available 7pm - 11pm)- for young people and their parents, whānau and friends</li>
-       <li>What's Up 0800 942 8787(0800 WHATSUP) or webchat atwww.whatsup.co.nz from 5pm-10pm for 5-18 year olds</li>
-       <li>Kidsline (for young people up to 18 yearsof age) 0800 543 754(0800 KIDSLINE)</li>
-       <li>Gambling helpline  Call free, day or night, on 0800 654 655or text on 8006</li>
-       <li><a href="https://www.asianfamilyservices.nz/2001325991.html>">Asian health services 亚裔家庭服务中心</a>0800862342</li>
-    </ul>
-</div>
+
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#directory" aria-expanded="true" aria-controls="directory">Directory for services 服务目录     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="directory" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li><a href="https://www.healthpoint.co.nz/" runtime_url="https://www.healthpoint.co.nz/" target="_blank" >Healthpoint NZ</a>&nbsp;- Find GP, Specialist, Physiotherapist, Occupational therapy, Midwife, Dental, Many other health services</li>
+                <li><a href="https://healthpages.co.nz/" runtime_url="https://healthpages.co.nz/" target="_blank" >Healthpages NZ</a>&nbsp;- Find GP, Specialist, Physiotherapist, Occupational therapy, Midwife, Dental, Many other health services</li>
+                <li><a href="https://interpret.org.nz/book-an-interpreter.html" runtime_url="https://interpret.org.nz/book-an-interpreter.html" target="_blank">Interpreting</a> - Book an Interpreter - Charges Apply</li>
+                <li>LABTESTS NZ Collection centres 血检中心的开放时间和地址 <a href="https://www.labtests.co.nz/index.php/collection-centres" target="_blank">Link</a></li>
+              </ul>
+          </div>
+        </div>
+
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#general" aria-expanded="true" aria-controls="general">General health information 一般健康信息     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="general" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li><a href="https://www.healthnavigator.org.nz/"  target="_blank" >Healthnavigator</a> A New Zealand website that gives information on health related topics</a></li>
+                <li><a href="https://www.healthed.govt.nz/" target="_blank">HealthEd</a>- Health Education in other languages</li>    
+                <li><a href="https://www.health.govt.nz/your-health" runtime_url="https://www.health.govt.nz/your-health" target="_blank" >Ministry of health</a> - Information on health and disease</li>
+                <li><a href="https://healthpages.co.nz/" runtime_url="https://healthpages.co.nz/" target="_blank">Healthpages</a> - Search health services in New Zealand</li>
+                <li><a href="https://www.kidshealth.org.nz/" runtime_url="https://www.kidshealth.org.nz/" target="_blank">Kidshealth</a> - About kids health conditions</li>
+              </ul>
+          </div>
+        </div>
+
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#assess" aria-expanded="true" aria-controls="assess">Self assessment tests 自我评估测试     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="assess" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li>MOCA dementia screen+instructions
+                  <br>
+                  <a href="./files/moca-eng.pdf" target="_blank">Form |</a>
+                  <a href="./files/moca-eng-ins.pdf" target="_blank">Instructions</a>
+                  <br>
+          MOCA 认知评估基础量表+评分方法
+          <br>
+          <a href="./files/moca-chi.pdf" target="_blank">表格 |</a>
+          <a href="./files/moca-chi-ins.pdf" target="_blank">方法</a>
+          </li>
+          <li>Sleepiness assessment
+              <br>睡眠评分 <a href="./epworth.html">Link</a>
+          </li>
+          <li>Anxiety assessment
+              <br>焦虑症评分 <a href="./gad.html">Link</a>
+          </li>
+          <li>Depression assessment
+              <br>抑郁评分 <a href="./kessler.html">Link</a>
+          </li>
+          <li>Asthma assessment
+              <br>哮喘评分 <a href="./act/actlanding.html">Link</a>
+          </li>
+          <li>COPD Assessment Test )<br>慢性阻塞性肺病評估測試
+              <a href="./cat.html">Link</a>
+          </li>
+              </ul>
+          </div>
+        </div>
+
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#diabetes" aria-expanded="true" aria-controls="diabetes">Diabetes 糖尿病     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="diabetes" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li><a href="https://www.diabetes.org.nz/home" runtime_url="https://www.diabetes.org.nz/home" target="_blank">Diabetes NZ</a> - Information and support for patients with diabetes</li>
+                <li><a href="https://www.healthpoint.co.nz/community-health-services/community-health/green-prescription-sport-auckland/" runtime_url="https://www.healthpoint.co.nz/community-health-services/community-health/green-prescription-sport-auckland/" target="_blank">Green Prescription</a> - Subsidised Gym activities for patients with disability</li>
+                <li><a href="https://www.health.govt.nz/your-health/healthy-living/food-activity-and-sleep/green-prescriptions/active-families" runtime_url="https://www.health.govt.nz/your-health/healthy-living/food-activity-and-sleep/green-prescriptions/active-families" target="_blank">Active Families</a> - For children</li>
+                <li> Diabetes prevention<br>如何预防糖尿病 <a href="https://static1.squarespace.com/static/5a1b161b6957daf4c4f3b326/t/5a2e443af9619a5b7c9bd2ae/1512981563310/2014-Prediabetes.pdf" target="_blank">Link</a></li>
+                <li>Diabetes physical activity <a href="https://static1.squarespace.com/static/5a1b161b6957daf4c4f3b326/t/5a2e442171c10b8afedfe0a8/1512981539042/2014-Diabetes-and-physical-activity.pdf" target="_blank">Link</a></li>
+                <li>Diabetes Stay well <a href="https://static1.squarespace.com/static/5a1b161b6957daf4c4f3b326/t/5abad10b352f53d186dcd84b/1522192659655/Staying+well+with+type+2.pdf" target="_blank">Link</a></li>
+                <li>2型糖尿病患者如何保持健康 <a href="https://static1.squarespace.com/static/5a1b161b6957daf4c4f3b326/t/5a2e44d8e4966be66fdd5a36/1512981727507/Chinese-Staying-well-with-type-2-Chinese.pdf" target="_blank">中文 </a></li>
+                <li>Diabetes diet 糖尿病飲食<a href="https://static1.squarespace.com/static/5a1b161b6957daf4c4f3b326/t/5a2e4460419202de2ec198ef/1512981609282/Diabetes_and_healthy_food_choices_web.pdf" target="_blank">eng</a><a href="">中文 </a></li>
+              </ul>
+          </div>
+        </div>
+
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#woman" aria-expanded="true" aria-controls="woman">Women health and maternity 妇女保健和生育     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="woman" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li><a href="https://www.familyplanning.org.nz/clinics" runtime_url="https://www.familyplanning.org.nz/clinics" target="_blank">Family planning NZ</a> - Information and services on family planning, STI screening, cervical smears, pregnancy and many more</li>
+                <li><a href="https://womensrefuge.org.nz/" runtime_url="https://womensrefuge.org.nz/" target="_blank">Womens refuge</a> - Support for women who are victims of abuse, violence and provide refuge</li>
+                <li><a href="https://www.fertilityassociates.co.nz/" runtime_url="https://www.fertilityassociates.co.nz/" target="_blank">Fertility Associates</a> - Private fertility services</li>
+                <li><a href="https://nationalwomenshealth.adhb.govt.nz/our-services/fertility/public-funding/" runtime_url="https://nationalwomenshealth.adhb.govt.nz/our-services/fertility/public-funding/" target="_blank">Fertility Plus</a> - Public fertility services, Needs GP referal</li>
+                <li><a href="http://www.pregnancyhelp.org.nz/index.php" runtime_url="http://www.pregnancyhelp.org.nz/index.php" target="_blank">Pregnancy help</a> - Information and supporting pregnancy</li>
+                <li><a href="https://mokopunaora.nz/" runtime_url="https://mokopunaora.nz/" target="_blank">Mokopuna Ora</a> - Healthy pregnancy for NZ mums and babies</li>
+                <li><a href="https://findyourmidwife.co.nz/" runtime_url="https://findyourmidwife.co.nz/" target="_blank">Find your midwife</a> - Find your due date and midwife</li>
+                <li><a href="https://www.healthpoint.co.nz/maternity/" runtime_url="https://www.healthpoint.co.nz/maternity/" target="_blank">Maternity Services</a> - Midwives, GPs, Specialists, Birthing facilities, pregnancy ultrasound</li>
+                <li><a href="https://www.menopause.org.au/" runtime_url="https://www.menopause.org.au/" target="_blank">Menapause</a> - Australian Menapause Society</li>
+                <li>Free smear clinics booking<br>免费宫颈子宫颈抹片检查网上预约 <a href="https://www.wons.org.nz/clinics/">link</a></li>
+                <li>Free contraception for Auckland central patients免费避孕诊所。<a href="https://nationalwomenshealth.adhb.govt.nz/our-services/gynaecology/contraceptive-clinic/" target="_blank">Link</a></li>
+              </ul>
+          </div>
+        </div>
+
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#elderly" aria-expanded="true" aria-controls="elderly">Elderly 老年人信息     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="elderly" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li>MOCA dementia screen+instructions<br><a href="./files/moca-eng.pdf" target="_blank">Form |</a><a href="./files/moca-eng-ins.pdf" target="_blank">Instructions</a><br>MOCA 认知评估基础量表+评分方法
+                  <br>
+                  <a href="./files/moca-chi.pdf" target="_blank">表格 |</a>
+                  <a href="./files/moca-chi-ins.pdf" target="_blank">方法</a>
+                  </li>
+                  <li><a href="https://www.ageconcern.org.nz/" runtime_url="https://www.ageconcern.org.nz/" target="_blank">Age Concern</a> - Charitable organisation dedicated solely to people over 65</li>
+                  <li><a href="https://www.ccsdisabilityaction.org.nz/mobility-parking/applications-and-renewal/" runtime_url="https://www.ccsdisabilityaction.org.nz/mobility-parking/applications-and-renewal/" target="_blank">Mobility Parking Permit Application</a></li>
+                  <li><a href="https://www.seniorline.org.nz/" runtime_url="https://www.seniorline.org.nz/" target="_blank">Seniorline</a> - Seniorline is a national information service to help older people and their whanau navigate the health system</li>
+                  <li><a href="http://superseniors.msd.govt.nz/health-wellbeing/index.html" runtime_url="http://superseniors.msd.govt.nz/health-wellbeing/index.html" target="_blank">Superseniors</a> - On these pages you&rsquo;ll find information about ageing positively</li>
+                  <li><a href="https://www.hqsc.govt.nz/our-programmes/advance-care-planning/" runtime_url="https://www.hqsc.govt.nz/our-programmes/advance-care-planning/" target="_blank">Advanced care planning</a> - Advance care planning (ACP) is the process of thinking about, talking about and planning for future health care and end-of-life care. It is about identifying what matters to you</li>
+              </ul>
+          </div>
+        </div>
 
 
-<div id="service" style="display:none; margin-bottom:30%;">
-  <p>Directory for services</p>
-   <hr class="short--hr">
-  <ul>
-      <li><a href="https://www.healthpoint.co.nz/" runtime_url="https://www.healthpoint.co.nz/" target="_blank" >Healthpoint NZ</a>&nbsp;- Find GP, Specialist, Physiotherapist, Occupational therapy, Midwife, Dental, Many other health services</li>
-      <li><a href="https://healthpages.co.nz/" runtime_url="https://healthpages.co.nz/" target="_blank" >Healthpages NZ</a>&nbsp;- Find GP, Specialist, Physiotherapist, Occupational therapy, Midwife, Dental, Many other health services</li>
-      <li><a href="https://interpret.org.nz/book-an-interpreter.html" runtime_url="https://interpret.org.nz/book-an-interpreter.html" target="_blank">Interpreting</a> - Book an Interpreter - Charges Apply</li>
-      <li>LABTESTS NZ Collection centres 血检中心的开放时间和地址 <a href="https://www.labtests.co.nz/index.php/collection-centres" target="_blank">Link</a></li>
-  </ul>
-  </div>
-  
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#mental" aria-expanded="true" aria-controls="mental">Mental health / counselling 心理健康信息     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="mental" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li>Crisis line- Central Auckland  0800 800 717, South Auckland  09 261 3700, West Auckland and NorthShore 09 487 1414 (After Hours 09 486 8900)</li>
+                <li>Anxiety assessment<br>焦虑症评分 <a href="./gad.html">Link</a></li>
+                <li>Depression assessment<br>抑郁评分 <a href="./kessler.html">Link</a></li>
+                <li><a href="https://supportingfamilies.org.nz/" runtime_url="https://supportingfamilies.org.nz/" target="_blank">Supporting Families NZ</a> - Support, Information, Advocacy</li>
+                <li><a href="http://www.areyouok.org.nz/" runtime_url="http://www.areyouok.org.nz/" target="_blank">Are you ok?</a> - Support group against family violence</li>
+                <li><a href="http://www.beatingtheblues.co.nz/" runtime_url="http://www.beatingtheblues.co.nz/" target="_blank">Beating the blues</a></li>
+                <li><a href="https://www.lifeline.org.nz/" runtime_url="https://www.lifeline.org.nz/" target="_blank">Life line</a> - Support from counsellors and trained volunteers</li>
+                <li><a href="https://www.mentalhealth.org.nz/" runtime_url="https://www.mentalhealth.org.nz/" target="_blank">Mental health foundation</a>&nbsp;- Charity that works towards creating a society free from discrimination, where all people enjoy positive mental health &amp; wellbeing</li>
+                <li><a href="http://www.depression.org/" runtime_url="http://www.depression.org/" target="_blank">Depression org</a> - Resources and support on depression</li>
+                <li><a href="https://www.calm.auckland.ac.nz/" runtime_url="https://www.calm.auckland.ac.nz/" target="_blank">CALM</a> - Computer Assisted Learning for the Mind</li>
+                <li><a href="https://www.mentalhealth.com/" runtime_url="https://www.mentalhealth.com/" target="_blank">Mental health.com</a> - Information on illnesses</li>
+                <li><a href="http://www.samaritans.org.nz/" runtime_url="http://www.samaritans.org.nz/" target="_blank">Samaritans</a>&nbsp; - Samaritans offer confidential, non-religious and non-judgemental support to anyone who may be feeling depressed, lonely, or even be contemplating suicide</li>
+                <li><a href="https://www.youthline.co.nz/" runtime_url="https://www.youthline.co.nz/" target="_blank">Youthline</a>&nbsp;- For young people and their whānau</li>
+                <li><a href="https://thelowdown.co.nz/" runtime_url="https://thelowdown.co.nz/" target="_blank">The lowdown</a> -Visit the website or&nbsp;free text 5626&nbsp;&nbsp;- for support for young people&nbsp;experiencing depression or&nbsp;anxiety</li>
+                <li><a href="https://www.whatsup.co.nz/" runtime_url="https://www.whatsup.co.nz/" target="_blank">What&rsquo;s Up</a>&nbsp;-&nbsp;for 5-18 year olds</li>
+                <li><a href="https://www.auntydee.co.nz/" runtime_url="https://www.auntydee.co.nz/" target="_blank">Auntydee</a> - a free online tool for anyone&nbsp;who needs help working through&nbsp;problems&nbsp;</li>
+                <li><a href="https://www.sparx.org.nz/" runtime_url="https://www.sparx.org.nz/" target="_blank">SPARX</a>&nbsp;- an online self-help tool that&nbsp;teaches young people the key&nbsp;skills needed to help combat&nbsp;depression and anxiety&nbsp;</li>
+                <li><a href="http://www.kidsline.org.nz/Home_312.aspx" runtime_url="http://www.kidsline.org.nz/Home_312.aspx" target="_blank">Kidsline&nbsp;</a>- for young people up to 18 years&nbsp;of age</li>
+              </ul>
+          </div>
+        </div>
+        
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#resp" aria-expanded="true" aria-controls="resp">Respiratory 呼吸科     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="resp" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li><a href="https://www.asthmafoundation.org.nz/" runtime_url="https://www.asthmafoundation.org.nz/" target="_blank" >Asthma Foundation NZ</a></li>
+                <li><a href="https://www.asthma.org.nz/" runtime_url="https://www.asthma.org.nz/" target="_blank" >Asthma NZ</a></li>
+                <li><a href="https://s3-ap-southeast-2.amazonaws.com/assets.asthmafoundation.org.nz/images/172460-Child-Asthma-Plan_ASTH10_web.pdf" runtime_url="https://s3-ap-southeast-2.amazonaws.com/assets.asthmafoundation.org.nz/images/172460-Child-Asthma-Plan_ASTH10_web.pdf" target="_blank">Child Asthma Action Plan</a> - Download</li>
+                <li><a href="https://www.asthmafoundation.org.nz/resources/asthma-action-plans" runtime_url="https://www.asthmafoundation.org.nz/resources/asthma-action-plans" target="_blank">Adult Asthma Action Plan</a></li>
+                <li><a href="https://www.health.govt.nz/your-health/healthy-living/environmental-health/hazardous-substances/asbestos" runtime_url="https://www.health.govt.nz/your-health/healthy-living/environmental-health/hazardous-substances/asbestos" target="_blank" >Asbestos and health</a></li>
+                <li>Sleepiness assessment<br>睡眠评分 <a href="./epworth.html">Link</a></li>
+                <li>Asthma assessment<br>哮喘评分 <a href="./act/actlanding.html">Link</a></li>
+                <li>COPD Assessment Test )<br>慢性阻塞性肺病評估測試<a href="./cat.html">Link</a></li>
+              </ul>
+          </div>
+        </div>
+        
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#drug" aria-expanded="true" aria-controls="drug">Drug and Alcohol, Addiction, Smoking 药物，酗酒，吸烟     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="drug" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li><a href="https://www.aa.org.nz/" runtime_url="https://www.aa.org.nz/" target="_blank">Alchoholics Anonymous</a>&nbsp;- AA is a fellowship of men and women who share their experience strength and hope with each other that they may solve their common problem and help others to recover from alcoholism</li>
+                <li><a href="http://www.addictionshelp.org.nz/ADANZ/Subnav/Alcohol%20Drug%20Helpline" runtime_url="http://www.addictionshelp.org.nz/ADANZ/Subnav/Alcohol%20Drug%20Helpline" target="_blank" >Addictions help</a>&nbsp;- Advice and guidance to assist you in understanding and caring for someone impacted upon by alcohol or other drugs</li>
+                <li><a href="https://www.ash.org.nz/" runtime_url="https://www.ash.org.nz/" target="_blank">ASH</a> - Action for smokefree 2025</li>
+                <li><a href="https://quit.org.nz/" runtime_url="https://quit.org.nz/" target="_blank" >Quitline</a>&nbsp;- If you are ready to quit smoking, Quitline can support you with a plan designed to help you beat the smoking addiction</li>
+                <li><a href="https://www.gamblinghelpline.co.nz/Home_452.aspx" runtime_url="https://www.gamblinghelpline.co.nz/Home_452.aspx" target="_blank">Gambling helpline</a></li>
+                <li><a href="https://www.drughelp.org.nz/" runtime_url="https://www.drughelp.org.nz/" target="_blank">Drug help</a></li>
+              </ul>
+          </div>
+        </div>
 
-<div id="general" style="display:none; margin-bottom:30%;">
-    <p>General Health information</p>
-    <hr class="short--hr">
-    <ul>
-        <li><a href="https://www.healthnavigator.org.nz/"  target="_blank" >Healthnavigator</a> A New Zealand website that gives information on health related topics</a></li>
-        <li><a href="https://www.healthed.govt.nz/" target="_blank">HealthEd</a>- Health Education in other languages</li>    
-        <li><a href="https://www.health.govt.nz/your-health" runtime_url="https://www.health.govt.nz/your-health" target="_blank" >Ministry of health</a> - Information on health and disease</li>
-        <li><a href="https://healthpages.co.nz/" runtime_url="https://healthpages.co.nz/" target="_blank">Healthpages</a> - Search health services in New Zealand</li>
-        <li><a href="https://www.kidshealth.org.nz/" runtime_url="https://www.kidshealth.org.nz/" target="_blank">Kidshealth</a> - About kids health conditions</li>
-    </ul>
-</div>
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#rheum" aria-expanded="true" aria-controls="rheum">Rheumatology 风湿科     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="rheum" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li><a href="https://www.arthritis.org.nz/" runtime_url="https://www.arthritis.org.nz/" target="_blank">Arthritis NZ</a>&nbsp;- National charity that provides information, advice and support to people diagnosed with any of the more than 140 forms of arthritis</li>
+              </ul>
+          </div>
+        </div>
 
-<div id="test" style="display:none; margin-bottom:30%;">
-    <p>Self assessment tests | 自我评估测试</p>
-        <hr class="short--hr">
-        <ul>
-            <li>MOCA dementia screen+instructions
-                <br>
-                <a href="./files/moca-eng.pdf" target="_blank">Form |</a>
-                <a href="./files/moca-eng-ins.pdf" target="_blank">Instructions</a>
-                <br>
-        MOCA 认知评估基础量表+评分方法
-        <br>
-        <a href="./files/moca-chi.pdf" target="_blank">表格 |</a>
-        <a href="./files/moca-chi-ins.pdf" target="_blank">方法</a>
-        </li>
-        <li>Sleepiness assessment
-            <br>睡眠评分 <a href="./epworth.html">Link</a>
-        </li>
-        <li>Anxiety assessment
-            <br>焦虑症评分 <a href="./gad.html">Link</a>
-        </li>
-        <li>Depression assessment
-            <br>抑郁评分 <a href="./kessler.html">Link</a>
-        </li>
-        <li>Asthma assessment
-            <br>哮喘评分 <a href="./act/actlanding.html">Link</a>
-        </li>
-        <li>COPD Assessment Test )<br>慢性阻塞性肺病評估測試
-            <a href="./cat.html">Link</a>
-        </li>
-        <!-- <li>liquid nitrogen consent</li>
-        <li>Ear syringe consent<br>洗耳同意书
-            <a href="./files/ear_syringe_eng.pdf" target="_blank">Eng</a>
-            <a href="./files/ear_syringe_chi.pdf" target="_blank">中文</a> -->
-        </li>
-    </ul>
- </div>      
- 
-<div id="woman" style="display:none; margin-bottom:30%;">
-<p>Womens Health & Maternity</p>
-<hr class="short--hr">
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#cardio" aria-expanded="true" aria-controls="cardio">Cardiovascular 心血管科     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="cardio" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li><a href="https://www.heartfoundation.org.nz/" runtime_url="https://www.heartfoundation.org.nz/" target="_blank" >Heart Foundation NZ</a>&nbsp;- Information for a healthy heart</li>
+                <li><a href="https://www.heartfoundation.org.nz/wellbeing/healthy-eating" runtime_url="https://www.heartfoundation.org.nz/wellbeing/healthy-eating" target="_blank" >Healthy Eating</a></li>
+                <li><a href="https://www.heartfoundation.org.nz/wellbeing/managing-risk/managing-high-blood-pressure" runtime_url="https://www.heartfoundation.org.nz/wellbeing/managing-risk/managing-high-blood-pressure" target="_blank" >Managing High Blood Pressure</a></li>
+                <li><a href="https://www.heartfoundation.org.nz/wellbeing/managing-risk/managing-high-cholesterol" runtime_url="https://www.heartfoundation.org.nz/wellbeing/managing-risk/managing-high-cholesterol" target="_blank" >Managing High Cholesterol</a></li>
+                <li><a href="https://www.heartfoundation.org.nz/wellbeing/healthy-eating/how-to-lose-weight" runtime_url="https://www.heartfoundation.org.nz/wellbeing/healthy-eating/how-to-lose-weight" target="_blank" >Reach Healthy Weight</a></li>
+                <li><a href="https://www.heartfoundation.org.nz/wellbeing/bmi-calculator" runtime_url="https://www.heartfoundation.org.nz/wellbeing/bmi-calculator" target="_blank" >Whats my BMI?</a></li>
+                <li>Healthy heart Food Chart<br>健康的心脏食物图<a href="https://www.heartfoundation.org.nz/shop/nutrition/docs/healthy-heart-chinese.pdf" target="_blank">中文</a></li>
+                <li>Healthy heart eating<br>健康的心脏食物<a href="https://www.heartfoundation.org.nz/shop/heart-healthcare/eating-for-a-healthy-heart.pdf" target="_blank">eng</a><a href="https://www.heartfoundation.org.nz/shop/nutrition/docs/simple-steps-chinese.pdf" target="_blank">中文</a></li>
+                <li>Prevent Stroke and heart attacks<a href="https://www.heartfoundation.org.nz/resources/lowering-your-risk-of-heart-attack-and-stroke-booklet" target="_blank">eng</a></li>
+                <li>Healthy lunch box for kids<a href="https://www.heartfoundation.org.nz/shop/education/loading-up-the-lunchbox-chinese.pdf" target="_blank">中文 </a></li>
+              </ul>
+          </div>
+        </div>
 
-<ul>
-    <li><a href="https://www.familyplanning.org.nz/clinics" runtime_url="https://www.familyplanning.org.nz/clinics" target="_blank">Family planning NZ</a> - Information and services on family planning, STI screening, cervical smears, pregnancy and many more</li>
-    <li><a href="https://womensrefuge.org.nz/" runtime_url="https://womensrefuge.org.nz/" target="_blank">Womens refuge</a> - Support for women who are victims of abuse, violence and provide refuge</li>
-    <li><a href="https://www.fertilityassociates.co.nz/" runtime_url="https://www.fertilityassociates.co.nz/" target="_blank">Fertility Associates</a> - Private fertility services</li>
-    <li><a href="https://nationalwomenshealth.adhb.govt.nz/our-services/fertility/public-funding/" runtime_url="https://nationalwomenshealth.adhb.govt.nz/our-services/fertility/public-funding/" target="_blank">Fertility Plus</a> - Public fertility services, Needs GP referal</li>
-    <li><a href="http://www.pregnancyhelp.org.nz/index.php" runtime_url="http://www.pregnancyhelp.org.nz/index.php" target="_blank">Pregnancy help</a> - Information and supporting pregnancy</li>
-    <li><a href="https://mokopunaora.nz/" runtime_url="https://mokopunaora.nz/" target="_blank">Mokopuna Ora</a> - Healthy pregnancy for NZ mums and babies</li>
-    <li><a href="https://findyourmidwife.co.nz/" runtime_url="https://findyourmidwife.co.nz/" target="_blank">Find your midwife</a> - Find your due date and midwife</li>
-    <li><a href="https://www.healthpoint.co.nz/maternity/" runtime_url="https://www.healthpoint.co.nz/maternity/" target="_blank">Maternity Services</a> - Midwives, GPs, Specialists, Birthing facilities, pregnancy ultrasound</li>
-    <li><a href="https://www.menopause.org.au/" runtime_url="https://www.menopause.org.au/" target="_blank">Menapause</a> - Australian Menapause Society</li>
-    <li>Free smear clinics booking<br>免费宫颈子宫颈抹片检查网上预约 <a href="https://www.wons.org.nz/clinics/">link</a></li>
-    <li>Free contraception for Auckland central patients免费避孕诊所。<a href="https://nationalwomenshealth.adhb.govt.nz/our-services/gynaecology/contraceptive-clinic/" target="_blank">Link</a></li>
-</ul>
-</div>
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#neuro" aria-expanded="true" aria-controls="neuro">Neurological 神经科     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="neuro" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li><a href="https://www.stroke.org.nz/" runtime_url="https://www.stroke.org.nz/" target="_blank" >Stroke Foundation NZ</a></li>
+                <li><a href="https://www.msnz.org.nz/" runtime_url="https://www.msnz.org.nz/" target="_blank" >Multiple Sclerosis NZ</a></li>
+                <li><a href="https://www.parkinsons.org.nz/" runtime_url="https://www.parkinsons.org.nz/" target="_blank" >Parkinsons NZ</a></li>
+              </ul>
+          </div>
+        </div>
 
-<div id="elderly" style="display:none; margin-bottom:30%;">
-<p>Elderly</p>
-<hr class="short--hr">
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#genetic" aria-expanded="true" aria-controls="genetic">Genetic 基因遗传科     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="genetic" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li><a href="https://www.mda.org.nz/" runtime_url="https://www.mda.org.nz/" target="_blank" >Muscular Dystrophy NZ</a></li>
+              </ul>
+          </div>
+        </div>
 
-<ul>
-    <li>MOCA dementia screen+instructions<br><a href="./files/moca-eng.pdf" target="_blank">Form |</a><a href="./files/moca-eng-ins.pdf" target="_blank">Instructions</a><br>MOCA 认知评估基础量表+评分方法
-    <br>
-    <a href="./files/moca-chi.pdf" target="_blank">表格 |</a>
-    <a href="./files/moca-chi-ins.pdf" target="_blank">方法</a>
-    </li>
-    <li><a href="https://www.ageconcern.org.nz/" runtime_url="https://www.ageconcern.org.nz/" target="_blank">Age Concern</a> - Charitable organisation dedicated solely to people over 65</li>
-    <li><a href="https://www.ccsdisabilityaction.org.nz/mobility-parking/applications-and-renewal/" runtime_url="https://www.ccsdisabilityaction.org.nz/mobility-parking/applications-and-renewal/" target="_blank">Mobility Parking Permit Application</a></li>
-    <li><a href="https://www.seniorline.org.nz/" runtime_url="https://www.seniorline.org.nz/" target="_blank">Seniorline</a> - Seniorline is a national information service to help older people and their whanau navigate the health system</li>
-    <li><a href="http://superseniors.msd.govt.nz/health-wellbeing/index.html" runtime_url="http://superseniors.msd.govt.nz/health-wellbeing/index.html" target="_blank">Superseniors</a> - On these pages you&rsquo;ll find information about ageing positively</li>
-    <li><a href="https://www.hqsc.govt.nz/our-programmes/advance-care-planning/" runtime_url="https://www.hqsc.govt.nz/our-programmes/advance-care-planning/" target="_blank">Advanced care planning</a> - Advance care planning (ACP) is the process of thinking about, talking about and planning for future health care and end-of-life care. It is about identifying what matters to you</li>
-</ul>
-</div>
-<div id="resp" style="display:none; margin-bottom:30%;">
-<p>Respiratory</p>
-<hr class="short--hr">
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#gastro" aria-expanded="true" aria-controls="gastro">Gastroenterology 肠胃病科     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="gastro" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li>Irritable Bowel Syndrome-<a href="https://www.monashfodmap.com/ibs-central/i-have-ibs/" runtime_url="https://www.monashfodmap.com/ibs-central/i-have-ibs/" target="_blank">FODMAP Diet and App</a> (MONASH University)</li>
+                <li><a href="https://www.healthyfood.com/resource/fodmaps-toolkit-your-complete-guide-to-going-low-fodmap/" runtime_url="https://www.healthyfood.com/resource/fodmaps-toolkit-your-complete-guide-to-going-low-fodmap/" target="_blank">FODMAP Diet</a> (healthy food)</li>
+              </ul>
+          </div>
+        </div>
 
-<ul>
-    <li><a href="https://www.asthmafoundation.org.nz/" runtime_url="https://www.asthmafoundation.org.nz/" target="_blank" >Asthma Foundation NZ</a></li>
-    <li><a href="https://www.asthma.org.nz/" runtime_url="https://www.asthma.org.nz/" target="_blank" >Asthma NZ</a></li>
-    <li><a href="https://s3-ap-southeast-2.amazonaws.com/assets.asthmafoundation.org.nz/images/172460-Child-Asthma-Plan_ASTH10_web.pdf" runtime_url="https://s3-ap-southeast-2.amazonaws.com/assets.asthmafoundation.org.nz/images/172460-Child-Asthma-Plan_ASTH10_web.pdf" target="_blank">Child Asthma Action Plan</a> - Download</li>
-    <li><a href="https://www.asthmafoundation.org.nz/resources/asthma-action-plans" runtime_url="https://www.asthmafoundation.org.nz/resources/asthma-action-plans" target="_blank">Adult Asthma Action Plan</a></li>
-    <li><a href="https://www.health.govt.nz/your-health/healthy-living/environmental-health/hazardous-substances/asbestos" runtime_url="https://www.health.govt.nz/your-health/healthy-living/environmental-health/hazardous-substances/asbestos" target="_blank" >Asbestos and health</a></li>
-    <li>Sleepiness assessment<br>睡眠评分 <a href="./epworth.html">Link</a></li>
-    <li>Asthma assessment<br>哮喘评分 <a href="./act/actlanding.html">Link</a></li>
-    <li>COPD Assessment Test )<br>慢性阻塞性肺病評估測試<a href="./cat.html">Link</a>
-    </li>
-  </ul>
-</div>
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#derm" aria-expanded="true" aria-controls="derm">Dermatology 皮肤科     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="derm" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li><a href="http://www.dermnetnz.org/" runtime_url="http://www.dermnetnz.org/" target="_blank">Dermnet</a> - Information of Skin conditions for health professionals and patients</li>
+              </ul>
+          </div>
+        </div>
 
-<div id="drug" style="display:none; margin-bottom:30%;">
-<p>Drug and Alcohol, Addiction, Smoking</p>
-<hr class="short--hr">
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#child" aria-expanded="true" aria-controls="child">Childrens Health 小儿科     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="child" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li><a href="https://www.plunket.org.nz/" runtime_url="https://www.plunket.org.nz/" target="_blank">Plunket NZ</a>&nbsp;- Support service for children under 5</li>
+                <li><a href="https://www.health.govt.nz/our-work/preventative-health-wellness/immunisation/new-zealand-immunisation-schedule" runtime_url="https://www.health.govt.nz/our-work/preventative-health-wellness/immunisation/new-zealand-immunisation-schedule" target="_blank" >National Immunisation Schedule</a></li>
+                <li><a href="https://www.kidshealth.org.nz/" runtime_url="https://www.kidshealth.org.nz/" target="_blank">KidsHealth</a> - General Information</li>
+                <li><a href="https://www.health.govt.nz/our-work/life-stages/child-health/well-child-tamariki-ora-services/growth-charts" runtime_url="https://www.health.govt.nz/our-work/life-stages/child-health/well-child-tamariki-ora-services/growth-charts" target="_blank" >Childrens Growth Charts</a></li>
+              </ul>
+          </div>
+        </div>
 
-<ul>
-    <li><a href="https://www.aa.org.nz/" runtime_url="https://www.aa.org.nz/" target="_blank">Alchoholics Anonymous</a>&nbsp;- AA is a fellowship of men and women who share their experience strength and hope with each other that they may solve their common problem and help others to recover from alcoholism</li>
-    <li><a href="http://www.addictionshelp.org.nz/ADANZ/Subnav/Alcohol%20Drug%20Helpline" runtime_url="http://www.addictionshelp.org.nz/ADANZ/Subnav/Alcohol%20Drug%20Helpline" target="_blank" >Addictions help</a>&nbsp;- Advice and guidance to assist you in understanding and caring for someone impacted upon by alcohol or other drugs</li>
-    <li><a href="https://www.ash.org.nz/" runtime_url="https://www.ash.org.nz/" target="_blank">ASH</a> - Action for smokefree 2025</li>
-    <li><a href="https://quit.org.nz/" runtime_url="https://quit.org.nz/" target="_blank" >Quitline</a>&nbsp;- If you are ready to quit smoking, Quitline can support you with a plan designed to help you beat the smoking addiction</li>
-    <li><a href="https://www.gamblinghelpline.co.nz/Home_452.aspx" runtime_url="https://www.gamblinghelpline.co.nz/Home_452.aspx" target="_blank">Gambling helpline</a></li>
-    <li><a href="https://www.drughelp.org.nz/" runtime_url="https://www.drughelp.org.nz/" target="_blank">Drug help</a></li>
-</ul>
-</div>
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#flu" aria-expanded="true" aria-controls="flu">Flu 流感     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="flu" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li><a href="https://www.fightflu.co.nz/faq" runtime_url="https://www.fightflu.co.nz/faq" target="_blank" >FightFlu - FAQ</a></li>
+                <li><a href="https://www.influenza.org.nz/sites/default/files/2018%20Flu%20Pregnancy%20Brochure%20Update%20Spreads.pdf" runtime_url="https://www.influenza.org.nz/sites/default/files/2018%20Flu%20Pregnancy%20Brochure%20Update%20Spreads.pdf" target="_blank" >Avoid Flu During Pregnancy</a></li>
+                <li><a href="https://www.influenza.org.nz/" runtime_url="https://www.influenza.org.nz/" target="_blank" >Influenza.Org</a></li>
+              </ul>
+          </div>
+        </div>
 
-<div id="rheum" style="display:none; margin-bottom:30%;">
-<p>Rheumatology</p>
-<hr class="short--hr">
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#travel" aria-expanded="true" aria-controls="travel">Travel (vacinations, diseases, outbreaks) 旅游健康,疫苗接种     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="travel" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li><a href="https://wwwnc.cdc.gov/travel" runtime_url="https://wwwnc.cdc.gov/travel" target="_blank">Centre for Disease Control and Prevention</a> (CDC)</li>
+                <li><a href="https://www.safetravel.govt.nz/" runtime_url="https://www.safetravel.govt.nz/" target="_blank" >Safetravel</a></li>
+                <li>coronavirus testing stations 冠状病毒检测站<a href="coronavirus.html" target="_blank">Link</a></li>
+                <li>Measles information 麻疹资讯<a href="https://www.health.govt.nz/your-health/conditions-and-treatments/diseases-and-illnesses/measles" target="_blank">Link</a></li>
+              </ul>
+          </div>
+        </div>
 
-<ul>
-    <li><a href="https://www.arthritis.org.nz/" runtime_url="https://www.arthritis.org.nz/" target="_blank">Arthritis NZ</a>&nbsp;- National charity that provides information, advice and support to people diagnosed with any of the more than 140 forms of arthritis</li>
-</ul>
-</div>
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#imm" aria-expanded="true" aria-controls="imm">Immunisation 疫苗接种     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="imm" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li><a href="https://www.immune.org.nz/" runtime_url="https://www.immune.org.nz/" target="_blank" >Immune org</a></li>
+                <li><a href="https://www.health.govt.nz/our-work/preventative-health-wellness/immunisation/new-zealand-immunisation-schedule" runtime_url="https://www.health.govt.nz/our-work/preventative-health-wellness/immunisation/new-zealand-immunisation-schedule" target="_blank" >Immunissation Schedule</a></li>
+              </ul>
+          </div>
+        </div>
 
-<div id="diabetes" style="display:none; margin-bottom:30%;">
-<p>Diabetes</p>
-<hr class="short--hr">
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#imm" aria-expanded="true" aria-controls="imm">Medicines 药物     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="imm" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li><a href="https://www.pharmac.govt.nz/" runtime_url="https://www.pharmac.govt.nz/" target="_blank" >Pharmac NZ</a></li>
+                <li><a href="https://www.medsafe.govt.nz/Medicines/infoSearch.asp" runtime_url="https://www.medsafe.govt.nz/Medicines/infoSearch.asp" target="_blank" >Medsafe NZ</a></li>
+                <li><a href="http://www.saferx.co.nz/" runtime_url="http://www.saferx.co.nz/" target="_blank" >SafeRx</a></li>
+              </ul>
+          </div>
+        </div>
 
-<ul>
-    <li><a href="https://www.diabetes.org.nz/home" runtime_url="https://www.diabetes.org.nz/home" target="_blank">Diabetes NZ</a> - Information and support for patients with diabetes</li>
-    <li><a href="https://www.healthpoint.co.nz/community-health-services/community-health/green-prescription-sport-auckland/" runtime_url="https://www.healthpoint.co.nz/community-health-services/community-health/green-prescription-sport-auckland/" target="_blank">Green Prescription</a> - Subsidised Gym activities for patients with disability</li>
-    <li><a href="https://www.health.govt.nz/your-health/healthy-living/food-activity-and-sleep/green-prescriptions/active-families" runtime_url="https://www.health.govt.nz/your-health/healthy-living/food-activity-and-sleep/green-prescriptions/active-families" target="_blank">Active Families</a> - For children</li>
-    <li> Diabetes prevention<br>如何预防糖尿病 <a href="https://static1.squarespace.com/static/5a1b161b6957daf4c4f3b326/t/5a2e443af9619a5b7c9bd2ae/1512981563310/2014-Prediabetes.pdf" target="_blank">Link</a></li>
-    <li>Diabetes physical activity <a href="https://static1.squarespace.com/static/5a1b161b6957daf4c4f3b326/t/5a2e442171c10b8afedfe0a8/1512981539042/2014-Diabetes-and-physical-activity.pdf" target="_blank">Link</a></li>
-    <li>Diabetes Stay well <a href="https://static1.squarespace.com/static/5a1b161b6957daf4c4f3b326/t/5abad10b352f53d186dcd84b/1522192659655/Staying+well+with+type+2.pdf" target="_blank">Link</a></li>
-    <li>2型糖尿病患者如何保持健康 <a href="https://static1.squarespace.com/static/5a1b161b6957daf4c4f3b326/t/5a2e44d8e4966be66fdd5a36/1512981727507/Chinese-Staying-well-with-type-2-Chinese.pdf" target="_blank">中文 </a></li>
-    <li>Diabetes diet 糖尿病飲食<a href="https://static1.squarespace.com/static/5a1b161b6957daf4c4f3b326/t/5a2e4460419202de2ec198ef/1512981609282/Diabetes_and_healthy_food_choices_web.pdf" target="_blank">eng</a><a href="">中文 </a>
-    </li>
-</ul>
-</div>
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#gov" aria-expanded="true" aria-controls="gov">Government 福利表格     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="gov" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li><a href="https://www.workandincome.govt.nz/" target="_blank" >Work and Income NZ</a></li>
+                <li><a href="https://www.workandincome.govt.nz/documents/forms/community-services-card-application.pdf" target="_blank" >Community Services Card Application 社区服务卡表格</a></li>
+                <li><a href="https://www.workandincome.govt.nz/documents/forms/disability-certificate.pdf" target="_blank" >Disability Certificate 伤残津贴表格</a></li>
+                <li><a href="https://www.workandincome.govt.nz/documents/forms/disability-allowance-couselling.pdf" target="_blank" >Councelling Application 心理辅导津贴</a></li>
+                <li><a href="https://www.ccsdisabilityaction.org.nz/mobility-parking/applications-and-renewal/" target="_blank" >Mobility Parking Permit 残障停车证</a></li>
+                <li><a href="https://www.workandincome.govt.nz/documents/forms/disability-allowance-medical-alarm-assessment-form.pdf" target="_blank">Medical alarm application 医疗报警器表格 </a>
+              </ul>
+          </div>
+        </div>
 
-<div id="cardio" style="display:none; margin-bottom:30%;">
-<p>Cardiovascular</p>
-<hr class="short--hr">
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#screen" aria-expanded="true" aria-controls="screen">Screening 健康筛查     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="screen" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li><a href="https://www.nsu.govt.nz/" runtime_url="https://www.nsu.govt.nz/" target="_blank" >National Screening Unit</a></li>
+                <li><a href="https://www.timetoscreen.nz/bowel-screening/" runtime_url="https://www.timetoscreen.nz/bowel-screening/" target="_blank" >National Bowel Screening</a></li>
+                <li><a href="https://prevention.cancer.gov/sites/default/files/uploads/news_and_event/infographic.png" runtime_url="https://prevention.cancer.gov/sites/default/files/uploads/news_and_event/infographic.png" target="_blank" >Prostate Cancer Screen</a></li>
+              </ul>
+          </div>
+        </div>
 
-<ul>
-    <li><a href="https://www.heartfoundation.org.nz/" runtime_url="https://www.heartfoundation.org.nz/" target="_blank" >Heart Foundation NZ</a>&nbsp;- Information for a healthy heart</li>
-    <li><a href="https://www.heartfoundation.org.nz/wellbeing/healthy-eating" runtime_url="https://www.heartfoundation.org.nz/wellbeing/healthy-eating" target="_blank" >Healthy Eating</a></li>
-    <li><a href="https://www.heartfoundation.org.nz/wellbeing/managing-risk/managing-high-blood-pressure" runtime_url="https://www.heartfoundation.org.nz/wellbeing/managing-risk/managing-high-blood-pressure" target="_blank" >Managing High Blood Pressure</a></li>
-    <li><a href="https://www.heartfoundation.org.nz/wellbeing/managing-risk/managing-high-cholesterol" runtime_url="https://www.heartfoundation.org.nz/wellbeing/managing-risk/managing-high-cholesterol" target="_blank" >Managing High Cholesterol</a></li>
-    <li><a href="https://www.heartfoundation.org.nz/wellbeing/healthy-eating/how-to-lose-weight" runtime_url="https://www.heartfoundation.org.nz/wellbeing/healthy-eating/how-to-lose-weight" target="_blank" >Reach Healthy Weight</a></li>
-    <li><a href="https://www.heartfoundation.org.nz/wellbeing/bmi-calculator" runtime_url="https://www.heartfoundation.org.nz/wellbeing/bmi-calculator" target="_blank" >Whats my BMI?</a></li>
-    <li>Healthy heart Food Chart<br>健康的心脏食物图<a href="https://www.heartfoundation.org.nz/shop/nutrition/docs/healthy-heart-chinese.pdf" target="_blank">中文</a></li>
-    <li>Healthy heart eating<br>健康的心脏食物<a href="https://www.heartfoundation.org.nz/shop/heart-healthcare/eating-for-a-healthy-heart.pdf" target="_blank">eng</a><a href="https://www.heartfoundation.org.nz/shop/nutrition/docs/simple-steps-chinese.pdf" target="_blank">中文</a></li>
-    <li>Prevent Stroke and heart attacks<a href="https://www.heartfoundation.org.nz/resources/lowering-your-risk-of-heart-attack-and-stroke-booklet" target="_blank">eng</a></li>
-    <li>Healthy lunch box for kids<a href="https://www.heartfoundation.org.nz/shop/education/loading-up-the-lunchbox-chinese.pdf" target="_blank">中文 </a></li>
-</ul>
-</div>
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#men" aria-expanded="true" aria-controls="men">Mens Health 男性健康     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="men" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li><a href="https://www.menshealthweek.co.nz/health-info/" runtime_url="https://www.menshealthweek.co.nz/health-info/" target="_blank" >Mens health week</a></li>
+                <li><a href="https://www.getthetools.org.nz/" runtime_url="https://www.getthetools.org.nz/" target="_blank">Get the tools</a> - Discussing nuts and bolts of mens health</li>
+              </ul>
+          </div>
+        </div>
 
-<div id="sti" style="display:none; margin-bottom:30%;">
-<p>STI (Sexually Transmited Illness)</p>
-<hr class="short--hr">
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#allergy" aria-expanded="true" aria-controls="allergy">Allergy 过敏     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="allergy" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li><a href="http://www.allergy.org.nz/" runtime_url="http://www.allergy.org.nz/" target="_blank" >Allergy NZ</a></li>
+                <li><a href="https://www.allergy.org.au/" runtime_url="https://www.allergy.org.au/" target="_blank" style="background-color: transparent;">ASCIA</a> (Allergy Australia)</li>
+                <li><a href="https://www.allergy.org.au/hp/ascia-plans-action-and-treatment" runtime_url="https://www.allergy.org.au/hp/ascia-plans-action-and-treatment" target="_blank">Download Action Plans</a> (Anaphylaxis, Allergy)</li>
+                <li><a href="https://anaphylaxis.ascia.org.au/" runtime_url="https://anaphylaxis.ascia.org.au/" target="_blank">Anaphylaxis e-training</a></li>
+              </ul>
+          </div>
+        </div>
 
-<ul>
-    <li><a href="https://www.herpes.org.nz/" runtime_url="https://www.herpes.org.nz/" target="_blank" >Herpes NZ</a></li>
-    <li><a href="http://www.ashs.org.nz/fact-sheets.html" runtime_url="http://www.ashs.org.nz/fact-sheets.html" target="_blank">Auckland Sexual Health</a> - Patient information on STI</li>
-    <li><a href="https://www.nzshs.org/docman/guidelines/management-of-sexual-health-conditions/chlamydia/153-chlamydia-patient-information/file" runtime_url="https://www.nzshs.org/docman/guidelines/management-of-sexual-health-conditions/chlamydia/153-chlamydia-patient-information/file" target="_blank" >Chlamydia patient information</a></li>
-    <li><a href="https://www.nzshs.org/docman/guidelines/management-of-sexual-health-conditions/genital-herpes/159-genital-herpes-patient-information/file" runtime_url="https://www.nzshs.org/docman/guidelines/management-of-sexual-health-conditions/genital-herpes/159-genital-herpes-patient-information/file" target="_blank" >Genital herpes patient information</a></li>
-    <li><a href="https://www.nzshs.org/docman/guidelines/management-of-sexual-health-conditions/genital-warts/164-genital-warts-patient-information/file" runtime_url="https://www.nzshs.org/docman/guidelines/management-of-sexual-health-conditions/genital-warts/164-genital-warts-patient-information/file" target="_blank" >Genital warts patient information</a></li>
-    <li><a href="https://www.nzshs.org/docman/guidelines/management-of-sexual-health-conditions/gonorrhoea/167-gonorrhoea-patient-information/file" runtime_url="https://www.nzshs.org/docman/guidelines/management-of-sexual-health-conditions/gonorrhoea/167-gonorrhoea-patient-information/file" target="_blank" >Gonorrhoea patient information</a></li>
-    <li><a href="https://www.nzshs.org/docman/guidelines/management-of-sexual-health-conditions/syphilis/175-syphilis-patient-information/file" runtime_url="https://www.nzshs.org/docman/guidelines/management-of-sexual-health-conditions/syphilis/175-syphilis-patient-information/file" target="_blank" >Syphilis patient information</a></li>
-</ul>
-</div>
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#cancer" aria-expanded="true" aria-controls="cancer">Cancer 癌症     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="cancer" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li><a href="https://cancernz.org.nz/" runtime_url="https://cancernz.org.nz/" target="_blank" >Cancer Society NZ</a></li>
+                <li><a href="https://www.breastcancerfoundation.org.nz/" runtime_url="https://www.breastcancerfoundation.org.nz/" target="_blank">Breast Cancer Foundation</a></li>
+                <li><a href="https://bowelcancernz.org.nz/" runtime_url="https://bowelcancernz.org.nz/" target="_blank">Bowel Cancer NZ</a></li>
+                <li><a href="https://prostate.org.nz/" runtime_url="https://prostate.org.nz/" target="_blank" >Prostate Cancer Foundation NZ</a></li>
+                <li><a href="https://www.giftofknowledge.co.nz/" runtime_url="https://www.giftofknowledge.co.nz/" target="_blank">Giftofknowledge</a> - Hereditary breast and ovarian cancer​</li>
+              </ul>
+          </div>
+        </div>
 
-<div id="neuro" style="display:none; margin-bottom:30%;">
-<p>Neurological</p>
-<hr class="short--hr">
+        <a href ="#" class="list-group-item list-group-item-action collapsed" type="button" data-toggle="collapse" data-target="#sti" aria-expanded="true" aria-controls="sti">STI (Sexually Transmited Illness) 性病     <span class="mdi mdi-chevron-down"></span></a>
+        <div id="sti" class="collapse" data-parent="#menu">
+          <div>
+              <ul>
+                <li><a href="https://www.herpes.org.nz/" runtime_url="https://www.herpes.org.nz/" target="_blank" >Herpes NZ</a></li>
+                <li><a href="http://www.ashs.org.nz/fact-sheets.html" runtime_url="http://www.ashs.org.nz/fact-sheets.html" target="_blank">Auckland Sexual Health</a> - Patient information on STI</li>
+                <li><a href="https://www.nzshs.org/docman/guidelines/management-of-sexual-health-conditions/chlamydia/153-chlamydia-patient-information/file" runtime_url="https://www.nzshs.org/docman/guidelines/management-of-sexual-health-conditions/chlamydia/153-chlamydia-patient-information/file" target="_blank" >Chlamydia patient information</a></li>
+                <li><a href="https://www.nzshs.org/docman/guidelines/management-of-sexual-health-conditions/genital-herpes/159-genital-herpes-patient-information/file" runtime_url="https://www.nzshs.org/docman/guidelines/management-of-sexual-health-conditions/genital-herpes/159-genital-herpes-patient-information/file" target="_blank" >Genital herpes patient information</a></li>
+                <li><a href="https://www.nzshs.org/docman/guidelines/management-of-sexual-health-conditions/genital-warts/164-genital-warts-patient-information/file" runtime_url="https://www.nzshs.org/docman/guidelines/management-of-sexual-health-conditions/genital-warts/164-genital-warts-patient-information/file" target="_blank" >Genital warts patient information</a></li>
+                <li><a href="https://www.nzshs.org/docman/guidelines/management-of-sexual-health-conditions/gonorrhoea/167-gonorrhoea-patient-information/file" runtime_url="https://www.nzshs.org/docman/guidelines/management-of-sexual-health-conditions/gonorrhoea/167-gonorrhoea-patient-information/file" target="_blank" >Gonorrhoea patient information</a></li>
+                <li><a href="https://www.nzshs.org/docman/guidelines/management-of-sexual-health-conditions/syphilis/175-syphilis-patient-information/file" runtime_url="https://www.nzshs.org/docman/guidelines/management-of-sexual-health-conditions/syphilis/175-syphilis-patient-information/file" target="_blank" >Syphilis patient information</a></li>
+              </ul>
+          </div>
+        </div>
 
-<ul>
-    <li><a href="https://www.stroke.org.nz/" runtime_url="https://www.stroke.org.nz/" target="_blank" >Stroke Foundation NZ</a></li>
-    <li><a href="https://www.msnz.org.nz/" runtime_url="https://www.msnz.org.nz/" target="_blank" >Multiple Sclerosis NZ</a></li>
-    <li><a href="https://www.parkinsons.org.nz/" runtime_url="https://www.parkinsons.org.nz/" target="_blank" >Parkinsons NZ</a></li>
-</ul>
-</div>
-
-<div id="genetic" style="display:none; margin-bottom:30%;">
-<p>Genetic</p>
-<hr class="short--hr">
-
-<ul>
-<li><a href="https://www.mda.org.nz/" runtime_url="https://www.mda.org.nz/" target="_blank" >Muscular Dystrophy NZ</a></li>
-</ul>
-</div>
-
-<div id="mental" style="display:none; margin-bottom:30%;">
-<p>Mental Health/Councelling</p>
-<hr class="short--hr">
-
-<ul>
-    <li>Crisis line- Central Auckland  0800 800 717, South Auckland  09 261 3700, West Auckland and NorthShore 09 487 1414 (After Hours 09 486 8900)</li>
-    <li>Anxiety assessment<br>焦虑症评分 <a href="./gad.html">Link</a></li>
-    <li>Depression assessment<br>抑郁评分 <a href="./kessler.html">Link</a></li>
-    <li><a href="https://supportingfamilies.org.nz/" runtime_url="https://supportingfamilies.org.nz/" target="_blank">Supporting Families NZ</a> - Support, Information, Advocacy</li>
-    <li><a href="http://www.areyouok.org.nz/" runtime_url="http://www.areyouok.org.nz/" target="_blank">Are you ok?</a> - Support group against family violence</li>
-    <li><a href="http://www.beatingtheblues.co.nz/" runtime_url="http://www.beatingtheblues.co.nz/" target="_blank">Beating the blues</a></li>
-    <li><a href="https://www.lifeline.org.nz/" runtime_url="https://www.lifeline.org.nz/" target="_blank">Life line</a> - Support from counsellors and trained volunteers</li>
-    <li><a href="https://www.mentalhealth.org.nz/" runtime_url="https://www.mentalhealth.org.nz/" target="_blank">Mental health foundation</a>&nbsp;- Charity that works towards creating a society free from discrimination, where all people enjoy positive mental health &amp; wellbeing</li>
-    <li><a href="http://www.depression.org/" runtime_url="http://www.depression.org/" target="_blank">Depression org</a> - Resources and support on depression</li>
-    <li><a href="https://www.calm.auckland.ac.nz/" runtime_url="https://www.calm.auckland.ac.nz/" target="_blank">CALM</a> - Computer Assisted Learning for the Mind</li>
-    <li><a href="https://www.mentalhealth.com/" runtime_url="https://www.mentalhealth.com/" target="_blank">Mental health.com</a> - Information on illnesses</li>
-    <li><a href="http://www.samaritans.org.nz/" runtime_url="http://www.samaritans.org.nz/" target="_blank">Samaritans</a>&nbsp; - Samaritans offer confidential, non-religious and non-judgemental support to anyone who may be feeling depressed, lonely, or even be contemplating suicide</li>
-    <li><a href="https://www.youthline.co.nz/" runtime_url="https://www.youthline.co.nz/" target="_blank">Youthline</a>&nbsp;- For young people and their whānau</li>
-    <li><a href="https://thelowdown.co.nz/" runtime_url="https://thelowdown.co.nz/" target="_blank">The lowdown</a> -Visit the website or&nbsp;free text 5626&nbsp;&nbsp;- for support for young people&nbsp;experiencing depression or&nbsp;anxiety</li>
-    <li><a href="https://www.whatsup.co.nz/" runtime_url="https://www.whatsup.co.nz/" target="_blank">What&rsquo;s Up</a>&nbsp;-&nbsp;for 5-18 year olds</li>
-    <li><a href="https://www.auntydee.co.nz/" runtime_url="https://www.auntydee.co.nz/" target="_blank">Auntydee</a> - a free online tool for anyone&nbsp;who needs help working through&nbsp;problems&nbsp;</li>
-    <li><a href="https://www.sparx.org.nz/" runtime_url="https://www.sparx.org.nz/" target="_blank">SPARX</a>&nbsp;- an online self-help tool that&nbsp;teaches young people the key&nbsp;skills needed to help combat&nbsp;depression and anxiety&nbsp;</li>
-    <li><a href="http://www.kidsline.org.nz/Home_312.aspx" runtime_url="http://www.kidsline.org.nz/Home_312.aspx" target="_blank">Kidsline&nbsp;</a>- for young people up to 18 years&nbsp;of age</li>
-</ul>
-</div>
-
-<div id="gastro" style="display:none; margin-bottom:30%;">
-<p>Gastroenterology</p>
- <hr class="short--hr">
-<ul>
-    <li>Irritable Bowel Syndrome-<a href="https://www.monashfodmap.com/ibs-central/i-have-ibs/" runtime_url="https://www.monashfodmap.com/ibs-central/i-have-ibs/" target="_blank">FODMAP Diet and App</a> (MONASH University)</li>
-    <li><a href="https://www.healthyfood.com/resource/fodmaps-toolkit-your-complete-guide-to-going-low-fodmap/" runtime_url="https://www.healthyfood.com/resource/fodmaps-toolkit-your-complete-guide-to-going-low-fodmap/" target="_blank">FODMAP Diet</a> (healthy food)</li>
-</ul>
-</div>
-
-<div id="derm" style="display:none; margin-bottom:30%;">
-<p>Dermatology</p>
- <hr class="short--hr">
-<ul>
-    <li><a href="http://www.dermnetnz.org/" runtime_url="http://www.dermnetnz.org/" target="_blank">Dermnet</a> - Information of Skin conditions for health professionals and patients</li>
-</ul>
-</div>
-
-<div id="paed" style="display:none; margin-bottom:30%;">
-<p>Childrens health</p>
- <hr class="short--hr">
-<ul>
-    <li><a href="https://www.plunket.org.nz/" runtime_url="https://www.plunket.org.nz/" target="_blank">Plunket NZ</a>&nbsp;- Support service for children under 5</li>
-    <li><a href="https://www.health.govt.nz/our-work/preventative-health-wellness/immunisation/new-zealand-immunisation-schedule" runtime_url="https://www.health.govt.nz/our-work/preventative-health-wellness/immunisation/new-zealand-immunisation-schedule" target="_blank" >National Immunisation Schedule</a></li>
-    <li><a href="https://www.kidshealth.org.nz/" runtime_url="https://www.kidshealth.org.nz/" target="_blank">KidsHealth</a> - General Information</li>
-    <li><a href="https://www.health.govt.nz/our-work/life-stages/child-health/well-child-tamariki-ora-services/growth-charts" runtime_url="https://www.health.govt.nz/our-work/life-stages/child-health/well-child-tamariki-ora-services/growth-charts" target="_blank" >Childrens Growth Charts</a></li>
-</ul>
-</div>
-
-<div id="flu" style="display:none; margin-bottom:30%;">
-<p>Flu</p>
- <hr class="short--hr">
-<ul>
-    <li><a href="https://www.fightflu.co.nz/faq" runtime_url="https://www.fightflu.co.nz/faq" target="_blank" >FightFlu - FAQ</a></li>
-    <li><a href="https://www.influenza.org.nz/sites/default/files/2018%20Flu%20Pregnancy%20Brochure%20Update%20Spreads.pdf" runtime_url="https://www.influenza.org.nz/sites/default/files/2018%20Flu%20Pregnancy%20Brochure%20Update%20Spreads.pdf" target="_blank" >Avoid Flu During Pregnancy</a></li>
-    <li><a href="https://www.influenza.org.nz/" runtime_url="https://www.influenza.org.nz/" target="_blank" >Influenza.Org</a></li>
-</ul>
-</div>
-
-<div id="travel" style="display:none; margin-bottom:30%;">
-<p>Travel (vacinations, diseases, outbreaks)</p>
- <hr class="short--hr">
-<ul>
-    <li><a href="https://wwwnc.cdc.gov/travel" runtime_url="https://wwwnc.cdc.gov/travel" target="_blank">Centre for Disease Control and Prevention</a> (CDC)</li>
-    <li><a href="https://www.safetravel.govt.nz/" runtime_url="https://www.safetravel.govt.nz/" target="_blank" >Safetravel</a></li>
-    <li>coronavirus testing stations 冠状病毒检测站<a href="coronavirus.html" target="_blank">Link</a>
-    </li>
-    <li>Measles information 麻疹资讯<a href="https://www.health.govt.nz/your-health/conditions-and-treatments/diseases-and-illnesses/measles" target="_blank">Link</a>
-    </li>
-</ul>
-</div>
-
-<div id="imm" style="display:none; margin-bottom:30%;">
-<p>Immunisation</p>
- <hr class="short--hr">
-<ul>
-    <li><a href="https://www.immune.org.nz/" runtime_url="https://www.immune.org.nz/" target="_blank" >Immune org</a></li>
-    <li><a href="https://www.health.govt.nz/our-work/preventative-health-wellness/immunisation/new-zealand-immunisation-schedule" runtime_url="https://www.health.govt.nz/our-work/preventative-health-wellness/immunisation/new-zealand-immunisation-schedule" target="_blank" >Immunissation Schedule</a></li>
-</ul>
-</div>
-
-<div id="medicine" style="display:none; margin-bottom:30%;">
-<p>Medicines</p>
- <hr class="short--hr">
-<ul>
-    <li><a href="https://www.pharmac.govt.nz/" runtime_url="https://www.pharmac.govt.nz/" target="_blank" >Pharmac NZ</a></li>
-    <li><a href="https://www.medsafe.govt.nz/Medicines/infoSearch.asp" runtime_url="https://www.medsafe.govt.nz/Medicines/infoSearch.asp" target="_blank" >Medsafe NZ</a></li>
-    <li><a href="http://www.saferx.co.nz/" runtime_url="http://www.saferx.co.nz/" target="_blank" >SafeRx</a></li>
-</ul>
-</div>
-
-<div id="gov" style="display:none; margin-bottom:30%;">
-<p>Government 福利表格</p>
- <hr class="short--hr">
-<ul>
-    <li><a href="https://www.workandincome.govt.nz/" target="_blank" >Work and Income NZ</a></li>
-    <li><a href="https://www.workandincome.govt.nz/documents/forms/community-services-card-application.pdf" target="_blank" >Community Services Card Application 社区服务卡表格</a></li>
-    <li><a href="https://www.workandincome.govt.nz/documents/forms/disability-certificate.pdf" target="_blank" >Disability Certificate 伤残津贴表格</a></li>
-    <li><a href="https://www.workandincome.govt.nz/documents/forms/disability-allowance-couselling.pdf" target="_blank" >Councelling Application 心理辅导津贴</a></li>
-    <li><a href="https://www.ccsdisabilityaction.org.nz/mobility-parking/applications-and-renewal/" target="_blank" >Mobility Parking Permit 残障停车证</a></li>
-    <li><a href="https://www.workandincome.govt.nz/documents/forms/disability-allowance-medical-alarm-assessment-form.pdf" target="_blank">Medical alarm application 医疗报警器表格 </a>
-</ul>
-</div>
-
-<div id="screening" style="display:none; margin-bottom:30%;">
-<p>Screening</p>
- <hr class="short--hr">
-<ul>
-    <li><a href="https://www.nsu.govt.nz/" runtime_url="https://www.nsu.govt.nz/" target="_blank" >National Screening Unit</a></li>
-    <li><a href="https://www.timetoscreen.nz/bowel-screening/" runtime_url="https://www.timetoscreen.nz/bowel-screening/" target="_blank" >National Bowel Screening</a></li>
-    <li><a href="https://prevention.cancer.gov/sites/default/files/uploads/news_and_event/infographic.png" runtime_url="https://prevention.cancer.gov/sites/default/files/uploads/news_and_event/infographic.png" target="_blank" >Prostate Cancer Screen</a></li>
-</ul>
-</div>
-
-<div id="men" style="display:none; margin-bottom:30%;">
-<p>Mens Health</p>
- <hr class="short--hr">
-<ul>
-    <li><a href="https://www.menshealthweek.co.nz/health-info/" runtime_url="https://www.menshealthweek.co.nz/health-info/" target="_blank" >Mens health week</a></li>
-    <li><a href="https://www.getthetools.org.nz/" runtime_url="https://www.getthetools.org.nz/" target="_blank">Get the tools</a> - Discussing nuts and bolts of mens health</li>
-</ul>
-</div>
-
-<div id="allergy" style="display:none; margin-bottom:30%;">
-<p>Allergy</p>
- <hr class="short--hr">
-<ul>
-    <li><a href="http://www.allergy.org.nz/" runtime_url="http://www.allergy.org.nz/" target="_blank" >Allergy NZ</a></li>
-    <li><a href="https://www.allergy.org.au/" runtime_url="https://www.allergy.org.au/" target="_blank" style="background-color: transparent;">ASCIA</a> (Allergy Australia)</li>
-    <li><a href="https://www.allergy.org.au/hp/ascia-plans-action-and-treatment" runtime_url="https://www.allergy.org.au/hp/ascia-plans-action-and-treatment" target="_blank">Download Action Plans</a> (Anaphylaxis, Allergy)</li>
-    <li><a href="https://anaphylaxis.ascia.org.au/" runtime_url="https://anaphylaxis.ascia.org.au/" target="_blank">Anaphylaxis e-training</a></li>
-</ul>
-</div>
-
-<div id="cancer" style="display:none; margin-bottom:30%;">
-<p>Cancer / Malignancy</p>
- <hr class="short--hr">
-<ul>
-    <li><a href="https://cancernz.org.nz/" runtime_url="https://cancernz.org.nz/" target="_blank" >Cancer Society NZ</a></li>
-    <li><a href="https://www.breastcancerfoundation.org.nz/" runtime_url="https://www.breastcancerfoundation.org.nz/" target="_blank">Breast Cancer Foundation</a></li>
-    <li><a href="https://bowelcancernz.org.nz/" runtime_url="https://bowelcancernz.org.nz/" target="_blank">Bowel Cancer NZ</a></li>
-    <li><a href="https://prostate.org.nz/" runtime_url="https://prostate.org.nz/" target="_blank" >Prostate Cancer Foundation NZ</a></li>
-    <li><a href="https://www.giftofknowledge.co.nz/" runtime_url="https://www.giftofknowledge.co.nz/" target="_blank">Giftofknowledge</a> - Hereditary breast and ovarian cancer​</li>
-</ul>
-</div>
-
-
-
-
- 
-
-
-
-    
+     </div> <!-- listgroup -->
+    </div>  <!-- accordion div -->
+  </div> <!-- container div -->
+            
+            
+            
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
