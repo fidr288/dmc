@@ -6,17 +6,17 @@
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
 	<!-- Bootstrap JS -->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-	<style type="text/css">
+    <style type="text/css">
 		/* style for the buttons container */
 		.buttons-container {
-			margin: auto;
-            height: 100vh;
-			margin-top: 50px;
-			padding: 20px;
 			border: 1px solid #ddd;
 			border-radius: 5px;
 			background-color: #f7f7f7;
 			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 100%;
 		}
 
 		/* style for the buttons */
@@ -24,6 +24,7 @@
 			display: flex;
 			flex-direction: row;
 			margin-bottom: 20px;
+			flex: 1;
 		}
 
 		.button-col {
@@ -32,8 +33,18 @@
 
 		.button {
 			width: 100%;
+			font-size: 24px;
+			padding: 20px;
+		}
+
+		@media (max-width: 576px) {
+			.button {
+				font-size: 18px;
+				padding: 15px;
+			}
 		}
 	</style>
+
 </head>
 <body>
 	<div class="container">
