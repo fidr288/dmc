@@ -38,57 +38,142 @@
 
 				<!-- Main -->
 				
-					<div id="main">
-
-						<!-- Featured Post -->
-							<article class="post featured">
-								<h2 style="color: red;">This form is for non-residents only</h2>
-								<h2 style="color: red;">此表格只适用于非居民</h2>
-							</article>
-							
-							<article class="post featured">
-								<header>
-								<h3>1.Fill in online non-resident enrolment form<br>填写线上注册表格</h3>
-								<h4 style="color: red;">FILL FORM IN ENGLISH 请只用英文填写表格</h4>
-								</header>
-								<h4><a href="https://doc.dominionmedical.co.nz/interview?i=docassemble.nonresonline:data/questions/nonresonline.yml" class="button large" style="background-color: #acd0c0;">Enrollment form 线上注册表格</a>
-								</h4>
-							</article>
-
-							<article class="post featured">
-								<header>
-								<h3>2.Upload photos<br>上传图片</h3>
-								</header>
-								<h4><a href="https://doc.dominionmedical.co.nz/interview?i=docassemble.nonresvisaonline:data/questions/nonresvisaonline.yml" class="button large" style="background-color: #acd0c0;">Upload 上传</a>
-								</h4>
-								<!-- <div class="box alt"> -->
-									<div style="display:flex; justify-content: center;" class="row gtr-50 gtr-uniform">
-										<div><span class="image fit"><img src="images/china-passport.jpg" alt="" /></span></div>
-									</div>
-								<!-- </div> -->
-							</article>
-							<article class="post featured">
-							<header>
-							<h3><a href="./files/health-information-privacy-statement.pdf" target="blank">3. View our privacy statement<br>看我们的隐私声明</a></h3>
-							</header>
-							</article>
-
-						<!-- Footer -->
-							<!-- <footer>
-								<div class="pagination">
-									<a href="#" class="previous">Prev</a>
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer> -->
-
+				<div class="container">
+					<h3 style="padding-top: 60px">Kessler 10 depression score</h3>
+					<hr>
+					<h4>These questions concern how you have been feeling over the past 30 days.<br>
+						以下十个问题是有关你在过去四个星期內的感觉。选择每题中最能描述你所感受时间多久的一个答案。</h4>
+				<table class="table table-sm">
+					<thead class="thead-dark">
+					  <tr>
+						<th scope="col"></th>
+						<th scope="col">none of the time<br> 绝对没有</th>
+						<th scope="col">a little of the time<br> 偶尔如此</th>
+						<th scope="col">some of the time<br> 有时如此</th>
+						<th scope="col">most of the time<br> 大部份时间如此</th>
+						<th scope="col">all of the time<br> 所有时间</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<th scope="row">Feel tired out for no good reason?
+								<br>无缘无故地感觉筋疲力尽？</th>
+						<td><input name="one" value = "1" type="radio" required></td>
+						<td><input name="one" value = "2" type="radio" required></td>
+						<td><input name="one" value = "3" type="radio" required></td>
+						<td><input name="one" value = "4" type="radio" required></td>
+						<td><input name="one" value = "5" type="radio" required></td>
+					  </tr>
+					  <tr>
+						<th scope="row">Feel nervous?
+								<br>感觉紧张?</th>
+						<td><input name="two" value = "1" type="radio" required></td>
+						<td><input name="two" value = "2" type="radio" required></td>
+						<td><input name="two" value = "3" type="radio" required></td>
+						<td><input name="two" value = "4" type="radio" required></td>
+						<td><input name="two" value = "5" type="radio" required></td>
+					  </tr>
+					  <tr>
+						<th scope="row">Feel so nervous that nothing could calm you down?
+								<br>感觉紧张,而且没有任何方法可以使你冷静下来?</th>
+						<td><input name="three" value = "1" type="radio" required></td>
+						<td><input name="three" value = "2" type="radio" required></td>
+						<td><input name="three" value = "3" type="radio" required></td>
+						<td><input name="three" value = "4" type="radio" required></td>
+						<td><input name="three" value = "5" type="radio" required></td>
+					  </tr>
+					  <tr>
+						<th scope="row">Feel hopeless?
+								<br>感觉绝望?</th>
+						<td><input name="four" value = "1" type="radio" required></td>
+						<td><input name="four" value = "2" type="radio" required></td>
+						<td><input name="four" value = "3" type="radio" required></td>
+						<td><input name="four" value = "4" type="radio" required></td>
+						<td><input name="four" value = "5" type="radio" required></td>
+					  </tr>
+					  <tr>
+						<th scope="row">Feel restless or fidgety?
+								<br>感觉焦躁不安或坐立不安?</th>
+						<td><input name="five" value = "1" type="radio" required></td>
+						<td><input name="five" value = "2" type="radio" required></td>
+						<td><input name="five" value = "3" type="radio" required></td>
+						<td><input name="five" value = "4" type="radio" required></td>
+						<td><input name="five" value = "5" type="radio" required></td>
+					  </tr>
+					  <tr>
+						<th scope="row">Feel so restless you could not sit still?
+								<br>感觉焦躁不安,以致你不能静坐?</th>
+						<td><input name="six" value = "1" type="radio" required></td>
+						<td><input name="six" value = "2" type="radio" required></td>
+						<td><input name="six" value = "3" type="radio" required></td>
+						<td><input name="six" value = "4" type="radio" required></td>
+						<td><input name="six" value = "5" type="radio" required></td>
+					  </tr>
+					  <tr>
+						<th scope="row">Feel depressed?
+								<br>感覺抑鬱?</th>
+						<td><input name="seven" value = "1" type="radio" required></td>
+						<td><input name="seven" value = "2" type="radio" required></td>
+						<td><input name="seven" value = "3" type="radio" required></td>
+						<td><input name="seven" value = "4" type="radio" required></td>
+						<td><input name="seven" value = "5" type="radio" required></td>
+					  </tr>
+					  <tr>
+						<th scope="row">Feel that everything was an effort?
+								<br>感觉做什么都是那么吃力的?</th>
+						<td><input name="eight" value = "1" type="radio" required></td>
+						<td><input name="eight" value = "2" type="radio" required></td>
+						<td><input name="eight" value = "3" type="radio" required></td>
+						<td><input name="eight" value = "4" type="radio" required></td>
+						<td><input name="eight" value = "5" type="radio" required></td>
+					  </tr>
+					  <tr>
+						<th scope="row">Feel so sad that nothing could cheer you up?
+								<br>感觉那么悲伤,以致没有任何方法可以使你振奋起来?</th>
+						<td><input name="nine" value = "1" type="radio" required></td>
+						<td><input name="nine" value = "2" type="radio" required></td>
+						<td><input name="nine" value = "3" type="radio" required></td>
+						<td><input name="nine" value = "4" type="radio" required></td>
+						<td><input name="nine" value = "5" type="radio" required></td>
+					  </tr>
+					  <tr>
+						<th scope="row">Feel worthless?
+								<br>感觉自己不中用?</th>
+						<td><input name="ten" value = "1" type="radio" required></td>
+						<td><input name="ten" value = "2" type="radio" required></td>
+						<td><input name="ten" value = "3" type="radio" required></td>
+						<td><input name="ten" value = "4" type="radio" required></td>
+						<td><input name="ten" value = "5" type="radio" required></td>
+					  </tr>
+					</tbody>
+				  </table>
+				  <div class="buttons">
+					<button id="calc" type="button" class="btn btn-success" >Calculate</button>
+					<button id="clear" type="button" class="btn btn-danger">Clear</button>   
+					</div> 
+				</div>
+				<div class="container message">
+					<h3 id="message"></h3>
+					<h3 id="level"></h3>
+				</div>
+				<hr>
+			
+				<!-- <footer>
+				  <div class="container content">
+					<div class="row">
+					  <div class="col-sm-4">
+						<a href="index.html" class="link-text">Home<br>主页</a>
+					</div>  
+					  <div class="col-sm-4">
+							<a href="fees.html" class="link-text">Service & Fees<br>服务及收费</a>
+						</div>
+						<div class="col-sm-4">
+							<a href="resource.html" class="link-text">Resources<br>资源</a>
+						</div> 
 					</div>
+				  </div> 
+			</footer> -->
+
 
 				<!-- Footer -->
 				<footer id="footer">
@@ -166,13 +251,29 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="./js/jquery.min.js"></script>
+			<script src="./js/jquery.scrollex.min.js"></script>
+			<script src="./js/jquery.scrolly.min.js"></script>
+			<script src="./js/browser.min.js"></script>
+			<script src="./js/breakpoints.min.js"></script>
+			<script src="./js/util.js"></script>
+			<script src="./js/main.js"></script>
+			<script src="./js/kessler.js"></script>
+			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"></script>
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"></script>
+		  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"></script>
+		  <script type="text/javascript">
+			$(document).ready(function () {
+			  $("#exampleModal").modal('show');
+			});
+		  </script>
 
 	</body>
 </html>
