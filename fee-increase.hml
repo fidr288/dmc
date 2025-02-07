@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ: Fee Adjustment for Patients Without a Community Services Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .faq-section {
+            margin-bottom: 30px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .faq-heading {
+            color: #3498db;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #3498db;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .faq-heading-chinese {
+            color: #3498db; /* Same color as English heading */
+            font-size: 1.2em;
+            margin-top: 5px;
+            font-weight: bold; /* Made bold */
+        }
+        .highlight {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        p {
+            margin: 10px 0;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>FAQ: Fee Adjustment for Patients Without a Community Services Card</h1>
+    <h2 style="text-align: center; color: #3498db;">常见问题解答：无社区服务卡患者的费用调整</h2>
+
+    <div class="faq-section">
+        <div class="faq-heading">Why is this price change occurring?</div>
+        <div class="faq-heading-chinese">为什么会有这次价格调整？</div>
+        <p>Medical practices in New Zealand are facing considerable challenges right now. While the Government has offered some support to help local health practitioners adjust their consultation fees, it hasn’t been enough to cover the increasing costs that GP practices are experiencing. Consequently, we need to raise the fee for your GP visit.</p>
+        <p>目前，新西兰的医疗诊所正面临着巨大的挑战。虽然政府提供了一些支持来帮助本地医疗从业者调整咨询费用，但这仍不足以覆盖全科医生诊所日益增加的成本。因此，我们需要提高您的就诊费用。</p>
+    </div>
+
+    <div class="faq-section">
+        <div class="faq-heading">When will the new fees take effect?</div>
+        <div class="faq-heading-chinese">新的费用何时生效？</div>
+        <p>The new consultation fee will take effect on <span class="highlight">3 March 2025</span>.</p>
+        <p>新的咨询费用将于<span class="highlight">2025年3月3日</span>生效。</p>
+    </div>
+
+    <div class="faq-section">
+        <div class="faq-heading">How much will the new consultation fee be?</div>
+        <div class="faq-heading-chinese">新的咨询费用是多少？</div>
+        <p>The consultation fee will increase from <span class="highlight">$19.50 to $25 per visit</span>.</p>
+        <p>咨询费用将增加<span class="highlight">$5.5纽元</span>，全科医生咨询费用将从每次<span class="highlight">19.50纽元</span>调整为<span class="highlight">25.00纽元</span>。</p>
+    </div>
+
+    <div class="faq-section">
+        <div class="faq-heading">Does this new consultation fee apply to everyone?</div>
+        <div class="faq-heading-chinese">新的咨询费用适用于所有人吗？</div>
+        <p>No, this fee change applies only to patients over <span class="highlight">18 years old</span> who do not hold a Community Services Card.</p>
+        <p>不，此次费用调整仅适用于<span class="highlight">18岁以上</span>且无社区服务卡的患者。</p>
+    </div>
+
+    <div class="faq-section">
+        <div class="faq-heading">Will this fee increase affect all types of consultations?</div>
+        <div class="faq-heading-chinese">此次费用调整是否适用于所有类型的咨询？</div>
+        <p>This adjustment is specific to <span class="highlight">standard consultation visits</span>. Other services may have additional charges based on their nature, but the current fee structure for those services will remain unchanged.</p>
+        <p>此次调整仅针对<span class="highlight">标准咨询就诊</span>。其他服务可能会根据其性质收取额外费用，但这些服务的现有费用结构将保持不变。</p>
+    </div>
+
+    <div class="faq-section">
+        <div class="faq-heading">Is this only happening at this practice?</div>
+        <div class="faq-heading-chinese">这次调整仅适用于本诊所吗？</div>
+        <p>No, this change is being implemented at <span class="highlight">most medical practices across New Zealand</span>. However, fees may vary from practice to practice.</p>
+        <p>不，此次调整正在<span class="highlight">新西兰大多数医疗诊所</span>实施。不过，各诊所的费用可能有所不同。</p>
+    </div>
+
+    <div class="faq-section">
+        <div class="faq-heading">Will there be any changes to other services or treatments?</div>
+        <div class="faq-heading-chinese">其他服务或治疗费用会有变化吗？</div>
+        <p>At this time, the fee adjustment only affects <span class="highlight">consultation visits</span>.</p>
+        <p>目前，费用调整仅影响<span class="highlight">咨询就诊</span>。</p>
+    </div>
+
+    <div class="faq-section">
+        <div class="faq-heading">What should I do if I have concerns about the fee increase?</div>
+        <div class="faq-heading-chinese">如果我对费用调整有疑问怎么办？</div>
+        <p>If you have any concerns or questions about the fee increase, please reach out to <a href="mailto:info@dominionmedicalcentre.co.nz">info@dominionmedicalcentre.co.nz</a>. We’re here to help.</p>
+        <p>如果您对费用调整有任何疑问或担忧，请联系<a href="mailto:info@dominionmedicalcentre.co.nz">info@dominionmedicalcentre.co.nz</a>。我们随时为您提供帮助。</p>
+    </div>
+
+    <div class="faq-section">
+        <div class="faq-heading">What if I have already booked an appointment? Which fee applies?</div>
+        <div class="faq-heading-chinese">如果我已经预约了就诊，适用哪种费用？</div>
+        <p>The new fee will apply to all consultations from <span class="highlight">Monday, 3 March 2025</span>.</p>
+        <p>自<span class="highlight">2025年3月3日（星期一）</span>起，所有咨询将适用新的费用。</p>
+    </div>
+
+    <div class="faq-section">
+        <div class="faq-heading">Will my prescription fees increase as well?</div>
+        <div class="faq-heading-chinese">处方费用也会增加吗？</div>
+        <p>No, there will be <span class="highlight">no increase in prescription fees</span>.</p>
+        <p>不会，处方费用<span class="highlight">不会增加</span>。</p>
+    </div>
+
+    <div class="faq-section">
+        <div class="faq-heading">Are children still free?</div>
+        <div class="faq-heading-chinese">儿童就诊仍然免费吗？</div>
+        <p>Yes, consultations for children will remain <span class="highlight">free</span>.</p>
+        <p>是的，儿童咨询<span class="highlight">仍然免费</span>。</p>
+    </div>
+
+    <div class="faq-section">
+        <div class="faq-heading">Your health is our priority.</div>
+        <div class="faq-heading-chinese">您的健康是我们的首要任务。</div>
+        <p>If you’re facing financial difficulties, please reach out to us so we can discuss potential options to ensure you receive the care you need.</p>
+        <p>如果您面临经济困难，请联系我们，我们将讨论可能的方案，以确保您获得所需的医疗服务。</p>
+    </div>
+
+    <div class="faq-section">
+        <div class="faq-heading">How often do you review your fees?</div>
+        <div class="faq-heading-chinese">你们多久审查一次费用？</div>
+        <p>This is the first significant change to consultation fees at our practice in several years, as our consultation fee is set by government department “policy”.</p>
+        <p>这是我们诊所多年来首次对咨询费用进行重大调整，因为我们的咨询费用是由政府部门的“政策”设定的。</p>
+    </div>
+
+    <div class="faq-section">
+        <div class="faq-heading">Thank you for your continued trust in Dominion Medical Centre.</div>
+        <div class="faq-heading-chinese">感谢您对Dominion Medical Centre的持续信任。</div>
+        <p>We remain committed to providing you with exceptional care and support.</p>
+        <p>我们将继续致力于为您提供卓越的护理和支持。</p>
+        <p>If you have any further questions, please don’t hesitate to contact us.</p>
+        <p>如有其他问题，请随时联系我们。</p>
+    </div>
+
+</body>
+</html>
