@@ -373,12 +373,13 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Dominon Medical Centre</li><li>2024</li></ul>
+						<ul><li>&copy; Dominon Medical Centre</li><li id="copy-year"></li></ul>
 					</div>
 
 			</div>
 
 		<!-- Scripts -->
+		    document.getElementById('copy-year').textContent = new Date().getFullYear();
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
