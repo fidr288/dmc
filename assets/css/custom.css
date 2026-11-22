@@ -635,11 +635,153 @@ p {
 		padding: 1rem 1.25rem 1.75rem 1.25rem;
 	}
 	.service-grid {
-		grid-template-columns: 1fr;
-		gap: 0.75rem;
-	}
-	.notice-item summary {
-		font-size: 0.85rem;
-		padding: 0.85rem 1rem;
-	}
+ 		grid-template-columns: 1fr;
+ 		gap: 0.75rem;
+ 	}
+ 	.notice-item summary {
+ 		font-size: 0.85rem;
+ 		padding: 0.85rem 1rem;
+ 	}
+     /* ==========================================================================
+    Fees Page (fees.html)
+    ========================================================================== */
+
+    #main > .fees-section {
+    	padding: 3rem 3.5rem;
+    }
+
+    .fees-group {
+    	margin-bottom: 2.5rem;
+    }
+
+    .fees-table-wrap {
+    	width: 100%;
+    	overflow-x: auto;
+    	-webkit-overflow-scrolling: touch;
+    	border: 1px solid #e2e8f0;
+    }
+
+    .fees-table {
+    	width: 100%;
+    	border-collapse: collapse;
+    	margin: 0;
+    	font-size: 0.9rem;
+    	line-height: 1.5;
+    }
+
+    .fees-table thead th {
+    	background-color: #212931;
+    	color: #ffffff;
+    	font-family: "Source Sans Pro", Helvetica, sans-serif;
+    	font-size: 0.8rem;
+    	font-weight: 900;
+    	letter-spacing: 0.05em;
+    	text-transform: uppercase;
+    	padding: 0.9rem 1rem;
+    	text-align: left;
+    	white-space: nowrap;
+    }
+
+    .fees-table thead th.price-col,
+    .fees-table tbody td.price-col {
+    	text-align: right;
+    	white-space: nowrap;
+    }
+
+    .fees-table tbody tr {
+    	border-bottom: 1px solid #e2e8f0;
+    	background-color: #ffffff;
+    }
+
+    .fees-table tbody tr:nth-child(even) {
+    	background-color: #f8fafc;
+    }
+
+    .fees-table tbody th,
+    .fees-table tbody td {
+    	padding: 0.85rem 1rem;
+    	vertical-align: top;
+    	color: #212931;
+    }
+
+    .fees-table tbody th {
+    	font-family: "Source Sans Pro", Helvetica, sans-serif;
+    	font-weight: 700;
+    	text-align: left;
+    	text-transform: none;
+    	letter-spacing: 0.01em;
+    }
+
+    .fees-table .zh {
+    	display: block;
+    	font-weight: 400;
+    	font-size: 0.85rem;
+    	color: #5c6670;
+    	margin-top: 0.15rem;
+    }
+
+    .fees-table .price-val {
+    	font-family: "Source Sans Pro", Helvetica, sans-serif;
+    	font-weight: 700;
+    	color: #212931;
+    }
+
+    .fees-table .price-free {
+    	font-family: "Source Sans Pro", Helvetica, sans-serif;
+    	font-weight: 700;
+    	color: #188038;
+    }
+
+    /* 2-Column layout for secondary fee tables on desktop */
+    .fees-two-col {
+    	display: grid;
+    	grid-template-columns: repeat(2, minmax(0, 1fr));
+    	gap: 2rem;
+    	margin-bottom: 2.5rem;
+    }
+
+    .fees-two-col .fees-group {
+    	margin-bottom: 0;
+    }
+
+    /* Disclaimers box */
+    .fees-notes {
+    	background: #f4f7f9;
+    	border: 1px solid #d9e2ec;
+    	border-left: 4px solid #212931;
+    	padding: 1.25rem 1.5rem;
+    	font-size: 0.85rem;
+    	line-height: 1.65;
+    	color: #4a5568;
+    }
+
+    .fees-notes p {
+    	margin: 0 0 0.75rem 0;
+    }
+
+    .fees-notes p:last-child {
+    	margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 980px) {
+    	#main > .fees-section {
+    		padding: 2.5rem 2rem;
+    	}
+    	.fees-two-col {
+    		grid-template-columns: 1fr;
+    		gap: 2rem;
+    	}
+    }
+
+    @media screen and (max-width: 600px) {
+    	#main > .fees-section {
+    		padding: 2rem 1.25rem;
+    	}
+    	.fees-table thead th,
+    	.fees-table tbody th,
+    	.fees-table tbody td {
+    		padding: 0.7rem 0.75rem;
+    		font-size: 0.85rem;
+    	}
+    }
 }
