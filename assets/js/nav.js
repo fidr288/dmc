@@ -4,6 +4,7 @@
 	const links = [
 		{ href: 'index.html', label: 'Home 主页' },
 		{ href: 'fees.html', label: 'Fees 服务及收费' },
+		{ href: 'resources.html', label: 'Resources 资源' },
 		// { href: 'https://form.jotform.com/243126299351862', label: 'Pay online 在线支付' },
 		// { href: 'career.html', label: 'Career 招聘' }
 	];
