@@ -784,4 +784,38 @@ p {
     		font-size: 0.85rem;
     	}
     }
+
+        /* Brief Clinic Intro Strip */
+    #main > .clinic-intro {
+    	padding: 0 3rem 1.75rem 3rem;
+    	border-top: none;
+    	text-align: center;
+    }
+    .clinic-intro p {
+    	text-align: center;
+    	margin: 0 auto 0.4rem auto;
+    	max-width: 48rem;
+    	font-size: 0.95rem;
+    	line-height: 1.6;
+    	color: #4a5568;
+    }
+    .clinic-intro p:last-child {
+    	margin-bottom: 0;
+    	font-size: 0.9rem;
+    	color: #5c6670;
+    }
+    
+    @media screen and (max-width: 980px) {
+    	#main > .clinic-intro {
+    		padding: 0 2rem 1.5rem 2rem;
+    	}
+    }
+    @media screen and (max-width: 600px) {
+    	#main > .clinic-intro {
+    		padding: 0 1.25rem 1.25rem 1.25rem;
+    	}
+    	.clinic-intro p {
+    		text-align: left;
+    	}
+    }
 }
