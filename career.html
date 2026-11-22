@@ -4,201 +4,391 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
-		<title>Career 招聘</title>
+		<title>Career 招聘 | Dominion Medical Centre</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Fix mobile/portrait background cutting off halfway */
+			#wrapper > .bg {
+				position: fixed !important;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				height: 100vh;
+				height: 100lvh;
+				background-size: auto, auto, cover !important;
+				background-position: center, center, center !important;
+			}
+
+			#header {
+				height: 14rem;
+				padding-bottom: 6.5rem;
+			}
+
+			p {
+				text-align: left;
+			}
+
+			/* Main content padding */
+			#main > .career-section {
+				padding: 3rem 3.5rem;
+			}
+
+			/* Page Title & Top CTA */
+			.career-hero {
+				text-align: center;
+				background: #f4f7f9;
+				border: 1px solid #d9e2ec;
+				border-top: 4px solid #18bfef;
+				padding: 2.25rem 2rem;
+				margin-bottom: 2.5rem;
+			}
+			.career-hero h1 {
+				font-size: clamp(2rem, 4vw, 2.75rem);
+				margin-bottom: 0.25rem;
+			}
+			.career-hero .subtitle-zh {
+				font-family: "Source Sans Pro", Helvetica, sans-serif;
+				font-size: 1.15rem;
+				color: #717981;
+				font-weight: 700;
+				letter-spacing: 0.08em;
+				margin-bottom: 1.5rem;
+			}
+
+			/* 2x2 Roles Grid */
+			.roles-grid {
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				gap: 1.5rem;
+			}
+			.role-card {
+				background: #ffffff;
+				border: 1px solid #e2e8f0;
+				border-top: 3px solid #212931;
+				padding: 1.75rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				text-align: left;
+				transition: border-top-color 0.2s ease, box-shadow 0.2s ease;
+			}
+			.role-card:hover {
+				border-top-color: #18bfef;
+				box-shadow: 0 4px 12px rgba(33, 41, 49, 0.06);
+			}
+			.role-header {
+				border-bottom: 1px solid #eeeeee;
+				padding-bottom: 0.75rem;
+				margin-bottom: 1.25rem;
+			}
+			.role-header h2 {
+				font-size: 1.2rem;
+				margin: 0 0 0.2rem 0;
+				color: #212931;
+			}
+			.role-header .role-zh {
+				font-family: "Source Sans Pro", Helvetica, sans-serif;
+				font-size: 0.95rem;
+				font-weight: 700;
+				color: #717981;
+			}
+			.role-list {
+				list-style: disc;
+				margin: 0 0 1.5rem 1.25rem;
+				padding: 0;
+			}
+			.role-list li {
+				padding-left: 0.25rem;
+				margin-bottom: 0.85rem;
+				font-size: 0.9rem;
+				line-height: 1.55;
+				color: #212931;
+			}
+			.role-list li:last-child {
+				margin-bottom: 0;
+			}
+			.role-list .zh {
+				display: block;
+				color: #5c6670;
+				font-size: 0.85rem;
+				margin-top: 0.15rem;
+			}
+			.role-card .button {
+				width: 100%;
+			}
+
+			/* Structured Footer Links */
+			.footer-links-group {
+				margin-bottom: 1.75rem;
+			}
+			.footer-links-group:last-child {
+				margin-bottom: 0;
+			}
+			.footer-links-group h3 {
+				margin-bottom: 0.75rem;
+				font-size: 0.9rem;
+			}
+			.footer-links-list {
+				list-style: none;
+				padding-left: 0;
+				margin: 0;
+			}
+			.footer-links-list li {
+				padding: 0.35rem 0;
+				font-family: "Source Sans Pro", Helvetica, sans-serif;
+				font-size: 0.85rem;
+				font-weight: 700;
+				letter-spacing: 0.04em;
+			}
+
+			/* Fold 7 unfolded & tablets */
+			@media screen and (max-width: 980px) {
+				#main > .career-section {
+					padding: 2.5rem 2rem;
+				}
+			}
+
+			/* Fold 7 cover screen & narrow phones */
+			@media screen and (max-width: 736px) {
+				#main > .career-section {
+					padding: 2rem 1.25rem;
+				}
+				.career-hero {
+					padding: 1.75rem 1.25rem;
+				}
+				.roles-grid {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+		<div id="wrapper" class="fade-in">
 
-				
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">DMC</a>
-					</header>
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">DMC</a>
+			</header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">Home 主页</a></li>
-							<!-- <li><a href="video.html">Video consult 视频会诊</a></li> -->
-							<li><a href="fees.html">Fees 服务及收费</a></li>
-							<!-- <li><a href="resources.html">Resources 资源</a></li> -->
-							<!-- <li><a href="https://form.jotform.com/223428371274052">Pay online 在线支付</a></li> -->
-							<li><a href="https://www.jotform.com/build/243126299351862">Pay online 在线支付</a></li>
-							<li class="active"><a href="career.html">Career 招聘</a></li>
-						</ul>
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Home 主页</a></li>
+					<li><a href="fees.html">Fees 服务及收费</a></li>
+					<li><a href="https://form.jotform.com/243126299351862">Pay online 在线支付</a></li>
+					<li class="active"><a href="career.html">Career 招聘</a></li>
+				</ul>
+			</nav>
 
-					</nav>
+			<!-- Main -->
+			<div id="main">
+				<section class="career-section">
 
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header>
-								<h2>Join us<br>加入我们的团队</h2>
-							</header>
-								<!-- <h4>send your CV to:</h4> 
-								<h3 style="text-transform: lowercase;">admin@dominionmedical.co.nz</h3> -->
-								<a href="https://form.jotform.com/223435621948056" class="button large "  >Apply here</a>
-							</article>
-
-							<section class="posts">
-								<article>
-									<header>
-									<h3>Doctor 医生</h3>
-									</header>
-									<ul>
-										<li>Must be able to speak Mandarin<br>必须会说普通话</li>
-										<li>RNZCGP required<br>必须持有RNZCGP</li>
-										<li>Flexible hours<br>弹性上班时间</li>
-									</ul>
-								</article>
-								<article>
-								<header>
-								<h3>Practice nurse 护士</h3>
-								</header>
-								<ul>
-									<li>Must be able to speak Mandarin<br>必须会说普通话</li>
-									<li>New graduates welcome<br>欢迎新毕业生</li>
-									<li>Must be NZ registered<br>必须是新西兰注册护士</li>
-									<li>Training provided on the job<br>提供在职培训</li>
-									<li>Flexible hours<br>弹性上班时间</li>
-									<li>Current vaccinator certificate preferred but not required<br>具有疫苗接种证书优先考虑</li>
-								</ul>
-							</article>
-							<article>
-								<header>
-								<h3>Healthcare assistant 医护助理</h3>
-								</header>
-								<ul>
-									<li>Must be able to speak Mandarin<br>必须会说普通话</li>
-									<li>You will work under the guidance of a Registered Nurse to provide quality care<br>您将会在注册护士的指导下工作，以提供病人护理</li>
-									<li>No qualifications required but experience with working in healthcare setting preferred<br>不需要专业资格但是有经验者优先考虑</li>
-									<li>Training provided on the job<br>提供在职培训</li>
-									<li>Flexible hours<br>弹性上班时间</li>
-								</ul>
-							</article>
-							<article>
-								<header>
-								<h3>Receptionist 接待员</h3>
-								</header>
-								<ul>
-									<li>Must be able to speak Mandarin<br>必须会说普通话</li>
-									<li>No qualifications required but experience with working in healthcare setting preferred<br>不需要专业资格但是有经验者优先考虑</li>
-									<li>Training provided on the job<br>提供在职培训</li>
-									<li>Flexible hours<br>弹性上班时间</li>
-								</ul>
-							</article>
-							
-						</section>
-						<!-- Footer -->
-							<!-- <footer>
-								<div class="pagination">
-									<a href="#" class="previous">Prev</a>
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer> -->
-
+					<!-- Top CTA -->
+					<div class="career-hero">
+						<h1>Join Our Team</h1>
+						<div class="subtitle-zh">加入我们的团队</div>
+						<a href="https://form.jotform.com/223435621948056" class="button primary large">Apply Online 立即申请</a>
 					</div>
 
-				<!-- Footer -->
-				<footer id="footer">
-					<section>
-						<header>
-							<h3>Useful Links 常用链接</h3>
-						</header>
-						<hr>
-						<h5><a href="files/health-information-privacy-statement.pdf">Privacy statement 隐私声明</a></h5>
-						<h5><a href="about.html">About us 关于我们</a></h5>
-						<h5><a href="career.html">Join us 加入我们的团队</a></h5>
-						<h5><a href="https://www.adhb.health.nz/your-health/find-an-accident-and-medical-clinic/">After hours clinics 下班后诊所</a></h5>
-						<h5><a href="https://www.labtests.co.nz/collection-centres/">Labtest centres 化验所地址</a></h5>
-						<h5><a href="https://www.wellwomenandfamily.co.nz/clinics">Free smear clinics 免费宫颈子宫颈抹片检查</a></h5>
-						<h5><a href="https://www.timetoscreen.nz/breast-screening/sign-up/">Breastscreen 乳房筛查</a></h5>
-						<h5><a href="https://nationalwomenshealth.adhb.govt.nz/our-services/contraception-clinic/">Free contraception clinics 免费避孕诊所</a></h5>
-						
-						<!-- <form method="post" action="#">
-							<div class="fields">
-								<div class="field">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name" />
+					<!-- Roles 2x2 Grid -->
+					<div class="roles-grid">
+
+						<article class="role-card">
+							<div>
+								<div class="role-header">
+									<h2>Doctor</h2>
+									<span class="role-zh">医生</span>
 								</div>
-								<div class="field">
-									<label for="email">Email</label>
-									<input type="text" name="email" id="email" />
-								</div>
-								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="3"></textarea>
-								</div>
+								<ul class="role-list">
+									<li>
+										Must be able to speak Mandarin
+										<span class="zh">必须会说普通话</span>
+									</li>
+									<li>
+										RNZCGP required
+										<span class="zh">必须持有 RNZCGP</span>
+									</li>
+									<li>
+										Flexible hours
+										<span class="zh">弹性上班时间</span>
+									</li>
+								</ul>
 							</div>
-							<ul class="actions">
-								<li><input type="submit" value="Send Message" /></li>
-							</ul>
-						</form> -->
-					</section>
-					<section class="split contact">
-						<section class="alt">
-							<h3>Address</h3>
-							<p>349 Mt Albert Road<br />
-							Mt Roskill, Auckland 1041</p>
-						</section>
-						<section>
-							<h3>Phone</h3>
-							<p><a href="tel:+6496204986">09-6204986</a></p>
-							
-						</section>
-						<section>
-							<h3>Fax</h3>
-							<p>09-6201349</a></p>
-							
-						</section>
-						<section>
-							<h3>Email</h3>
-							<p><a href="mailto:contact@dominionmedical.co.nz">contact@dominionmedical.co.nz</a></p>
-						</section>
-						<!-- <section>
-							<h3>Social</h3>
-							<ul class="icons alt">
-								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-							</ul>
-						</section> -->
-					</section>
-				</footer>
+							<a href="https://form.jotform.com/223435621948056" class="button small">Apply Now 申请此职位</a>
+						</article>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Dominon Medical Centre</li><li>2022</li></ul>
+						<article class="role-card">
+							<div>
+								<div class="role-header">
+									<h2>Practice Nurse</h2>
+									<span class="role-zh">护士</span>
+								</div>
+								<ul class="role-list">
+									<li>
+										Must be able to speak Mandarin
+										<span class="zh">必须会说普通话</span>
+									</li>
+									<li>
+										Must be NZ registered (new graduates welcome)
+										<span class="zh">必须是新西兰注册护士（欢迎新毕业生）</span>
+									</li>
+									<li>
+										Current vaccinator certificate preferred, not required
+										<span class="zh">具有疫苗接种证书优先考虑</span>
+									</li>
+									<li>
+										Training provided on the job
+										<span class="zh">提供在职培训</span>
+									</li>
+									<li>
+										Flexible hours
+										<span class="zh">弹性上班时间</span>
+									</li>
+								</ul>
+							</div>
+							<a href="https://form.jotform.com/223435621948056" class="button small">Apply Now 申请此职位</a>
+						</article>
+
+						<article class="role-card">
+							<div>
+								<div class="role-header">
+									<h2>Healthcare Assistant</h2>
+									<span class="role-zh">医护助理</span>
+								</div>
+								<ul class="role-list">
+									<li>
+										Must be able to speak Mandarin
+										<span class="zh">必须会说普通话</span>
+									</li>
+									<li>
+										Work under the guidance of a Registered Nurse to provide quality care
+										<span class="zh">在注册护士的指导下工作，提供病人护理</span>
+									</li>
+									<li>
+										No qualifications required; healthcare experience preferred
+										<span class="zh">不需要专业资格，有医疗行业经验者优先考虑</span>
+									</li>
+									<li>
+										Training provided on the job
+										<span class="zh">提供在职培训</span>
+									</li>
+									<li>
+										Flexible hours
+										<span class="zh">弹性上班时间</span>
+									</li>
+								</ul>
+							</div>
+							<a href="https://form.jotform.com/223435621948056" class="button small">Apply Now 申请此职位</a>
+						</article>
+
+						<article class="role-card">
+							<div>
+								<div class="role-header">
+									<h2>Receptionist</h2>
+									<span class="role-zh">接待员</span>
+								</div>
+								<ul class="role-list">
+									<li>
+										Must be able to speak Mandarin
+										<span class="zh">必须会说普通话</span>
+									</li>
+									<li>
+										No qualifications required; healthcare experience preferred
+										<span class="zh">不需要专业资格，有医疗行业经验者优先考虑</span>
+									</li>
+									<li>
+										Training provided on the job
+										<span class="zh">提供在职培训</span>
+									</li>
+									<li>
+										Flexible hours
+										<span class="zh">弹性上班时间</span>
+									</li>
+								</ul>
+							</div>
+							<a href="https://form.jotform.com/223435621948056" class="button small">Apply Now 申请此职位</a>
+						</article>
+
 					</div>
 
+				</section>
 			</div>
 
+			<!-- Footer -->
+			<footer id="footer">
+				<section>
+					<div class="footer-links-group">
+						<h3>Patient Resources / 患者资源</h3>
+						<ul class="footer-links-list">
+							<li><a href="https://www.healthpoint.co.nz/gps-accident-urgent-medical-care/accident-urgent-medical-care-ae/central-auckland/">After hours clinics 下班后诊所</a></li>
+							<li><a href="https://www.awanuilabs.co.nz/north/auckland/collection-centres/">Labtest centres 化验所地址</a></li>
+							<li><a href="https://www.timetoscreen.nz/breast-screening/sign-up/">BreastScreen 乳房筛查</a></li>
+							<li><a href="https://nationalwomenshealth.adhb.govt.nz/our-services/contraception-clinic/">Free contraception clinics 免费避孕诊所</a></li>
+							<li><a href="https://www.dominionmedical.co.nz/files/iron-infusion-patient-information-sheet.pdf">Iron infusion 静脉铁剂输注</a></li>
+							<li><a href="https://www.dominionmedical.co.nz/files/aclasta-info.pdf">Zoledronic acid infusion 唑来膦酸 (Aclasta) 输液</a></li>
+						</ul>
+					</div>
+					<div class="footer-links-group">
+						<h3>Clinic Info / 诊所信息</h3>
+						<ul class="footer-links-list">
+							<li><a href="about.html">About us 关于我们</a></li>
+							<li><a href="career.html">Join us 加入我们的团队</a></li>
+							<li><a href="files/health-information-privacy-statement.pdf">Privacy statement 隐私声明</a></li>
+						</ul>
+					</div>
+				</section>
+				<section class="split contact">
+					<section class="alt">
+						<h3>Address</h3>
+						<p>
+							<a href="https://maps.google.com/?q=349+Mt+Albert+Road,+Mt+Roskill,+Auckland+1041" target="_blank" rel="noopener">
+								349 Mt Albert Road<br />
+								Mt Roskill, Auckland 1041
+							</a>
+						</p>
+					</section>
+					<section>
+						<h3>Phone</h3>
+						<p><a href="tel:+6496204986">09-6204986</a></p>
+					</section>
+					<section>
+						<h3>Fax</h3>
+						<p>09-6201349</p>
+					</section>
+					<section>
+						<h3>Email</h3>
+						<p><a href="mailto:contact@dominionmedical.co.nz">contact@dominionmedical.co.nz</a></p>
+					</section>
+				</section>
+			</footer>
+
+			<!-- Copyright -->
+			<div id="copyright">
+				<ul>
+					<li>&copy; Dominion Medical Centre</li>
+					<li id="copy-year"></li>
+				</ul>
+			</div>
+
+		</div>
+
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script>document.getElementById('copy-year').textContent = new Date().getFullYear();</script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
