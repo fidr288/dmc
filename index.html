@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/custom.css" />
+		<link rel="stylesheet" href="assets/css/custom.css?v=2" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		
 	</head>
@@ -57,8 +57,14 @@
 								<span class="btn-zh">处方</span>
 							</a>
 						</li>
-						<li>
+						<!-- <li>
 							<a href="https://form.jotform.com/243126299351862" class="button">
+								<span class="btn-en">Pay Online</span>
+								<span class="btn-zh">在线支付</span>
+							</a>
+						</li> -->
+						<li>
+							<a href="#" id="open-pay-modal" class="button" role="button">
 								<span class="btn-en">Pay Online</span>
 								<span class="btn-zh">在线支付</span>
 							</a>
@@ -83,7 +89,7 @@
 						</li>
 					</ul>
 				</article>
-				
+
 				<!-- Brief Clinic Introduction -->
 				<section class="clinic-overview">
 					<div class="overview-grid">
@@ -241,6 +247,102 @@
 				}
 			}, { passive: true });
 		</script>
+		<!-- Pay Online Bank Details Modal -->
+		<dialog id="pay-modal" class="pay-modal" aria-labelledby="pay-modal-title">
+			<div class="pay-modal-inner">
+				<button type="button" class="pay-modal-close" id="close-pay-modal" aria-label="Close">&times;</button>
+			
+				<h2 id="pay-modal-title">ASB Bank Details <span class="zh">银行账户</span></h2>
+			
+				<div class="bank-details-box">
+					<div class="bank-row">
+						<span class="bank-label">Account Number 帐号</span>
+						<span class="bank-value">
+							<strong id="bank-acct">12-3033-0051764-00</strong>
+							<button type="button" class="copy-btn" id="copy-acct-btn">Copy 复制</button>
+						</span>
+					</div>
+					<div class="bank-row">
+						<span class="bank-label">Account Name 户名</span>
+						<span class="bank-value"><strong>Wattle Healthcare Ltd</strong></span>
+					</div>
+					<div class="bank-row">
+						<span class="bank-label">Reference 参考</span>
+						<span class="bank-value"><strong>Name 姓名, Date of Birth 出生日期</strong></span>
+					</div>
+				</div>
+			
+				<table class="pay-fee-table">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Consultations<span class="zh">诊所/电话会诊</span></th>
+							<th>Prescription<span class="zh">处方</span></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th class="cat-adult">Adult + CSC<span class="zh">成人 + CSC</span></th>
+							<td class="cat-adult">$20</td>
+							<td class="cat-adult">$15</td>
+						</tr>
+						<tr>
+							<th class="cat-adult">Adult<span class="zh">成人</span></th>
+							<td class="cat-adult">$25</td>
+							<td class="cat-adult">$15</td>
+						</tr>
+						<tr>
+							<th class="cat-youth">14–17 yr/岁</th>
+							<td class="cat-youth">$13</td>
+							<td class="cat-youth">$10</td>
+						</tr>
+						<tr>
+							<th>0–13 yr/岁</th>
+							<td colspan="2" class="price-free">Free 免费</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</dialog>
 
+		<script>
+			(function () {
+				var openBtn = document.getElementById('open-pay-modal');
+				var closeBtn = document.getElementById('close-pay-modal');
+				var modal = document.getElementById('pay-modal');
+				var copyBtn = document.getElementById('copy-acct-btn');
+				var acctText = document.getElementById('bank-acct');
+			
+				if (openBtn && modal) {
+					openBtn.addEventListener('click', function (e) {
+						e.preventDefault();
+						modal.showModal();
+					});
+				}
+			
+				if (closeBtn && modal) {
+					closeBtn.addEventListener('click', function () {
+						modal.close();
+					});
+				}
+			
+				if (modal) {
+					modal.addEventListener('click', function (e) {
+						if (e.target === modal) modal.close();
+					});
+				}
+			
+				if (copyBtn && acctText) {
+					copyBtn.addEventListener('click', function () {
+						navigator.clipboard.writeText(acctText.textContent.trim()).then(function () {
+							copyBtn.textContent = 'Copied 已复制';
+							setTimeout(function () {
+								copyBtn.textContent = 'Copy 复制';
+							}, 2000);
+						});
+					});
+				}
+			})();
+		</script>
 	</body>
 </html>
