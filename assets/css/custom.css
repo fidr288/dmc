@@ -893,7 +893,7 @@ p {
         /* ==========================================================================
            Pay Online Modal
            ========================================================================== */
-            
+
         .pay-modal {
         	border: none;
         	padding: 0;
@@ -904,16 +904,16 @@ p {
         	box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
         	border-top: 4px solid #18bfef;
         }
-        
+
         .pay-modal::backdrop {
         	background: rgba(18, 24, 30, 0.65);
         }
-        
+
         .pay-modal-inner {
         	position: relative;
         	padding: 2rem 1.75rem 1.75rem 1.75rem;
         }
-        
+
         .pay-modal-close {
         	position: absolute;
         	top: 0.75rem;
@@ -928,17 +928,17 @@ p {
         	padding: 0.25rem 0.5rem !important;
         	cursor: pointer;
         }
-        
+
         .pay-modal-close:hover {
         	color: #212931 !important;
         }
-        
+
         .pay-modal h2 {
         	text-align: center;
         	font-size: 1.3rem;
         	margin: 0 0 1.25rem 0;
         }
-        
+
         .pay-modal h2 .zh {
         	display: block;
         	font-size: 0.95rem;
@@ -946,7 +946,7 @@ p {
         	color: #717981;
         	margin-top: 0.15rem;
         }
-        
+
         .bank-details-box {
         	background: #f4f7f9;
         	border: 1px solid #d9e2ec;
@@ -954,23 +954,23 @@ p {
         	margin-bottom: 1.5rem;
         	text-align: left;
         }
-        
+
         .bank-row {
         	display: flex;
         	flex-direction: column;
         	padding: 0.45rem 0;
         	border-bottom: 1px solid #e2e8f0;
         }
-        
+
         .bank-row:last-child {
         	border-bottom: none;
         	padding-bottom: 0;
         }
-        
+
         .bank-row:first-child {
         	padding-top: 0;
         }
-        
+
         .bank-label {
         	font-family: "Source Sans Pro", Helvetica, sans-serif;
         	font-size: 0.75rem;
@@ -979,7 +979,7 @@ p {
         	text-transform: uppercase;
         	color: #5c6670;
         }
-        
+
         .bank-value {
         	display: flex;
         	align-items: center;
@@ -990,7 +990,7 @@ p {
         	margin-top: 0.15rem;
         	flex-wrap: wrap;
         }
-        
+
         .copy-btn {
         	font-family: "Source Sans Pro", Helvetica, sans-serif !important;
         	font-size: 0.72rem !important;
@@ -1005,19 +1005,19 @@ p {
         	box-shadow: inset 0 0 0 1px #cbd5e0 !important;
         	cursor: pointer;
         }
-        
+
         .copy-btn:hover {
         	box-shadow: inset 0 0 0 1px #18bfef !important;
         	color: #18bfef !important;
         }
-        
+
         .pay-fee-table {
         	width: 100%;
         	border-collapse: collapse;
         	margin: 0;
         	font-size: 0.88rem;
         }
-        
+
         .pay-fee-table th,
         .pay-fee-table td {
         	border: 1px solid #e2e8f0;
@@ -1026,7 +1026,7 @@ p {
         	vertical-align: middle;
         	line-height: 1.35;
         }
-        
+
         .pay-fee-table thead th {
         	background: #212931;
         	color: #ffffff;
@@ -1036,7 +1036,7 @@ p {
         	text-transform: uppercase;
         	letter-spacing: 0.04em;
         }
-        
+
         .pay-fee-table thead th .zh {
         	display: block;
         	font-weight: 400;
@@ -1045,7 +1045,7 @@ p {
         	color: #cbd5e0;
         	margin-top: 0.15rem;
         }
-        
+
         .pay-fee-table tbody th {
         	text-align: left;
         	padding-left: 0.75rem;
@@ -1053,38 +1053,322 @@ p {
         	font-weight: 700;
         	text-transform: none;
         }
-        
+
         .pay-fee-table tbody th .zh {
         	display: block;
         	font-size: 0.8rem;
         	font-weight: 400;
         }
-        
+
         .pay-fee-table tbody td {
         	font-family: "Source Sans Pro", Helvetica, sans-serif;
         	font-weight: 700;
         }
-        
+
         .pay-fee-table .cat-adult {
         	color: #2656c5;
         }
-        
+
         .pay-fee-table .cat-youth {
         	color: #48742b;
         }
-        
-        .pay-fee-table .price-free {
-        	color: #188038;
+
+         .pay-fee-table .price-free {
+         	color: #188038;
+         }
+     
+         @media screen and (max-width: 480px) {
+         	.pay-modal-inner {
+         		padding: 1.5rem 1rem 1.25rem 1rem;
+         	}
+         	.pay-fee-table th,
+         	.pay-fee-table td {
+         		padding: 0.5rem 0.35rem;
+         		font-size: 0.82rem;
+         	}
+         }
+     
+         /* ==========================================================================
+           Video Consultation Page
+           ========================================================================== */
+            
+        .video-rooms-grid {
+        	display: grid;
+        	grid-template-columns: repeat(4, minmax(0, 1fr));
+        	gap: 1.25rem;
+        	margin-bottom: 2.5rem;
         }
-        
-        @media screen and (max-width: 480px) {
-        	.pay-modal-inner {
-        		padding: 1.5rem 1rem 1.25rem 1rem;
+
+        .room-card {
+        	display: flex;
+        	flex-direction: column;
+        	align-items: center;
+        	text-align: center;
+        	background: #ffffff;
+        	border: 1px solid #e2e8f0;
+        	border-top: 4px solid #212931;
+        	padding: 1.75rem 1rem 1.4rem 1rem;
+        	text-decoration: none;
+        	border-bottom: 1px solid #e2e8f0 !important;
+        	transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+        }
+
+        .room-card:hover {
+        	transform: translateY(-3px);
+        	box-shadow: 0 8px 20px rgba(33, 41, 49, 0.08);
+        }
+
+        .room-1 { border-top-color: #2563eb; }
+        .room-2 { border-top-color: #d97706; }
+        .room-3 { border-top-color: #dc2626; }
+        .room-4 { border-top-color: #16a34a; }
+
+        .room-num {
+        	font-family: "Source Sans Pro", Helvetica, sans-serif;
+        	font-size: 2.5rem;
+        	font-weight: 900;
+        	line-height: 1;
+        	margin-bottom: 0.4rem;
+        }
+
+        .room-1 .room-num { color: #2563eb; }
+        .room-2 .room-num { color: #d97706; }
+        .room-3 .room-num { color: #dc2626; }
+        .room-4 .room-num { color: #16a34a; }
+
+        .room-label {
+        	font-family: "Source Sans Pro", Helvetica, sans-serif;
+        	font-size: 0.95rem;
+        	font-weight: 900;
+        	letter-spacing: 0.06em;
+        	text-transform: uppercase;
+        	color: #212931;
+        }
+
+        .room-zh {
+        	font-size: 0.85rem;
+        	color: #5c6670;
+        	margin-top: 0.1rem;
+        }
+
+        .room-enter {
+        	margin-top: 1rem;
+        	font-family: "Source Sans Pro", Helvetica, sans-serif;
+        	font-size: 0.75rem;
+        	font-weight: 700;
+        	letter-spacing: 0.06em;
+        	text-transform: uppercase;
+        	color: #717981;
+        }
+
+        .room-card:hover .room-enter {
+        	color: #212931;
+        }
+
+        /* Instructions Panel */
+        .video-instructions {
+        	background: #fafbfc;
+        	border: 1px solid #e2e8f0;
+        	padding: 2rem 2.25rem;
+        }
+
+        .video-instructions h2 {
+        	font-size: 1.15rem;
+        	margin: 0 0 1.25rem 0;
+        	padding-bottom: 0.75rem;
+        	border-bottom: 1px solid #e2e8f0;
+        	text-align: left;
+        }
+
+        .video-instructions h2 .zh {
+        	font-weight: 700;
+        	color: #717981;
+        	margin-left: 0.4rem;
+        	font-size: 0.95rem;
+        }
+
+        .video-steps {
+        	list-style: none;
+        	margin: 0;
+        	padding: 0;
+        	display: grid;
+        	gap: 1rem;
+        }
+
+        .video-steps li {
+        	display: flex;
+        	align-items: flex-start;
+        	gap: 1rem;
+        	padding: 0;
+        	text-align: left;
+        }
+
+        .step-num {
+        	flex-shrink: 0;
+        	width: 1.85rem;
+        	height: 1.85rem;
+        	border-radius: 50%;
+        	background: #212931;
+        	color: #ffffff;
+        	font-family: "Source Sans Pro", Helvetica, sans-serif;
+        	font-size: 0.85rem;
+        	font-weight: 900;
+        	display: flex;
+        	align-items: center;
+        	justify-content: center;
+        	margin-top: 0.1rem;
+        }
+
+        .step-text strong {
+        	display: block;
+        	font-size: 0.92rem;
+        	line-height: 1.5;
+        	color: #212931;
+        }
+
+        .step-text .zh {
+        	display: block;
+        	font-size: 0.85rem;
+        	line-height: 1.5;
+        	color: #5c6670;
+        	margin-top: 0.1rem;
+        }
+
+        @media screen and (max-width: 736px) {
+        	.video-rooms-grid {
+        		grid-template-columns: repeat(2, minmax(0, 1fr));
+        		gap: 0.9rem;
         	}
-        	.pay-fee-table th,
-        	.pay-fee-table td {
-        		padding: 0.5rem 0.35rem;
-        		font-size: 0.82rem;
+        	.room-card {
+        		padding: 1.35rem 0.75rem 1.15rem 0.75rem;
+        	}
+        	.video-instructions {
+        		padding: 1.5rem 1.25rem;
+	}
+        }
+
+        /* ==========================================================================
+           Resources Page
+           ========================================================================== */
+
+           .resource-search-wrap {
+        	max-width: 34rem;
+        	margin: 0 auto;
+        }
+
+        #resource-search {
+        	width: 100%;
+        	background: #ffffff;
+        	border: 1px solid #cbd5e0;
+        	padding: 0.7rem 1rem;
+        	font-size: 0.92rem;
+        	color: #212931;
+        	height: auto;
+        }
+
+        #resource-search:focus {
+        	border-color: #18bfef;
+        	outline: none;
+        }
+
+        .resources-grid {
+        	display: grid;
+        	grid-template-columns: repeat(2, minmax(0, 1fr));
+        	gap: 1.5rem;
+        	align-items: start;
+        }
+
+        .resources-col {
+        	display: flex;
+        	flex-direction: column;
+        	gap: 0.75rem;
+        }
+
+        .resource-item {
+        	background: #ffffff;
+        	border: 1px solid #e2e8f0;
+        	border-left: 3px solid #212931;
+        	transition: border-left-color 0.2s ease;
+        }
+
+        .resource-item[open] {
+        	border-left-color: #18bfef;
+        }
+
+        .resource-item summary {
+        	list-style: none;
+        	cursor: pointer;
+        	padding: 0.95rem 1.15rem;
+        	font-family: "Source Sans Pro", Helvetica, sans-serif;
+        	font-size: 0.92rem;
+        	font-weight: 700;
+        	letter-spacing: 0.03em;
+        	color: #212931;
+        	display: flex;
+        	align-items: center;
+        	justify-content: space-between;
+        	gap: 0.75rem;
+        	text-align: left;
+        }
+
+        .resource-item summary::-webkit-details-marker {
+        	display: none;
+        }
+
+        .resource-item summary .zh {
+        	font-weight: 400;
+        	color: #5c6670;
+        	margin-left: 0.35rem;
+        }
+
+        .resource-item summary::after {
+        	content: "+";
+        	font-size: 1.2rem;
+        	font-weight: 700;
+        	color: #717981;
+        	flex-shrink: 0;
+        	line-height: 1;
+        }
+
+        .resource-item[open] summary::after {
+        	content: "−";
+        	color: #18bfef;
+        }
+
+        .resource-body {
+        	padding: 0.25rem 1.15rem 1.1rem 1.15rem;
+        	border-top: 1px solid #edf2f7;
+        	text-align: left;
+        }
+
+        .resource-body ul {
+        	margin: 0.65rem 0 0 1.15rem;
+        	padding: 0;
+        }
+
+        .resource-body li {
+        	font-size: 0.88rem;
+        	line-height: 1.6;
+        	margin-bottom: 0.5rem;
+        	color: #212931;
+        	padding-left: 0.15rem;
+        }
+
+        .resource-body li:last-child {
+        	margin-bottom: 0;
+        }
+
+        .resource-empty {
+        	text-align: center !important;
+        	color: #717981;
+        	font-size: 0.95rem;
+        	margin-top: 2rem;
+        }
+
+        @media screen and (max-width: 736px) {
+        	.resources-grid {
+        		grid-template-columns: 1fr;
+        		gap: 0.75rem;
         	}
         }
 }
