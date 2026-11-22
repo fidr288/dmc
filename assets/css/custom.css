@@ -1,0 +1,645 @@
+/* ==========================================================================
+   Global Layout & Template Overrides
+   ========================================================================== */
+
+/* Fix mobile/portrait background cutting off halfway */
+#wrapper > .bg {
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	height: 100lvh;
+	background-size: auto, auto, cover !important;
+	background-position: center, center, center !important;
+}
+
+/* Header spacing (7rem - 4rem #nav margin = 3rem clean gap across all pages) */
+#header {
+	height: 15rem;
+	padding-bottom: 7rem;
+}
+
+#intro + #header {
+	margin-top: -15rem;
+}
+
+/* Bilingual readability (overrides Massively's default justify) */
+p {
+	text-align: left;
+}
+
+
+/* ==========================================================================
+   Home Page (index.html)
+   ========================================================================== */
+
+/* Hero */
+#intro {
+	min-height: 75vh;
+	padding: 5rem 2rem 4rem 2rem;
+}
+
+#intro h1 {
+	font-size: clamp(2.25rem, 5vw, 4.25rem);
+	margin-bottom: 1rem;
+}
+
+#intro h4,
+#intro h6 {
+	margin-bottom: 0.5rem;
+}
+
+#intro .emergency-num {
+	color: #ff4d4d;
+	font-weight: 900;
+	font-size: 1.4em;
+	border-bottom: none;
+}
+
+/* Responsive 6-button service grid (Desktop: 3x2, Fold 7 inner: 2x3, Cover/Phone: 1x6) */
+#main > .post.quick-actions {
+	padding: 3rem 3rem 2rem 3rem;
+}
+
+.service-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.service-grid li {
+	padding: 0;
+}
+
+.service-grid .button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	min-height: 4.5rem;
+	line-height: 1.3;
+	padding: 0.85rem 1rem;
+	white-space: normal;
+	text-align: center;
+}
+
+.service-grid .btn-en {
+	font-size: 0.9rem;
+}
+
+.service-grid .btn-zh {
+	font-size: 0.85rem;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	margin-top: 0.25rem;
+	text-transform: none;
+}
+
+/* 2-Column Spotlight Row (Enrolment & Mobile App) */
+#main > .spotlight-row {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.25rem;
+	padding: 0 3rem 2rem 3rem;
+	border-top: none;
+}
+
+.spotlight-card {
+	background: #f4f7f9;
+	border: 1px solid #d9e2ec;
+	border-top: 4px solid #18bfef;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: left;
+}
+
+.spotlight-card h3 {
+	margin: 0 0 0.5rem 0;
+	font-size: 1.1rem;
+}
+
+.spotlight-card p {
+	margin: 0 0 1.25rem 0;
+	font-size: 0.9rem;
+	line-height: 1.6;
+}
+
+.spotlight-card .button {
+	width: 100%;
+}
+
+/* Collapsible Clinic Notices */
+#main > .notices-section {
+	padding: 1.5rem 3rem 2.5rem 3rem;
+}
+
+.notice-item {
+	border: 1px solid #e2e2e2;
+	border-left: 4px solid #212931;
+	background: #fafafa;
+	margin-bottom: 0.75rem;
+	text-align: left;
+}
+
+.notice-item:last-child {
+	margin-bottom: 0;
+}
+
+.notice-item.urgent {
+	border-left-color: #d93025;
+	background: #fff8f8;
+}
+
+.notice-item.holiday {
+	border-left-color: #188038;
+	background: #f6fbf7;
+}
+
+.notice-item summary {
+	cursor: pointer;
+	padding: 0.9rem 1.25rem;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-weight: 900;
+	font-size: 0.9rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+}
+
+.notice-item summary::-webkit-details-marker {
+	display: none;
+}
+
+.notice-item summary::after {
+	content: "+";
+	font-size: 1.25rem;
+	line-height: 1;
+	flex-shrink: 0;
+}
+
+.notice-item[open] summary::after {
+	content: "−";
+}
+
+.notice-item.urgent summary {
+	color: #b3261e;
+}
+
+.notice-body {
+	padding: 0.5rem 1.25rem 1.25rem 1.25rem;
+	border-top: 1px solid rgba(0, 0, 0, 0.06);
+	font-size: 0.9rem;
+	line-height: 1.75;
+}
+
+.notice-body p {
+	margin-bottom: 0.85rem;
+}
+
+.notice-body ul {
+	margin: 0 0 1rem 1.25rem;
+}
+
+.notice-body li {
+	margin-bottom: 0.35rem;
+}
+
+.notice-body hr {
+	margin: 1.25rem 0;
+}
+
+.notice-body .actions {
+	margin-top: 1rem;
+	margin-bottom: 0;
+	justify-content: flex-start;
+}
+
+/* Compact After Hours Strip */
+#main > .after-hours-bar {
+	padding: 1.5rem 3rem 2.5rem 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+	text-align: left;
+}
+
+.after-hours-bar p {
+	margin: 0;
+	font-size: 0.9rem;
+	line-height: 1.6;
+}
+
+
+/* ==========================================================================
+   About Page (about.html)
+   ========================================================================== */
+
+#main > .about-section {
+	padding: 3rem 3.5rem;
+}
+
+.page-title {
+	text-align: center;
+	margin-bottom: 2.5rem;
+}
+
+.page-title h1 {
+	font-size: clamp(2rem, 4vw, 3rem);
+	margin-bottom: 0.25rem;
+}
+
+.page-title .subtitle-zh {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 1.15rem;
+	color: #717981;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+}
+
+.accreditation-banner {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	background: #f4f7f9;
+	border: 1px solid #d9e2ec;
+	border-left: 4px solid #18bfef;
+	padding: 1.5rem 2rem;
+	margin-bottom: 3rem;
+}
+
+.accreditation-banner img {
+	width: 110px;
+	height: auto;
+	flex-shrink: 0;
+	display: block;
+}
+
+.accreditation-banner p {
+	margin: 0 0 0.5rem 0;
+	font-size: 0.95rem;
+	line-height: 1.65;
+}
+
+.accreditation-banner p:last-child {
+	margin-bottom: 0;
+	color: #4a5568;
+}
+
+.team-heading {
+	display: flex;
+	align-items: baseline;
+	gap: 0.75rem;
+	border-bottom: 2px solid #eeeeee;
+	padding-bottom: 0.6rem;
+	margin: 0 0 1.5rem 0;
+}
+
+.team-heading h2 {
+	margin: 0;
+	font-size: 1.35rem;
+}
+
+.team-heading span {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #717981;
+}
+
+.doctors-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.25rem;
+	margin-bottom: 3rem;
+}
+
+.doctor-card {
+	background: #ffffff;
+	border: 1px solid #e2e8f0;
+	border-top: 3px solid #212931;
+	padding: 1.5rem;
+	transition: border-top-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.doctor-card:hover {
+	border-top-color: #18bfef;
+	box-shadow: 0 4px 12px rgba(33, 41, 49, 0.06);
+}
+
+.doctor-name-en {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 1.15rem;
+	font-weight: 900;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #212931;
+	margin: 0 0 0.25rem 0;
+}
+
+.doctor-name-zh {
+	font-size: 1rem;
+	font-weight: 600;
+	color: #4a5568;
+	margin: 0 0 0.75rem 0;
+}
+
+.doctor-qual {
+	display: inline-block;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	color: #4a5568;
+	background: #f0f4f8;
+	padding: 0.25rem 0.65rem;
+}
+
+.support-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 1.25rem;
+}
+
+.support-group {
+	background: #fafafa;
+	border: 1px solid #e2e8f0;
+	padding: 1.5rem;
+}
+
+.support-group h3 {
+	font-size: 0.95rem;
+	margin: 0 0 0.2rem 0;
+	color: #212931;
+}
+
+.support-group .group-zh {
+	display: block;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 0.85rem;
+	color: #717981;
+	margin-bottom: 1rem;
+	padding-bottom: 0.6rem;
+	border-bottom: 1px solid #e2e8f0;
+}
+
+.staff-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.staff-list li {
+	padding: 0.35rem 0;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 0.95rem;
+	font-weight: 700;
+	color: #212931;
+}
+
+
+/* ==========================================================================
+   Career Page (career.html)
+   ========================================================================== */
+
+#main > .career-section {
+	padding: 3rem 3.5rem;
+}
+
+.career-hero {
+	text-align: center;
+	background: #f4f7f9;
+	border: 1px solid #d9e2ec;
+	border-top: 4px solid #18bfef;
+	padding: 2.25rem 2rem;
+	margin-bottom: 2.5rem;
+}
+
+.career-hero h1 {
+	font-size: clamp(2rem, 4vw, 2.75rem);
+	margin-bottom: 0.25rem;
+}
+
+.career-hero .subtitle-zh {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 1.15rem;
+	color: #717981;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	margin-bottom: 1.5rem;
+}
+
+.roles-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.5rem;
+}
+
+.role-card {
+	background: #ffffff;
+	border: 1px solid #e2e8f0;
+	border-top: 3px solid #212931;
+	padding: 1.75rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: left;
+	transition: border-top-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.role-card:hover {
+	border-top-color: #18bfef;
+	box-shadow: 0 4px 12px rgba(33, 41, 49, 0.06);
+}
+
+.role-header {
+	border-bottom: 1px solid #eeeeee;
+	padding-bottom: 0.75rem;
+	margin-bottom: 1.25rem;
+}
+
+.role-header h2 {
+	font-size: 1.2rem;
+	margin: 0 0 0.2rem 0;
+	color: #212931;
+}
+
+.role-header .role-zh {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 0.95rem;
+	font-weight: 700;
+	color: #717981;
+}
+
+.role-list {
+	list-style: disc;
+	margin: 0 0 1.5rem 1.25rem;
+	padding: 0;
+}
+
+.role-list li {
+	padding-left: 0.25rem;
+	margin-bottom: 0.85rem;
+	font-size: 0.9rem;
+	line-height: 1.55;
+	color: #212931;
+}
+
+.role-list li:last-child {
+	margin-bottom: 0;
+}
+
+.role-list .zh {
+	display: block;
+	color: #5c6670;
+	font-size: 0.85rem;
+	margin-top: 0.15rem;
+}
+
+.role-card .button {
+	width: 100%;
+}
+
+
+/* ==========================================================================
+   Shared Footer
+   ========================================================================== */
+
+.footer-links-group {
+	margin-bottom: 1.75rem;
+}
+
+.footer-links-group:last-child {
+	margin-bottom: 0;
+}
+
+.footer-links-group h3 {
+	margin-bottom: 0.75rem;
+	font-size: 0.9rem;
+}
+
+.footer-links-list {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.footer-links-list li {
+	padding: 0.35rem 0;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 0.85rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+}
+
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+/* Fold 7 unfolded & tablets */
+@media screen and (max-width: 980px) {
+	#header {
+		height: 13rem;
+		padding-bottom: 6rem;
+	}
+	#intro + #header {
+		margin-top: -13rem;
+	}
+	#main > .post.quick-actions {
+		padding: 2.5rem 2rem 1.5rem 2rem;
+	}
+	#main > .spotlight-row {
+		padding: 0 2rem 1.5rem 2rem;
+	}
+	#main > .notices-section {
+		padding: 1.25rem 2rem 2rem 2rem;
+	}
+	#main > .after-hours-bar {
+		padding: 1.5rem 2rem 2rem 2rem;
+	}
+	#main > .about-section,
+	#main > .career-section {
+		padding: 2.5rem 2rem;
+	}
+	.service-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+/* Narrow tablets & landscape phones */
+@media screen and (max-width: 736px) {
+	#main > .career-section {
+		padding: 2rem 1.25rem;
+	}
+	.career-hero {
+		padding: 1.75rem 1.25rem;
+	}
+	.roles-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Stack spotlight, after-hours & about cards */
+@media screen and (max-width: 600px) {
+	#main > .spotlight-row {
+		grid-template-columns: 1fr;
+		padding: 0 1.25rem 1.5rem 1.25rem;
+	}
+	#main > .after-hours-bar {
+		padding: 1.25rem;
+	}
+	.after-hours-bar .button {
+		width: 100%;
+	}
+	#main > .about-section {
+		padding: 2rem 1.25rem;
+	}
+	.accreditation-banner {
+		flex-direction: column;
+		text-align: center;
+		padding: 1.25rem;
+		gap: 1rem;
+	}
+	.accreditation-banner p {
+		text-align: center;
+	}
+	.doctors-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Fold 7 cover screen & narrow phones */
+@media screen and (max-width: 480px) {
+	#intro {
+		min-height: 65vh;
+		padding: 3.5rem 1.25rem 3rem 1.25rem;
+	}
+	#main > .post.quick-actions {
+		padding: 1.75rem 1.25rem 1rem 1.25rem;
+	}
+	#main > .notices-section {
+		padding: 1rem 1.25rem 1.75rem 1.25rem;
+	}
+	.service-grid {
+		grid-template-columns: 1fr;
+		gap: 0.75rem;
+	}
+	.notice-item summary {
+		font-size: 0.85rem;
+		padding: 0.85rem 1rem;
+	}
+}
