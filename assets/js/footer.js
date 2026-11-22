@@ -21,6 +21,7 @@
 						<li><a href="career.html">Join us 加入我们的团队</a></li>
 						<li><a href="files/health-information-privacy-statement.pdf">Privacy statement 隐私声明</a></li>
                         <li><a href="files/lab-results-policy.pdf">Lab results policy 检查报告政策</a></li>
+                        <li><a href="https://www.jotform.com/223441001711033">Complaints 投诉</a></li>
 					</ul>
 				</div>
 			</section>
