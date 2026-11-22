@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript> -->
 		<style>
 			/* Hero & Header spacing (keeps scrollex expand/collapse working properly) */
 			#intro {
@@ -197,6 +197,17 @@
 				.notice-item summary {
 					font-size: 0.85rem;
 					padding: 0.85rem 1rem;
+				}
+				/* Fix mobile background cutting off halfway */
+				#wrapper > .bg {
+					position: fixed !important;
+					top: 0;
+					left: 0;
+					width: 100vw;
+					height: 100vh;
+					height: 100lvh;
+					background-size: auto, auto, cover !important;
+					background-position: center, center, center !important;
 				}
 			}
 		</style>
@@ -476,6 +487,15 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script>
+			// Guarantee #intro expands back at the top of the page in Firefox
+			window.addEventListener('scroll', function () {
+				if (window.scrollY < 40) {
+					var intro = document.getElementById('intro');
+					if (intro) intro.classList.remove('hidden');
+				}
+			}, { passive: true });
+		</script>
 
 	</body>
 </html>
