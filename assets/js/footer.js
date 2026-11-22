@@ -4,7 +4,7 @@
 		<footer id="footer">
 			<section>
 				<div class="footer-links-group">
-					<h3>Patient Resources / 患者资源</h3>
+					<h3>Quick links / 快速連結</h3>
 					<ul class="footer-links-list">
 						<li><a href="https://www.healthpoint.co.nz/gps-accident-urgent-medical-care/accident-urgent-medical-care-ae/central-auckland/">After hours clinics 下班后诊所</a></li>
 						<li><a href="https://www.awanuilabs.co.nz/north/auckland/collection-centres/">Labtest centres 化验所地址</a></li>
