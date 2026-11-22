@@ -784,67 +784,55 @@ p {
     		font-size: 0.85rem;
     	}
     }
-
-        /* Brief Clinic Intro Strip with Accreditation Badge */
-    #main > .clinic-intro {
-    	padding: 0 3rem 1.75rem 3rem;
-    	border-top: none;
-    }
-    
-    .clinic-intro-inner {
-    	display: flex;
-    	align-items: center;
-    	justify-content: center;
-    	gap: 1.25rem;
-    	max-width: 46rem;
-    	margin: 0 auto;
-    	padding: 0.85rem 1.25rem;
-    	background: #fafafa;
-    	border: 1px solid #eeeeee;
-    }
-    
-    .clinic-intro-inner img {
-    	width: 64px;
-    	height: auto;
-    	flex-shrink: 0;
-    	display: block;
-    }
-    
-    .clinic-intro-text p {
-    	text-align: left;
-    	margin: 0 0 0.25rem 0;
-    	font-size: 0.85rem;
-    	line-height: 1.5;
-    	color: #4a5568;
-    }
-    
-    .clinic-intro-text p:last-child {
-    	margin-bottom: 0;
-    	font-size: 0.8rem;
-    	color: #5c6670;
-    }
-    
-    @media screen and (max-width: 980px) {
-    	#main > .clinic-intro {
-    		padding: 0 2rem 1.5rem 2rem;
-    	}
-    }
-    
-    @media screen and (max-width: 600px) {
-    	#main > .clinic-intro {
-    		padding: 0 1.25rem 1.25rem 1.25rem;
-    	}
-    	.clinic-intro-inner {
-    		flex-direction: column;
-    		text-align: center;
-    		gap: 0.75rem;
-    		padding: 1rem;
-    	}
-    	.clinic-intro-inner img {
-    		width: 56px;
-    	}
-    	.clinic-intro-text p {
-    		text-align: center;
-    	}
-    }
+        
+            /* Brief Clinic Intro Strip with Inline Badge */
+        #main > .clinic-intro {
+        	padding: 0 3rem 1.75rem 3rem;
+        	border-top: none;
+        }
+        
+        .clinic-intro-box {
+        	max-width: 46rem;
+        	margin: 0 auto;
+        	padding: 0.85rem 1.25rem;
+        	background: #fafafa;
+        	border: 1px solid #eeeeee;
+        }
+        
+        .clinic-intro-box p {
+        	text-align: center;
+        	margin: 0 0 0.3rem 0;
+        	font-size: 0.85rem;
+        	line-height: 1.55;
+        	color: #4a5568;
+        }
+        
+        .clinic-intro-box p:last-child {
+        	margin-bottom: 0;
+        	font-size: 0.8rem;
+        	color: #5c6670;
+        }
+        
+        .clinic-intro-box .inline-badge {
+        	display: inline-block;
+        	height: 1.5em;
+        	width: auto;
+        	vertical-align: -0.25em;
+        	margin-right: 0.45rem;
+        }
+        
+        @media screen and (max-width: 980px) {
+        	#main > .clinic-intro {
+        		padding: 0 2rem 1.5rem 2rem;
+        	}
+        }
+        
+        @media screen and (max-width: 600px) {
+        	#main > .clinic-intro {
+        		padding: 0 1.25rem 1.25rem 1.25rem;
+        	}
+        	.clinic-intro-box p {
+        		text-align: left;
+        	}
+        }
 }
