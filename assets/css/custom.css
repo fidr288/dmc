@@ -200,7 +200,7 @@ p {
 }
 
 a.spotlight-card:hover {
-	background: #ffffff;
+	background: #e0f2fe;
 	border-color: #18bfef !important;
 	box-shadow: 0 6px 18px rgba(33, 41, 49, 0.06);
 	transform: translateY(-2px);
@@ -211,8 +211,8 @@ a.spotlight-card:hover {
 	width: 2.5rem;
 	height: 2.5rem;
 	border-radius: 6px;
-	background: #eef6fb;
-	color: #18bfef;
+	background: #edf2f7;
+	color: #212931;
 	display: flex;
 	align-items: center;
 	justify-content: center;
