@@ -1439,6 +1439,24 @@ a.spotlight-card:hover .spotlight-cta {
 		font-size: 0.85rem;
 		padding: 0.85rem 1rem;
 	}
+	.notice-body .actions {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 0.5rem;
+	}
+	.notice-body .actions li {
+		width: 100%;
+		padding: 0;
+	}
+	.notice-body .button {
+		width: 100%;
+		height: auto;
+		line-height: 1.4;
+		padding: 0.7rem 0.85rem;
+		white-space: normal;
+		font-size: 0.8rem;
+		letter-spacing: 0.04em;
+	}
 	.pay-modal-inner {
 		padding: 1.5rem 1rem 1.25rem 1rem;
 	}
