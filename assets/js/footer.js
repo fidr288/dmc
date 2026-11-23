@@ -41,8 +41,8 @@
 					<p><a href="tel:+6496204986">09-6204986</a></p>
 				</section>
 				<section>
-					<h3>Fax</h3>
-					<p>09-6201349</p>
+					<h3>EDI</h3>
+					<p>dommcmtr</p>
 				</section>
 				<section>
 					<h3>Email</h3>
