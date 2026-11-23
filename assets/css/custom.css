@@ -57,7 +57,7 @@ p {
 	border-bottom: none;
 }
 
-/* Responsive 6-button service grid */
+/* Hairline 2-Column Service Directory */
 #main > .post.quick-actions {
 	padding: 3rem 3rem 2rem 3rem;
 }
@@ -144,38 +144,6 @@ p {
 	transform: translateX(4px);
 }
 
-/* Modern Editorial Clinic Overview */
-#main > .clinic-overview,
-.clinic-overview {
-	padding: 1.5rem 3rem;
-	border-top: 1px solid #eeeeee;
-	border-bottom: 1px solid #eeeeee;
-	background: #fafbfc;
-	margin-bottom: 2rem;
-}
-
-.overview-grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 2rem;
-	align-items: center;
-}
-
-.overview-grid p {
-	margin: 0;
-	font-size: 0.9rem;
-	line-height: 1.65;
-	color: #212931;
-	text-align: left;
-}
-
-.overview-zh {
-	border-left: 1px solid #e2e8f0;
-	padding-left: 2rem;
-	color: #4a5568 !important;
-}
-
-/* 2-Column Spotlight Row (Enrolment & Mobile App) */
 /* 2-Column Spotlight Row (Enrolment & Mobile App) */
 #main > .spotlight-row {
 	display: grid;
@@ -200,7 +168,7 @@ p {
 }
 
 a.spotlight-card:hover {
-	background: #e0f2fe;
+	background: #ffffff;
 	border-color: #18bfef !important;
 	box-shadow: 0 6px 18px rgba(33, 41, 49, 0.06);
 	transform: translateY(-2px);
@@ -218,6 +186,12 @@ a.spotlight-card:hover {
 	justify-content: center;
 	font-size: 1.05rem;
 	margin-top: 0.1rem;
+	transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+a.spotlight-card:hover .spotlight-icon {
+	background: #e0f2fe;
+	color: #18bfef;
 }
 
 .spotlight-card.is-closed .spotlight-icon {
@@ -344,6 +318,7 @@ a.spotlight-card:hover .spotlight-cta {
 	color: #991b1b;
 	opacity: 0.85;
 }
+
 .notice-body {
 	padding: 0.75rem 1.25rem 1.25rem 1.25rem;
 	border-top: 1px solid rgba(0, 0, 0, 0.06);
@@ -1238,7 +1213,7 @@ a.spotlight-card:hover .spotlight-cta {
    Shared Footer
    ========================================================================== */
 
-   .footer-links-group {
+.footer-links-group {
 	margin-bottom: 2rem;
 }
 
@@ -1278,6 +1253,7 @@ a.spotlight-card:hover .spotlight-cta {
 .footer-links-list li a:hover {
 	color: #18bfef;
 }
+
 .footer-contact-list {
 	list-style: none;
 	padding-left: 0;
@@ -1307,6 +1283,7 @@ a.spotlight-card:hover .spotlight-cta {
 	color: #18bfef;
 }
 
+
 /* ==========================================================================
    Responsive Breakpoints
    ========================================================================== */
@@ -1323,10 +1300,6 @@ a.spotlight-card:hover .spotlight-cta {
 	#main > .post.quick-actions {
 		padding: 2.5rem 2rem 1.5rem 2rem;
 	}
-	#main > .clinic-overview,
-	.clinic-overview {
-		padding: 1.5rem 2rem;
-	}
 	#main > .spotlight-row {
 		padding: 0 2rem 1.5rem 2rem;
 	}
@@ -1340,9 +1313,6 @@ a.spotlight-card:hover .spotlight-cta {
 	#main > .career-section,
 	#main > .fees-section {
 		padding: 2.5rem 2rem;
-	}
-	.service-grid {
-		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 	.fees-two-col {
 		grid-template-columns: 1fr;
@@ -1360,21 +1330,6 @@ a.spotlight-card:hover .spotlight-cta {
 	}
 	.roles-grid {
 		grid-template-columns: 1fr;
-	}
-	#main > .clinic-overview,
-	.clinic-overview {
-		padding: 1.25rem;
-		margin-bottom: 1.5rem;
-	}
-	.overview-grid {
-		grid-template-columns: 1fr;
-		gap: 0.85rem;
-	}
-	.overview-zh {
-		border-left: none;
-		padding-left: 0;
-		padding-top: 0.85rem;
-		border-top: 1px solid #edf2f7;
 	}
 	.video-rooms-grid {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1445,10 +1400,6 @@ a.spotlight-card:hover .spotlight-cta {
 	}
 	#main > .notices-section {
 		padding: 1rem 1.25rem 1.75rem 1.25rem;
-	}
-	.service-grid {
-		grid-template-columns: 1fr;
-		gap: 0.75rem;
 	}
 	.notice-item summary {
 		font-size: 0.85rem;
