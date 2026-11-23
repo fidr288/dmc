@@ -10,8 +10,9 @@
 	width: 100vw;
 	height: 100vh;
 	height: 100lvh;
-	background-size: auto, auto, cover !important;
-	background-position: center, center, center !important;
+	background: linear-gradient(180deg, #161d24 0%, #212931 100%) !important;
+	background-size: cover !important;
+	background-position: center !important;
 }
 
 /* Header spacing (7rem - 4rem #nav margin = 3rem clean gap across all pages) */
