@@ -8,9 +8,9 @@
 					<ul class="footer-links-list">
 						<li><a href="https://www.healthpoint.co.nz/gps-accident-urgent-medical-care/accident-urgent-medical-care-ae/central-auckland/">After hours clinics 下班后诊所</a></li>
 						<li><a href="https://gpappointments.healthnz.govt.nz/book">After Hours Online GP 下班后网上会诊</a></li>
-						<li><a href="https://www.awanuilabs.co.nz/north/auckland/collection-centres/">Labtest centres 化验所地址</a></li>
-						<li><a href="https://www.timetoscreen.nz/breast-screening/sign-up/">BreastScreen 乳房筛查</a></li>
-						<li><a href="https://nationalwomenshealth.adhb.govt.nz/our-services/contraception-clinic/">Free contraception clinics 免费避孕诊所</a></li>
+						// <li><a href="https://www.awanuilabs.co.nz/north/auckland/collection-centres/">Labtest centres 化验所地址</a></li>
+						// <li><a href="https://www.timetoscreen.nz/breast-screening/sign-up/">BreastScreen 乳房筛查</a></li>
+						// <li><a href="https://nationalwomenshealth.adhb.govt.nz/our-services/contraception-clinic/">Free contraception clinics 免费避孕诊所</a></li>
 						<li><a href="https://www.dominionmedical.co.nz/files/iron-infusion-patient-information-sheet.pdf">Iron infusion 静脉铁剂输注</a></li>
 						<li><a href="https://www.dominionmedical.co.nz/files/aclasta-info.pdf">Zoledronic acid infusion 唑来膦酸 (Aclasta) 输液</a></li>
 					</ul>
