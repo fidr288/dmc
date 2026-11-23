@@ -58,9 +58,14 @@ p {
    ========================================================================== */
 
 /* Hero */
-#intro {
+/* #intro {
 	min-height: 75vh;
 	padding: 5rem 2rem 4rem 2rem;
+} */
+
+#intro {
+	min-height: 58vh;
+	padding: 3.5rem 2rem 3rem 2rem;
 }
 
 #intro h1 {
@@ -1413,10 +1418,16 @@ a.spotlight-card:hover .spotlight-cta {
 }
 
 /* Narrow phones */
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
 	#intro {
 		min-height: 65vh;
 		padding: 3.5rem 1.25rem 3rem 1.25rem;
+	} */
+
+	@media screen and (max-width: 480px) {
+	#intro {
+		min-height: 52vh;
+		padding: 2.75rem 1.25rem 2.25rem 1.25rem;
 	}
 	#main > .post.quick-actions {
 		padding: 1.75rem 1.25rem 1rem 1.25rem;
