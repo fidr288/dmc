@@ -62,69 +62,86 @@ p {
 	padding: 3rem 3rem 2rem 3rem;
 }
 
-.service-grid {
+.service-rows {
 	display: grid;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
-	gap: 1rem;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	column-gap: 2.5rem;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
-.service-grid li {
+.service-rows li {
 	padding: 0;
+	border-bottom: 1px solid #e2e8f0;
 }
 
-.service-grid .button {
+.service-rows li:nth-child(1),
+.service-rows li:nth-child(2) {
+	border-top: 1px solid #e2e8f0;
+}
+
+.service-row {
 	display: flex;
-	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 100%;
-	min-height: 3.9rem;
-	line-height: 1.3;
-	padding: 0.75rem 1rem;
-	white-space: normal;
-	text-align: center;
-	text-transform: none;
-	letter-spacing: 0.02em;
+	gap: 0.9rem;
+	padding: 1.05rem 0.5rem;
+	border-bottom: none !important;
+	color: #212931;
+	text-decoration: none;
+	transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.service-row:hover {
 	background-color: #f8fafc;
-	color: #212931 !important;
-	box-shadow: inset 0 0 0 1px #d9e2ec;
-	transition: background-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+	color: #18bfef;
 }
 
-.service-grid .button:hover {
-	background-color: #ffffff;
-	box-shadow: inset 0 0 0 1px #18bfef;
-	color: #18bfef !important;
-	transform: translateY(-1px);
+.row-icon {
+	width: 1.25rem;
+	text-align: center;
+	font-size: 1rem;
+	color: #717981;
+	flex-shrink: 0;
+	transition: color 0.15s ease;
 }
 
-.service-grid .button.primary {
-	background-color: #212931;
-	color: #ffffff !important;
-	box-shadow: none;
+.service-row:hover .row-icon {
+	color: #18bfef;
 }
 
-.service-grid .button.primary:hover {
-	background-color: #18bfef;
-	color: #ffffff !important;
-	box-shadow: none;
+.row-label {
+	display: flex;
+	align-items: baseline;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+	text-align: left;
 }
 
-.service-grid .btn-en {
-	font-size: 0.92rem;
+.row-en {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 0.98rem;
 	font-weight: 700;
+	letter-spacing: 0.02em;
 }
 
-.service-grid .btn-zh {
-	font-size: 0.82rem;
+.row-zh {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 0.88rem;
 	font-weight: 400;
-	letter-spacing: 0.04em;
-	margin-top: 0.2rem;
-	opacity: 0.85;
+	color: #5c6670;
+}
+
+.row-arrow {
+	margin-left: auto;
+	font-size: 1rem;
+	color: #94a3b8;
+	transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.service-row:hover .row-arrow {
+	color: #18bfef;
+	transform: translateX(4px);
 }
 
 /* Modern Editorial Clinic Overview */
@@ -159,6 +176,7 @@ p {
 }
 
 /* 2-Column Spotlight Row (Enrolment & Mobile App) */
+/* 2-Column Spotlight Row (Enrolment & Mobile App) */
 #main > .spotlight-row {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -168,29 +186,85 @@ p {
 }
 
 .spotlight-card {
-	background: #f4f7f9;
-	border: 1px solid #d9e2ec;
-	border-top: 4px solid #18bfef;
-	padding: 1.5rem;
+	display: flex;
+	align-items: flex-start;
+	gap: 1.1rem;
+	background: #f8fafc;
+	border: 1px solid #e2e8f0;
+	border-bottom: 1px solid #e2e8f0 !important;
+	padding: 1.35rem 1.5rem;
+	text-align: left;
+	text-decoration: none;
+	color: inherit;
+	transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+a.spotlight-card:hover {
+	background: #ffffff;
+	border-color: #18bfef !important;
+	box-shadow: 0 6px 18px rgba(33, 41, 49, 0.06);
+	transform: translateY(-2px);
+}
+
+.spotlight-icon {
+	flex-shrink: 0;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 6px;
+	background: #eef6fb;
+	color: #18bfef;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.05rem;
+	margin-top: 0.1rem;
+}
+
+.spotlight-card.is-closed .spotlight-icon {
+	background: #f1f5f9;
+	color: #717981;
+}
+
+.spotlight-content {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	text-align: left;
 }
 
 .spotlight-card h3 {
-	margin: 0 0 0.5rem 0;
-	font-size: 1.1rem;
+	margin: 0 0 0.35rem 0;
+	font-size: 1rem;
+	font-weight: 800;
+	letter-spacing: 0.02em;
+	text-transform: none;
+	color: #212931;
+}
+
+.spotlight-card h3 .zh {
+	font-weight: 400;
+	font-size: 0.9rem;
+	color: #5c6670;
+	margin-left: 0.35rem;
 }
 
 .spotlight-card p {
-	margin: 0 0 1.25rem 0;
-	font-size: 0.9rem;
-	line-height: 1.6;
+	margin: 0 0 0.75rem 0;
+	font-size: 0.85rem;
+	line-height: 1.55;
+	color: #4a5568;
 }
 
-.spotlight-card .button {
-	width: 100%;
+.spotlight-cta {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 0.82rem;
+	font-weight: 700;
+	letter-spacing: 0.03em;
+	color: #18bfef;
+	transition: transform 0.15s ease;
+	display: inline-block;
+}
+
+a.spotlight-card:hover .spotlight-cta {
+	transform: translateX(3px);
 }
 
 /* Collapsible Clinic Notices */
@@ -1299,6 +1373,12 @@ p {
 	.resources-grid {
 		grid-template-columns: 1fr;
 		gap: 0.75rem;
+	}
+	.service-rows {
+		grid-template-columns: 1fr;
+	}
+	.service-rows li:nth-child(2) {
+		border-top: none;
 	}
 }
 

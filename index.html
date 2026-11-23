@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/custom.css?v=8" />
+		<link rel="stylesheet" href="assets/css/custom.css?v=9" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		
 	</head>
@@ -45,48 +45,65 @@
 
 				<!-- Quick Actions -->
 				<article class="post featured quick-actions">
-					<ul class="service-grid">
+					<ul class="service-rows">
 						<li>
-							<!-- put primary next to button to highlight -->
-							<a href="https://form.jotform.com/230626496244055" class="button"> 
-								<span class="btn-en">Book Online</span>
-								<span class="btn-zh">在线预约</span>
+							<a href="https://form.jotform.com/230626496244055" class="service-row">
+								<span class="row-icon icon solid fa-calendar-check" aria-hidden="true"></span>
+								<span class="row-label">
+									<span class="row-en">Book Online</span>
+									<span class="row-zh">在线预约</span>
+								</span>
+								<span class="row-arrow" aria-hidden="true">&rarr;</span>
 							</a>
 						</li>
 						<li>
-							<a href="https://form.jotform.com/243126636298867" class="button">
-								<span class="btn-en">Prescriptions</span>
-								<span class="btn-zh">处方</span>
-							</a>
-						</li>
-						<!-- <li>
-							<a href="https://form.jotform.com/243126299351862" class="button">
-								<span class="btn-en">Pay Online</span>
-								<span class="btn-zh">在线支付</span>
-							</a>
-						</li> -->
-						<li>
-							<a href="#" id="open-pay-modal" class="button" role="button">
-								<span class="btn-en">Pay Online</span>
-								<span class="btn-zh">在线支付</span>
+							<a href="https://form.jotform.com/243126636298867" class="service-row">
+								<span class="row-icon icon solid fa-prescription-bottle-alt" aria-hidden="true"></span>
+								<span class="row-label">
+									<span class="row-en">Prescriptions</span>
+									<span class="row-zh">处方</span>
+								</span>
+								<span class="row-arrow" aria-hidden="true">&rarr;</span>
 							</a>
 						</li>
 						<li>
-							<a href="https://form.jotform.com/230621012239038" class="button">
-								<span class="btn-en">Message Us</span>
-								<span class="btn-zh">留言</span>
+							<a href="#" id="open-pay-modal" class="service-row" role="button">
+								<span class="row-icon icon solid fa-credit-card" aria-hidden="true"></span>
+								<span class="row-label">
+									<span class="row-en">Pay Online</span>
+									<span class="row-zh">在线支付</span>
+								</span>
+								<span class="row-arrow" aria-hidden="true">&rarr;</span>
 							</a>
 						</li>
 						<li>
-							<a href="https://form.jotform.com/230620815106849" class="button">
-								<span class="btn-en">Online Advice</span>
-								<span class="btn-zh">医生咨询</span>
+							<a href="https://form.jotform.com/230621012239038" class="service-row">
+								<span class="row-icon icon solid fa-envelope" aria-hidden="true"></span>
+								<span class="row-label">
+									<span class="row-en">Message Us</span>
+									<span class="row-zh">留言</span>
+								</span>
+								<span class="row-arrow" aria-hidden="true">&rarr;</span>
 							</a>
 						</li>
 						<li>
-							<a href="https://login.vensa.com/home" class="button">
-								<span class="btn-en">Portal</span>
-								<span class="btn-zh">患者门户</span>
+							<a href="https://form.jotform.com/230620815106849" class="service-row">
+								<span class="row-icon icon solid fa-user-md" aria-hidden="true"></span>
+								<span class="row-label">
+									<span class="row-en">Online Advice</span>
+									<span class="row-zh">医生咨询</span>
+								</span>
+								<span class="row-arrow" aria-hidden="true">&rarr;</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://login.vensa.com/home" class="service-row">
+								<span class="row-icon icon solid fa-laptop-medical" aria-hidden="true"></span>
+								<span class="row-label">
+									<span class="row-en">Patient Portal</span>
+									<span class="row-zh">患者门户</span>
+								</span>
+								<span class="row-arrow" aria-hidden="true">&rarr;</span>
 							</a>
 						</li>
 					</ul>
@@ -106,34 +123,34 @@
 				
 				<!-- Spotlight Row: Enrolment & Mobile App -->
 				<section class="spotlight-row">
-					<div class="spotlight-card">
-						<div>
-							<h3>Enrol Online / 网上登记注册</h3>
-							<p>New patients welcome. <br>
-								欢迎新病人在线注册。</p>
+					<a href="https://form.jotform.com/241368526496063" class="spotlight-card">
+						<div class="spotlight-icon icon solid fa-user-plus" aria-hidden="true"></div>
+						<div class="spotlight-content">
+							<h3>Enrol Online <span class="zh">网上登记注册</span></h3>
+							<p>New patients welcome. Register online in minutes.<br />欢迎新病人，几分钟即可在线完成注册。</p>
+							<span class="spotlight-cta">Enrol now 立即登记 &rarr;</span>
 						</div>
-						<a href="https://form.jotform.com/241368526496063" class="button primary">Enrol Now 立即登记</a>
-					</div>
-
-					<!-- To close books: comment out the Enrol Online card above and uncomment the card below -->
+					</a>
+				
+					<!-- To close books: comment out the Enrol Online card above and uncomment below -->
 					<!--
-					<div class="spotlight-card" style="border-top-color: #717981;">
-						<div>
-							<h3>New Patient Enrolment / 新病人注册</h3>
-							<p>We are currently not accepting any new patients, sorry for any inconvenience caused.<br>
-							很抱歉，本诊所目前不再接收新的注册病人。</p>
+					<div class="spotlight-card is-closed">
+						<div class="spotlight-icon icon solid fa-user-clock" aria-hidden="true"></div>
+						<div class="spotlight-content">
+							<h3>New Patient Enrolment <span class="zh">新病人注册</span></h3>
+							<p>We are currently not accepting new patients.<br />很抱歉，本诊所目前暂停接收新注册病人。</p>
 						</div>
 					</div>
 					-->
-
-					<div class="spotlight-card">
-						<div>
-							<h3>DMC Mobile App / 移动应用</h3>
-							<p>Faster bookings, scripts.<br>
-								更快捷地预约、处方。</p>
+				
+					<a href="https://www.jotform.com/app/231217148606856" class="spotlight-card">
+						<div class="spotlight-icon icon solid fa-mobile-alt" aria-hidden="true"></div>
+						<div class="spotlight-content">
+							<h3>DMC Mobile App <span class="zh">移动应用</span></h3>
+							<p>Faster bookings, repeat scripts, and clinic updates.<br />更快捷地预约、续方及查看诊所通知。</p>
+							<span class="spotlight-cta">Install app 安装应用 &rarr;</span>
 						</div>
-						<a href="https://www.jotform.com/app/231217148606856" class="button primary">Install App 安装应用</a>
-					</div>
+					</a>
 				</section>
 
 				<!-- Collapsible Clinic Notices -->
