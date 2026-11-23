@@ -36,18 +36,21 @@ p {
 	transition: color 0.15s ease, background-color 0.15s ease;
 }
 
-#nav ul li.active {
-	background: transparent;
+#nav ul li.active,
+#nav ul li.active:hover {
+	background: transparent !important;
 }
 
-#nav ul li.active a {
-	color: #212931;
-	background: rgba(255, 255, 255, 0.92);
-	box-shadow: inset 0 -2px 0 #18bfef;
+#nav ul li.active:before,
+#nav ul li.active:after {
+	display: none !important;
 }
 
+#nav ul li.active a,
 #nav ul li.active a:hover {
-	color: #18bfef;
+	background: transparent !important;
+	color: #ffffff !important;
+	box-shadow: inset 0 -2px 0 #18bfef !important;
 }
 /* ==========================================================================
    Home Page (index.html)
