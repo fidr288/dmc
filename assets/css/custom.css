@@ -1162,7 +1162,34 @@ p {
 .footer-links-list li a:hover {
 	color: #18bfef;
 }
+.footer-contact-list {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
 
+.footer-contact-list li {
+	padding: 0.3rem 0;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 0.88rem;
+	line-height: 1.5;
+	color: #4a5568;
+}
+
+.footer-contact-list strong {
+	color: #212931;
+	font-weight: 700;
+	margin-right: 0.35rem;
+}
+
+.footer-contact-list a {
+	color: #4a5568;
+	border-bottom: none;
+}
+
+.footer-contact-list a:hover {
+	color: #18bfef;
+}
 
 /* ==========================================================================
    Responsive Breakpoints

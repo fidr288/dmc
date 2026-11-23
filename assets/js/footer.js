@@ -1,56 +1,44 @@
 (function () {
 	const year = new Date().getFullYear();
+
 	const footerHTML = `
 		<footer id="footer">
 			<section>
 				<div class="footer-links-group">
-					<h3>Quick links / 快速連結</h3>
+					<h3>Quick Links 常用链接</h3>
 					<ul class="footer-links-list">
-						<li><a href="https://www.healthpoint.co.nz/gps-accident-urgent-medical-care/accident-urgent-medical-care-ae/central-auckland/">After hours clinics 下班后诊所</a></li>
-						<li><a href="https://gpappointments.healthnz.govt.nz/book">After Hours Online GP 下班后网上会诊</a></li>
-						// <li><a href="https://www.awanuilabs.co.nz/north/auckland/collection-centres/">Labtest centres 化验所地址</a></li>
-						// <li><a href="https://www.timetoscreen.nz/breast-screening/sign-up/">BreastScreen 乳房筛查</a></li>
-						// <li><a href="https://nationalwomenshealth.adhb.govt.nz/our-services/contraception-clinic/">Free contraception clinics 免费避孕诊所</a></li>
-						<li><a href="https://www.dominionmedical.co.nz/files/iron-infusion-patient-information-sheet.pdf">Iron infusion 静脉铁剂输注</a></li>
-						<li><a href="https://www.dominionmedical.co.nz/files/aclasta-info.pdf">Zoledronic acid infusion 唑来膦酸 (Aclasta) 输液</a></li>
-					</ul>
-				</div>
-				<div class="footer-links-group">
-					<h3>Clinic Info / 诊所信息</h3>
-					<ul class="footer-links-list">
-						<li><a href="about.html">About us 关于我们</a></li>
-						<li><a href="career.html">Join us 加入我们的团队</a></li>
-						<li><a href="files/health-information-privacy-statement.pdf">Privacy statement 隐私声明</a></li>
-                        <li><a href="files/lab-results-policy.pdf">Lab results policy 检查报告政策</a></li>
-                        <li><a href="https://www.jotform.com/223441001711033">Complaints 投诉</a></li>
+						<li><a href="resources.html">Patient Resources 患者资源</a></li>
+						<li><a href="https://www.adhb.health.nz/your-health/find-an-accident-and-medical-clinic/" target="_blank" rel="noopener">After Hours Clinics 下班后诊所</a></li>
+						<li><a href="https://www.awanuilabs.co.nz/north/auckland/collection-centres/" target="_blank" rel="noopener">Awanui Labs (Labtests) 化验所地址</a></li>
+						<li><a href="https://www.wellwomenandfamily.co.nz/clinics" target="_blank" rel="noopener">Free Smear Clinics 免费宫颈抹片检查</a></li>
+						<li><a href="https://www.timetoscreen.nz/breast-screening/sign-up/" target="_blank" rel="noopener">BreastScreen 乳房筛查</a></li>
+						<li><a href="https://nationalwomenshealth.adhb.govt.nz/our-services/contraception-clinic/" target="_blank" rel="noopener">Free Contraception Clinics 免费避孕诊所</a></li>
 					</ul>
 				</div>
 			</section>
-			<section class="split contact">
-				<section class="alt">
-					<h3>Address</h3>
-					<p>
-						<a href="https://maps.google.com/?q=349+Mt+Albert+Road,+Mt+Roskill,+Auckland+1041" target="_blank" rel="noopener">
-							349 Mt Albert Road<br />
-							Mt Roskill, Auckland 1041
-						</a>
-					</p>
-				</section>
-				<section>
-					<h3>Phone</h3>
-					<p><a href="tel:+6496204986">09-6204986</a></p>
-				</section>
-				<section>
-					<h3>EDI</h3>
-					<p>dommcmtr</p>
-				</section>
-				<section>
-					<h3>Email</h3>
-					<p><a href="mailto:contact@dominionmedical.co.nz">contact@dominionmedical.co.nz</a></p>
-				</section>
+
+			<section>
+				<div class="footer-links-group">
+					<h3>Contact 联系方式</h3>
+					<ul class="footer-contact-list">
+						<li><strong>Address:</strong> 349 Mt Albert Rd, Mt Roskill, Auckland 1041</li>
+						<li><strong>Phone:</strong> <a href="tel:+6496204986">09-6204986</a></li>
+						<li><strong>Email:</strong> <a href="mailto:contact@dominionmedical.co.nz">contact@dominionmedical.co.nz</a></li>
+						<li><strong>HealthLink EDI:</strong>dommcmtr</li>
+					</ul>
+				</div>
+
+				<div class="footer-links-group">
+					<h3>Clinic Info 诊所信息</h3>
+					<ul class="footer-links-list">
+						<li><a href="about.html">About Us 关于我们</a></li>
+						<li><a href="career.html">Join Our Team 加入我们</a></li>
+						<li><a href="files/lab-results-policy.pdf">Lab Results Policy 检查报告政策</a></li>
+						<li><a href="files/health-information-privacy-statement.pdf">Privacy Statement 隐私声明</a></li>
+					</ul>
+				</div>
 			</section>
 		</footer>
-
 		<div id="copyright">
 			<ul>
 				<li>&copy; Dominion Medical Centre</li>
