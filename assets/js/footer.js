@@ -7,13 +7,15 @@
 				<div class="footer-links-group">
 					<h3>Quick Links 常用链接</h3>
 					<ul class="footer-links-list">
-						<li><a href="resources.html">Patient Resources 患者资源</a></li>
 						<li><a href="https://www.adhb.health.nz/your-health/find-an-accident-and-medical-clinic/" target="_blank" rel="noopener">After Hours Clinics 下班后诊所</a></li>
 						<li><a href="https://gpappointments.healthnz.govt.nz/book" target="_blank" rel="noopener">After Hours Online GP 下班后网上会诊</a></li>
-						<li><a href="https://www.awanuilabs.co.nz/north/auckland/collection-centres/" target="_blank" rel="noopener">Awanui Labs (Labtests) 化验所地址</a></li>
+						// <li><a href="https://www.awanuilabs.co.nz/north/auckland/collection-centres/" target="_blank" rel="noopener">Awanui Labs (Labtests) 化验所地址</a></li>
 						<li><a href="https://www.wellwomenandfamily.co.nz/clinics" target="_blank" rel="noopener">Free Smear Clinics 免费宫颈抹片检查</a></li>
 						<li><a href="https://www.timetoscreen.nz/breast-screening/sign-up/" target="_blank" rel="noopener">BreastScreen 乳房筛查</a></li>
 						<li><a href="https://nationalwomenshealth.adhb.govt.nz/our-services/contraception-clinic/" target="_blank" rel="noopener">Free Contraception Clinics 免费避孕诊所</a></li>
+						<li><a href="https://www.healthnz.govt.nz/health-topics/keeping-healthy/cancer-screening/bowel-screening" target="_blank" rel="noopener">Bowel screening 肠道筛查试</a></li>
+						<li><a href="files/iron-infusion-patient-information-sheet.pdf" target="_blank" rel="noopener">Iron infusion info  静脉铁剂输注</a></li>
+						<li><a href="files/aclasta-info.pdf" target="_blank" rel="noopener">zoledronic acid (Aclasta) infusion 唑来膦酸 (Aclasta) 输液</a></li>
 					</ul>
 				</div>
 			</section>
