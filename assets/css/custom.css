@@ -1062,6 +1062,10 @@ p {
 	text-align: left;
 }
 
+.resource-item summary::-webkit-details-marker {
+	display: none;
+}
+
 .resource-item summary .zh {
 	font-weight: 400;
 	color: #5c6670;
