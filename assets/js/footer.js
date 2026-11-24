@@ -34,7 +34,7 @@
 					<ul class="footer-links-list">
 						<li><a href="about.html">About Us 关于我们</a></li>
 						<li><a href="career.html">Join Our Team 加入我们</a></li>
-						<li><a href="files/lab-results-policy.pdf">Lab Results Policy 检查报告政策</a></li>
+						<li><a href="files/Lab Results Policy.pdf">Lab Results Policy 检查报告政策</a></li>
 						<li><a href="files/health-information-privacy-statement.pdf">Privacy Statement 隐私声明</a></li>
 					</ul>
 				</div>
