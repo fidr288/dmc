@@ -538,26 +538,12 @@ a.spotlight-card:hover .spotlight-cta {
 	background: #f0f4f8;
 	padding: 0.25rem 0.65rem;
 }
-/* Clickable Doctor Card Button Reset & Affordance */
-button.doctor-card {
-	width: 100%;
-	height: auto;
-	line-height: normal;
-	text-align: left;
-	text-transform: none;
-	letter-spacing: normal;
-	font-weight: normal;
+/* Clickable Doctor Card Affordance */
+.doctor-card[data-doctor] {
 	cursor: pointer;
-	box-shadow: none;
 }
 
-button.doctor-card:hover {
-	border-top-color: #18bfef;
-	box-shadow: 0 4px 12px rgba(33, 41, 49, 0.06) !important;
-	color: inherit !important;
-}
-
-button.doctor-card:focus-visible {
+.doctor-card[data-doctor]:focus-visible {
 	outline: 2px solid #18bfef;
 	outline-offset: 2px;
 }
@@ -573,7 +559,7 @@ button.doctor-card:focus-visible {
 	transition: transform 0.15s ease;
 }
 
-button.doctor-card:hover .doctor-more {
+.doctor-card[data-doctor]:hover .doctor-more {
 	transform: translateX(3px);
 }
 
