@@ -501,6 +501,8 @@ a.spotlight-card:hover .spotlight-cta {
 .doctor-photo {
 	width: 84px;
 	height: 84px;
+	max-width: 84px;
+	max-height: 84px;
 	border-radius: 50%;
 	object-fit: cover;
 	object-position: center top;
@@ -1432,6 +1434,18 @@ a.spotlight-card:hover .spotlight-cta {
 		padding: 0.7rem 0.75rem;
 		font-size: 0.85rem;
 	}
+	.doctors-grid {
+		grid-template-columns: 1fr;
+	}
+	.doctor-card {
+		padding: 1.15rem 1.25rem;
+	}
+	.doctor-photo {
+		width: 64px;
+		height: 64px;
+		max-width: 64px;
+		max-height: 64px;
+	}
 }
 
 /* Narrow phones */
@@ -1481,5 +1495,15 @@ a.spotlight-card:hover .spotlight-cta {
 	.pay-fee-table td {
 		padding: 0.5rem 0.35rem;
 		font-size: 0.82rem;
+	}
+	@media screen and (max-width: 480px) {
+		/* ... existing rules ... */
+	
+		.doctor-photo {
+			width: 56px;
+			height: 56px;
+			max-width: 56px;
+			max-height: 56px;
+		}
 	}
 }
