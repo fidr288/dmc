@@ -538,7 +538,101 @@ a.spotlight-card:hover .spotlight-cta {
 	background: #f0f4f8;
 	padding: 0.25rem 0.65rem;
 }
+/* Clickable Doctor Card Button Reset & Affordance */
+button.doctor-card {
+	width: 100%;
+	height: auto;
+	line-height: normal;
+	text-align: left;
+	text-transform: none;
+	letter-spacing: normal;
+	font-weight: normal;
+	cursor: pointer;
+	box-shadow: none;
+}
 
+button.doctor-card:hover {
+	border-top-color: #18bfef;
+	box-shadow: 0 4px 12px rgba(33, 41, 49, 0.06) !important;
+	color: inherit !important;
+}
+
+button.doctor-card:focus-visible {
+	outline: 2px solid #18bfef;
+	outline-offset: 2px;
+}
+
+.doctor-more {
+	display: block;
+	margin-top: 0.65rem;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 0.03em;
+	color: #18bfef;
+	transition: transform 0.15s ease;
+}
+
+button.doctor-card:hover .doctor-more {
+	transform: translateX(3px);
+}
+
+/* Doctor Bio Modal */
+.doctor-modal {
+	max-width: 540px;
+}
+
+.doctor-modal-header {
+	display: flex;
+	align-items: center;
+	gap: 1.25rem;
+	padding-bottom: 1.15rem;
+	margin-bottom: 1.15rem;
+	border-bottom: 1px solid #e2e8f0;
+	text-align: left;
+}
+
+.doctor-modal-photo {
+	width: 84px;
+	height: 84px;
+	max-width: 84px;
+	max-height: 84px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center top;
+	flex-shrink: 0;
+	border: 3px solid #f0f4f8;
+	box-shadow: 0 2px 6px rgba(33, 41, 49, 0.08);
+}
+
+.doctor-modal-header h2 {
+	text-align: left;
+	font-size: 1.25rem;
+	margin: 0 0 0.15rem 0;
+}
+
+.doctor-modal-zh {
+	font-size: 0.98rem;
+	font-weight: 600;
+	color: #4a5568;
+	margin-bottom: 0.45rem;
+}
+
+.doctor-modal-bio p {
+	font-size: 0.92rem;
+	line-height: 1.65;
+	color: #212931;
+	margin: 0 0 0.85rem 0;
+}
+
+.doctor-modal-bio p:last-child {
+	margin-bottom: 0;
+}
+
+.doctor-modal-bio p.zh {
+	color: #5c6670;
+	font-size: 0.88rem;
+}
 .support-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
