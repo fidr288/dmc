@@ -398,7 +398,7 @@ a.spotlight-card:hover .spotlight-cta {
    About Page (about.html)
    ========================================================================== */
 
-#main > .about-section {
+   #main > .about-section {
 	padding: 3rem 3.5rem;
 }
 
@@ -478,6 +478,10 @@ a.spotlight-card:hover .spotlight-cta {
 }
 
 .doctor-card {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
 	background: #ffffff;
 	border: 1px solid #e2e8f0;
 	border-top: 3px solid #212931;
@@ -488,6 +492,20 @@ a.spotlight-card:hover .spotlight-cta {
 .doctor-card:hover {
 	border-top-color: #18bfef;
 	box-shadow: 0 4px 12px rgba(33, 41, 49, 0.06);
+}
+
+.doctor-info {
+	min-width: 0;
+}
+
+.doctor-photo {
+	width: 84px;
+	height: 84px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center top;
+	flex-shrink: 0;
+	border: 2px solid #e2e8f0;
 }
 
 .doctor-name-en {
@@ -559,7 +577,6 @@ a.spotlight-card:hover .spotlight-cta {
 	font-weight: 700;
 	color: #212931;
 }
-
 
 /* ==========================================================================
    Career & Shared Section Shell (career.html, notices, video, resources)
