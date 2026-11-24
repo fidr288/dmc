@@ -1500,5 +1500,7 @@ a.spotlight-card:hover .spotlight-cta {
 		height: 56px;
 		max-width: 56px;
 		max-height: 56px;
+		/* makes the blue softer */
+		filter: saturate(0.88) brightness(1.03);
 	}
 }
