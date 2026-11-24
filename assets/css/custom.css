@@ -568,43 +568,32 @@ a.spotlight-card:hover .spotlight-cta {
 
 /* Doctor Bio Modal */
 .doctor-modal {
-	max-width: 540px;
+	max-width: 520px;
 }
 
 .doctor-modal-header {
 	display: flex;
-	align-items: center;
-	gap: 1.25rem;
-	padding-bottom: 1.15rem;
+	align-items: baseline;
+	flex-wrap: wrap;
+	gap: 0.35rem 0.75rem;
+	padding-right: 2rem;
+	padding-bottom: 0.9rem;
 	margin-bottom: 1.15rem;
 	border-bottom: 1px solid #e2e8f0;
 	text-align: left;
 }
 
-.doctor-modal-photo {
-	width: 84px;
-	height: 84px;
-	max-width: 84px;
-	max-height: 84px;
-	border-radius: 50%;
-	object-fit: cover;
-	object-position: center top;
-	flex-shrink: 0;
-	border: 3px solid #f0f4f8;
-	box-shadow: 0 2px 6px rgba(33, 41, 49, 0.08);
-}
-
 .doctor-modal-header h2 {
 	text-align: left;
 	font-size: 1.25rem;
-	margin: 0 0 0.15rem 0;
+	margin: 0;
 }
 
 .doctor-modal-zh {
-	font-size: 0.98rem;
+	font-size: 1.05rem;
 	font-weight: 600;
-	color: #4a5568;
-	margin-bottom: 0.45rem;
+	color: #5c6670;
+	margin: 0;
 }
 
 .doctor-modal-bio p {

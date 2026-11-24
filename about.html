@@ -145,8 +145,7 @@
 				<button type="button" class="pay-modal-close" id="close-doctor-modal" aria-label="Close">&times;</button>
 				<div class="doctor-modal-header">
 					<h2 id="modal-doc-name"></h2>
-					<div id="modal-doc-zh" class="doctor-modal-zh"></div>
-					<span id="modal-doc-qual" class="doctor-qual"></span>
+					<span id="modal-doc-zh" class="doctor-modal-zh"></span>
 				</div>
 				<div id="modal-doc-bio" class="doctor-modal-bio"></div>
 			</div>
@@ -200,7 +199,6 @@
 				const closeBtn = document.getElementById("close-doctor-modal");
 				const nameEl = document.getElementById("modal-doc-name");
 				const zhEl = document.getElementById("modal-doc-zh");
-				const qualEl = document.getElementById("modal-doc-qual");
 				const bioEl = document.getElementById("modal-doc-bio");
 
 				document.querySelectorAll(".doctor-card[data-doctor]").forEach((card) => {
@@ -210,7 +208,6 @@
 
 						nameEl.textContent = doc.name;
 						zhEl.textContent = doc.zh;
-						qualEl.textContent = doc.qual;
 						bioEl.innerHTML = `<p>${doc.bioEn}</p><p class="zh">${doc.bioZh}</p>`;
 
 						modal.showModal();
