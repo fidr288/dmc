@@ -509,6 +509,9 @@ a.spotlight-card:hover .spotlight-cta {
 	flex-shrink: 0;
 	border: 3px solid #f0f4f8;
 	box-shadow: 0 2px 6px rgba(33, 41, 49, 0.08);
+	/* makes the blue softer */
+	filter: saturate(0.88) brightness(1.03);
+
 }
 
 .doctor-name-en {
@@ -1580,7 +1583,5 @@ a.spotlight-card:hover .spotlight-cta {
 		height: 56px;
 		max-width: 56px;
 		max-height: 56px;
-		/* makes the blue softer */
-		filter: saturate(0.88) brightness(1.03);
 	}
 }
