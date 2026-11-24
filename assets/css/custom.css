@@ -481,11 +481,11 @@ a.spotlight-card:hover .spotlight-cta {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 1rem;
+	gap: 1.25rem;
 	background: #ffffff;
 	border: 1px solid #e2e8f0;
 	border-top: 3px solid #212931;
-	padding: 1.5rem;
+	padding: 1.5rem 1.75rem;
 	transition: border-top-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -499,15 +499,16 @@ a.spotlight-card:hover .spotlight-cta {
 }
 
 .doctor-photo {
-	width: 84px;
-	height: 84px;
-	max-width: 84px;
-	max-height: 84px;
+	width: 92px;
+	height: 92px;
+	max-width: 92px;
+	max-height: 92px;
 	border-radius: 50%;
 	object-fit: cover;
 	object-position: center top;
 	flex-shrink: 0;
-	border: 2px solid #e2e8f0;
+	border: 3px solid #f0f4f8;
+	box-shadow: 0 2px 6px rgba(33, 41, 49, 0.08);
 }
 
 .doctor-name-en {
@@ -1400,7 +1401,6 @@ a.spotlight-card:hover .spotlight-cta {
 	}
 }
 
-/* Stack spotlight, after-hours, about & fees */
 @media screen and (max-width: 600px) {
 	#main > .spotlight-row {
 		grid-template-columns: 1fr;
@@ -1428,23 +1428,22 @@ a.spotlight-card:hover .spotlight-cta {
 	.doctors-grid {
 		grid-template-columns: 1fr;
 	}
-	.fees-table thead th,
-	.fees-table tbody th,
-	.fees-table tbody td {
-		padding: 0.7rem 0.75rem;
-		font-size: 0.85rem;
-	}
-	.doctors-grid {
-		grid-template-columns: 1fr;
-	}
 	.doctor-card {
 		padding: 1.15rem 1.25rem;
+		gap: 1rem;
 	}
 	.doctor-photo {
 		width: 64px;
 		height: 64px;
 		max-width: 64px;
 		max-height: 64px;
+		border-width: 2px;
+	}
+	.fees-table thead th,
+	.fees-table tbody th,
+	.fees-table tbody td {
+		padding: 0.7rem 0.75rem;
+		font-size: 0.85rem;
 	}
 }
 
@@ -1455,7 +1454,7 @@ a.spotlight-card:hover .spotlight-cta {
 		padding: 3.5rem 1.25rem 3rem 1.25rem;
 	} */
 
-	@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
 	#intro {
 		min-height: 52vh;
 		padding: 2.75rem 1.25rem 2.25rem 1.25rem;
@@ -1496,14 +1495,10 @@ a.spotlight-card:hover .spotlight-cta {
 		padding: 0.5rem 0.35rem;
 		font-size: 0.82rem;
 	}
-	@media screen and (max-width: 480px) {
-		/* ... existing rules ... */
-	
-		.doctor-photo {
-			width: 56px;
-			height: 56px;
-			max-width: 56px;
-			max-height: 56px;
-		}
+	.doctor-photo {
+		width: 56px;
+		height: 56px;
+		max-width: 56px;
+		max-height: 56px;
 	}
 }
