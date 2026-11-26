@@ -20,6 +20,15 @@
 
 			<section>
 				<div class="footer-links-group">
+					<h3>Clinic Info 诊所信息</h3>
+					<ul class="footer-links-list">
+						<li><a href="about.html">About Us 关于我们</a></li>
+						<li><a href="career.html">Join Our Team 加入我们</a></li>
+						<li><a href="files/Lab Results Policy.pdf">Lab Results Policy 检查报告政策</a></li>
+						<li><a href="files/health-information-privacy-statement.pdf">Privacy Statement 隐私声明</a></li>
+					</ul>
+				</div>
+				<div class="footer-links-group">
 					<h3>Contact 联系方式</h3>
 					<ul class="footer-contact-list">
 						<li><strong>Address:</strong> 349 Mt Albert Rd, Mt Roskill, Auckland 1041</li>
@@ -29,15 +38,7 @@
 					</ul>
 				</div>
 
-				<div class="footer-links-group">
-					<h3>Clinic Info 诊所信息</h3>
-					<ul class="footer-links-list">
-						<li><a href="about.html">About Us 关于我们</a></li>
-						<li><a href="career.html">Join Our Team 加入我们</a></li>
-						<li><a href="files/Lab Results Policy.pdf">Lab Results Policy 检查报告政策</a></li>
-						<li><a href="files/health-information-privacy-statement.pdf">Privacy Statement 隐私声明</a></li>
-					</ul>
-				</div>
+			
 			</section>
 		</footer>
 		<div id="copyright">
